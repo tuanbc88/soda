@@ -1,0 +1,27 @@
+Your task is to extract structured information from the text.
+
+Return the result strictly in the following JSON format:
+
+{{
+"entity_relations": [
+  {{"head": "Entity1", "relation": "relationName", "tail": "Entity2"}}
+],
+"attributes": [
+  {{"target": "Entity", "attribute": "attributeName", "value": "value"}}
+]
+}}
+
+Rules:
+- Only extract relations that explicitly appear in the text.
+- Do not hallucinate facts.
+- If no attributes are present, return an empty list.
+- Do not output anything other than the JSON object.
+
+Text:
+{input_text}
+
+Candidate entities:
+{entities_hint}
+
+Candidate relations:
+{relations_hint}

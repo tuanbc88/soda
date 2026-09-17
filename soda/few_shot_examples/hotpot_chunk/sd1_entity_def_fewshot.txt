@@ -1,0 +1,49 @@
+Example 1:
+Text: John Doe is a student at National University of Singapore.
+Triples: [['John_Doe', 'studentAt', 'National_University_of_Singapore']]
+
+Answer:
+[
+  ['John_Doe', 'Person', 'Student', 'a person enrolled in an educational program at an institution'],
+  ['National_University_of_Singapore', 'Organization', 'University', 'an institution that provides higher education and academic research']
+]
+
+Example 2:
+Text: Apple Inc. is a technology company headquartered in Cupertino.
+Triples: [['Apple_Inc.', 'headquarteredIn', 'Cupertino']]
+
+Answer:
+[
+  ['Apple_Inc.', 'Organization', 'Company', 'a business entity that develops and sells products or services'],
+  ['Cupertino', 'Location', 'City', 'a geographic area serving as an administrative or urban center']
+]
+
+Example 3:
+Text: Barack Obama served as the president of the United States.
+Triples: [['Barack_Obama', 'servedAs', 'President_of_the_United_States']]
+
+Answer:
+[
+  ['Barack_Obama', 'Person', 'Politician', 'a person involved in political leadership and public governance'],
+  ['President_of_the_United_States', 'Position', 'HeadOfState', 'a leadership role responsible for governing a nation']
+]
+
+Example 4:
+Text: Team A defeated Team B in the final match.
+Triples: [['Team_A', 'defeated', 'Team_B']]
+
+Answer:
+[
+  ['Team_A', 'Organization', 'SportsTeam', 'an organized group of players competing in sports competitions'],
+  ['Team_B', 'Organization', 'SportsTeam', 'an organized group of players competing in sports competitions']
+]
+
+Example 5:
+Text: The ALCO RS-3 locomotive uses a diesel-electric transmission.
+Triples: [['ALCO_RS-3', 'powerType', 'Diesel-electric_transmission']]
+
+Answer:
+[
+  ['ALCO_RS-3', 'Product', 'Locomotive', 'a powered vehicle designed for pulling trains on railway tracks'],
+  ['Diesel-electric_transmission', 'Technology', 'PowerSystem', 'a system converting diesel energy into electrical power for motion']
+]

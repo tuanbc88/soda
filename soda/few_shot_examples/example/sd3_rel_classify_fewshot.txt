@@ -1,0 +1,127 @@
+Example 1:
+Relations:
+[
+  ['Student', 'studiedAt', 'University', 'studyAt', 'a student studies at an institution', 'event'],
+  ['Student', 'internedAt', 'Company', 'internAt', 'a student works temporarily at a company', 'event'],
+  ['Student', 'fieldOfStudy', 'AcademicField', 'studyField', 'area of academic specialization', 'attribute'],
+  ['Student', 'gpa', 'Score', 'hasGPA', 'academic performance score', 'attribute']
+]
+
+Answer:
+[
+  ['Student', 'studiedAt', 'University', 'main', 'self'],
+  ['Student', 'internedAt', 'Company', 'main', 'self'],
+  ['Student', 'fieldOfStudy', 'AcademicField', 'rel_attr', 'studiedAt'],
+  ['Student', 'gpa', 'Score', 'subj_attr', 'subject']
+]
+
+Example 2:
+Relations:
+[
+  ['Employee', 'workedAt', 'Company', 'workAt', 'a person works at an organization', 'event'],
+  ['Employee', 'workPeriod', 'TimeRange', 'workPeriod', 'duration of employment', 'attribute'],
+  ['Employee', 'jobTitle', 'Position', 'hasJobTitle', 'role held in a job', 'attribute']
+]
+
+Answer:
+[
+  ['Employee', 'workedAt', 'Company', 'main', 'self'],
+  ['Employee', 'workPeriod', 'TimeRange', 'rel_attr', 'workedAt'],
+  ['Employee', 'jobTitle', 'Position', 'rel_attr', 'workedAt']
+]
+
+Example 3:
+Relations:
+[
+  ['Person', 'age', 'Number', 'hasAge', 'age of a person', 'attribute'],
+  ['Person', 'gender', 'Gender', 'hasGender', 'gender identity of a person', 'attribute']
+]
+
+Answer:
+[
+  ['Person', 'age', 'Number', 'subj_attr', 'subject'],
+  ['Person', 'gender', 'Gender', 'subj_attr', 'subject']
+]
+
+Example 4:
+Relations:
+[
+  ['Company', 'headquarteredIn', 'City', 'headquarterIn', 'location of company headquarters', 'event'],
+  ['Company', 'foundedYear', 'Year', 'foundedInYear', 'year the company was founded', 'attribute']
+]
+
+Answer:
+[
+  ['Company', 'headquarteredIn', 'City', 'main', 'self'],
+  ['Company', 'foundedYear', 'Year', 'subj_attr', 'subject']
+]
+
+Example 5:
+Relations:
+[
+  ['Researcher', 'publishedIn', 'Journal', 'publishIn', 'a researcher publishes work in a journal', 'event'],
+  ['Researcher', 'researchField', 'Field', 'researchField', 'area of research expertise', 'attribute'],
+  ['Researcher', 'publicationYear', 'Year', 'publishedInYear', 'year of publication', 'attribute']
+]
+
+Answer:
+[
+  ['Researcher', 'publishedIn', 'Journal', 'main', 'self'],
+  ['Researcher', 'researchField', 'Field', 'subj_attr', 'subject'],
+  ['Researcher', 'publicationYear', 'Year', 'rel_attr', 'publishedIn']
+]
+
+Example 6:
+Relations:
+[
+  ['Player', 'playedFor', 'Team', 'playFor', 'a player is a member of a team', 'event'],
+  ['Player', 'scoredAgainst', 'Team', 'scoreAgainst', 'a player scores against an opponent', 'event'],
+  ['Player', 'position', 'Position', 'playPosition', 'role of player in the team', 'attribute']
+]
+
+Answer:
+[
+  ['Player', 'playedFor', 'Team', 'main', 'self'],
+  ['Player', 'scoredAgainst', 'Team', 'main', 'self'],
+  ['Player', 'position', 'Position', 'subj_attr', 'subject']
+
+]
+
+
+Example 7:
+Relations:
+[
+  ['Device', 'usesProtocol', 'Protocol', 'useProtocol', 'a device uses a communication protocol', 'event'],
+  ['Device', 'powerConsumption', 'Power', 'consumePower', 'amount of power used', 'attribute']
+]
+
+Answer:
+[
+  ['Device', 'usesProtocol', 'Protocol', 'main', 'self'],
+  ['Device', 'powerConsumption', 'Power', 'subj_attr', 'subject']
+]
+
+
+
+Example 8:
+Relations:
+[
+  ['Person', 'bornIn', 'City', 'beBornIn', 'a person is born in a place', 'event']
+]
+
+Answer:
+[
+  ['Person', 'bornIn', 'City', 'main', 'self']
+]
+
+
+Example 9:
+Relations:
+[
+  ['Company', 'foundedIn', 'Year', 'beFoundedIn', 'a company is founded in a year', 'event']
+]
+
+Answer:
+[
+  ['Company', 'foundedIn', 'Year', 'main', 'self']
+]

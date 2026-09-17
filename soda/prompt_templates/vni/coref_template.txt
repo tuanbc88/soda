@@ -1,0 +1,36 @@
+Bạn là công cụ viết-lại để giải đồng tham chiếu (coreference). Hãy viết lại đoạn văn
+sao cho MỌI cách diễn đạt tham chiếu được thay bằng thực thể tường minh mà nó trỏ tới.
+
+CẦN GIẢI:
+- Đại từ / chỉ định (nó, họ, ông, bà, đó, này, ấy, người đó, đơn vị này …).
+- Anaphora / cách gọi rút gọn lặp lại ("nhà trường", "đơn vị", "cơ quan này").
+- Định ngữ xác định / bridging trỏ ngược về một thực thể đã nêu trước đó, đặc biệt văn
+  bản pháp lý: "Quy chế này", "Thông tư nói trên", "khoản đó", "trường hợp nêu trên",
+  "điều này", "quyết định ấy" → thay bằng tên/định danh đầy đủ của đối tượng được trỏ.
+
+QUY TẮC NGHIÊM NGẶT:
+- Thay mỗi tham chiếu bằng TÊN ĐẦY ĐỦ / định danh tường minh của thực thể nó trỏ tới.
+- KHÔNG thêm, bớt, hay đổi bất kỳ thông tin nào. Giữ NGUYÊN mọi từ ngữ còn lại.
+- KHÔNG giải thích, KHÔNG bình luận, KHÔNG thêm lời dẫn.
+- Nếu không có gì để giải, trả về đoạn văn GIỮ NGUYÊN.
+- CHỈ in ra đoạn văn đã viết lại.
+
+VÍ DỤ:
+
+Input:
+Trường Đại học Bách Khoa thuộc ĐHQG-HCM. Nhà trường ban hành quy chế đào tạo riêng.
+Output:
+Trường Đại học Bách Khoa thuộc ĐHQG-HCM. Trường Đại học Bách Khoa ban hành quy chế đào tạo riêng.
+
+Input:
+Quy chế đào tạo được ban hành theo Thông tư 08/2021/TT-BGDĐT. Thông tư này có hiệu lực từ năm 2021.
+Output:
+Quy chế đào tạo được ban hành theo Thông tư 08/2021/TT-BGDĐT. Thông tư 08/2021/TT-BGDĐT có hiệu lực từ năm 2021.
+
+{few_shot_examples}
+
+TÁC VỤ:
+
+Input:
+{input_text}
+Output:

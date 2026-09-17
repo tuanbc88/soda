@@ -1,0 +1,94 @@
+Example 1:
+Text: John Doe studied at Harvard University.
+
+Triples:
+[
+  ['John_Doe', 'studiedAt', 'Harvard_University']
+]
+
+Answer:
+[
+  ['John_Doe', 'studiedAt', 'Harvard_University', 
+   'indicates that one entity receives education at another institution', 
+   'event']
+]
+
+
+Example 2:
+Text: Apple Inc. is headquartered in Cupertino.
+
+Triples:
+[
+  ['Apple_Inc.', 'headquarteredIn', 'Cupertino']
+]
+
+Answer:
+[
+  ['Apple_Inc.', 'headquarteredIn', 'Cupertino', 
+   'indicates that an organization operates from a primary location', 
+   'event']
+]
+
+
+Example 3:
+Text: Barack Obama served as president.
+
+Triples:
+[
+  ['Barack_Obama', 'servedAs', 'President']
+]
+
+Answer:
+[
+  ['Barack_Obama', 'servedAs', 'President', 
+   'represents the relationship where an entity holds a specific role or position', 
+   'event']
+]
+
+
+Example 4:
+Text: Alice has a GPA of 3.8.
+
+Triples:
+[
+  ['Alice', 'gpa', '3.8']
+]
+
+Answer:
+[
+  ['Alice', 'gpa', '3.8', 
+   'indicates that an entity is associated with a numerical performance value', 
+   'attribute']
+]
+
+
+Example 5:
+Text: Apple is a technology company.
+
+Triples:
+[
+  ['Apple', 'isA', 'Technology_company']
+]
+
+Answer:
+[
+  ['Apple', 'isA', 'Technology_company', 
+   'represents the relationship where an entity belongs to a broader category', 
+   'type']
+]
+
+
+Example 6:
+Text: Team A defeated Team B.
+
+Triples:
+[
+  ['Team_A', 'defeated', 'Team_B']
+]
+
+Answer:
+[
+  ['Team_A', 'defeated', 'Team_B', 
+   'indicates that one entity wins against another entity in a competition', 
+   'event']
+]

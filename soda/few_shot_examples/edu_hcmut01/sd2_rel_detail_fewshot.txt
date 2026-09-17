@@ -1,0 +1,81 @@
+Example 1:
+Text: Quy chế đào tạo đại học được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Original Triples:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'ban_hanh_theo', 'Thông_tư_08_2021_TT_BGDĐT']
+]
+
+Entities:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'VanBan', 'VanBanQuyDinh', 'quy định chính thức dùng để quản lý hoặc hướng dẫn hoạt động giáo dục'],
+  ['Thông_tư_08_2021_TT_BGDĐT', 'VanBan', 'VanBanPhapLy', 'văn bản pháp lý được ban hành bởi cơ quan có thẩm quyền']
+]
+
+Typed Triples:
+[
+  ['VanBanQuyDinh', 'ban_hanh_theo', 'VanBanPhapLy']
+]
+
+Answer:
+[
+  ['VanBanQuyDinh', 'ban_hanh_theo', 'VanBanPhapLy',
+   'biểu thị rằng một quy định được xây dựng dựa trên văn bản pháp lý',
+   'attribute']
+]
+
+
+
+Example 2:
+Text: Bộ Giáo dục và Đào tạo ban hành Thông tư 08/2021/TT-BGDĐT.
+
+Original Triples:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'ban_hanh_boi', 'Bộ_Giáo_dục_và_Đào_tạo']
+]
+
+Entities:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'VanBan', 'VanBanPhapLy', 'văn bản pháp lý được ban hành bởi cơ quan có thẩm quyền'],
+  ['Bộ_Giáo_dục_và_Đào_tạo', 'ToChuc', 'CoQuanQuanLyGiaoDuc', 'tổ chức thực hiện quản lý và điều hành hoạt động giáo dục']
+]
+
+Typed Triples:
+[
+  ['VanBanPhapLy', 'ban_hanh_boi', 'CoQuanQuanLyGiaoDuc']
+]
+
+Answer:
+[
+  ['VanBanPhapLy', 'ban_hanh_boi', 'CoQuanQuanLyGiaoDuc',
+   'biểu thị rằng một văn bản pháp lý được ban hành bởi cơ quan quản lý giáo dục',
+   'event']
+]
+
+
+
+Example 3:
+Text: Chương trình đào tạo bao gồm chuẩn đầu ra.
+
+Original Triples:
+[
+  ['Chương_trình_đào_tạo', 'bao_gom', 'Chuẩn_đầu_ra']
+]
+
+Entities:
+[
+  ['Chương_trình_đào_tạo', 'DaoTao', 'ChuongTrinhDaoTao', 'chương trình quy định nội dung và kế hoạch đào tạo'],
+  ['Chuẩn_đầu_ra', 'DaoTao', 'ChuanDauRa', 'tập hợp yêu cầu năng lực người học cần đạt được']
+]
+
+Typed Triples:
+[
+  ['ChuongTrinhDaoTao', 'bao_gom', 'ChuanDauRa']
+]
+
+Answer:
+[
+  ['ChuongTrinhDaoTao', 'bao_gom', 'ChuanDauRa',
+   'biểu thị rằng một chương trình đào tạo chứa các chuẩn đầu ra cần đạt',
+   'attribute']
+]

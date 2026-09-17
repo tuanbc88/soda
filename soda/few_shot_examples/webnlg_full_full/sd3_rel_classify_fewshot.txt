@@ -1,0 +1,57 @@
+Example 1:
+Relations:
+[
+  ['Student', 'studiedAt', 'University', 'indicates that a student receives education at a university', 'event'],
+  ['Student', 'internedAt', 'Company', 'indicates that a student works temporarily at a company', 'event'],
+  ['Student', 'fieldOfStudy', 'AcademicField', 'indicates the academic field a student specializes in', 'attribute'],
+  ['Student', 'gpa', 'Score', 'indicates the numerical academic performance of a student', 'attribute']
+]
+
+Answer:
+[
+  ['Student', 'studiedAt', 'University', 'main', 'self'],
+  ['Student', 'internedAt', 'Company', 'main', 'self'],
+  ['Student', 'fieldOfStudy', 'AcademicField', 'rel_attr', 'studiedAt'],
+  ['Student', 'gpa', 'Score', 'subj_attr', 'subject']
+]
+
+Example 2:
+Relations:
+[
+  ['Employee', 'workedAt', 'Company', 'indicates that a person works at an organization', 'event'],
+  ['Employee', 'workPeriod', 'TimeRange', 'indicates the duration of an employment', 'attribute'],
+  ['Employee', 'jobTitle', 'Position', 'indicates the role held in a job', 'attribute']
+]
+
+Answer:
+[
+  ['Employee', 'workedAt', 'Company', 'main', 'self'],
+  ['Employee', 'workPeriod', 'TimeRange', 'rel_attr', 'workedAt'],
+  ['Employee', 'jobTitle', 'Position', 'rel_attr', 'workedAt']
+]
+
+Example 3:
+Relations:
+[
+  ['Person', 'age', 'Number', 'indicates the age of a person', 'attribute'],
+  ['Person', 'gender', 'Gender', 'indicates the gender identity of a person', 'attribute']
+]
+
+Answer:
+[
+  ['Person', 'age', 'Number', 'subj_attr', 'subject'],
+  ['Person', 'gender', 'Gender', 'subj_attr', 'subject']
+]
+
+Example 4:
+Relations:
+[
+  ['Company', 'headquarteredIn', 'City', 'indicates the city where a company is based', 'event'],
+  ['Company', 'foundedYear', 'Year', 'indicates the year a company was founded', 'attribute']
+]
+
+Answer:
+[
+  ['Company', 'headquarteredIn', 'City', 'main', 'self'],
+  ['Company', 'foundedYear', 'Year', 'subj_attr', 'subject']
+]

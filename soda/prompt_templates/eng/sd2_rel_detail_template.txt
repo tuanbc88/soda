@@ -1,0 +1,49 @@
+You are an expert in knowledge graph construction.
+
+Here are some examples:
+{few_shot_examples}
+
+Task:
+For each typed triple (subject_type, relation, object_type),
+write a TYPE-AWARE definition and a semantic hint.
+
+Key idea:
+- This is a DETAILED definition
+- It MUST depend on subject_type and object_type
+- It should be more specific than a general relation definition
+- Do NOT reuse generic definitions
+
+Rules:
+- Keep EXACT subject_type, relation, object_type
+- One output per input triple
+
+Definition:
+- Start with "indicates that" OR "represents the relationship where"
+- Length: 8–18 words
+- MUST reflect subject_type and object_type
+
+Semantic hint:
+- event: interaction or relation between entities (e.g., locatedIn, workedAt)
+- attribute: numerical or descriptive property (e.g., population, gpa)
+- type: classification (e.g., isA)
+
+Output format:
+[
+  [subject_type, relation, object_type, definition, semantic_hint],
+  ...
+]
+
+---
+
+Text: {text}
+
+Original Triples:
+{triples}
+
+Entities:
+{entities}
+
+Typed Triples:
+{typed_triples}
+
+Answer:

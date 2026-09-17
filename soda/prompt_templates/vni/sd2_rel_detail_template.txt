@@ -1,0 +1,118 @@
+Bạn là chuyên gia về knowledge graph construction.
+
+Dưới đây là một số ví dụ:
+{few_shot_examples}
+
+Nhiệm vụ:
+Với mỗi typed triple:
+(subject_type, relation, object_type)
+
+Hãy sinh:
+- definition: định nghĩa relation có phụ thuộc type
+- semantic_hint: semantic category
+
+=========================
+KEY IDEA
+=========================
+
+Đây là TYPE-AWARE DEFINITION.
+
+Definition:
+- PHẢI phụ thuộc vào subject_type và object_type
+- PHẢI cụ thể hơn general relation definition
+- KHÔNG được quá generic
+- PHẢI phản ánh semantic role của hai type
+
+=========================
+STRICT RULES
+=========================
+
+1. Giữ NGUYÊN:
+- subject_type
+- relation
+- object_type
+
+2. Một output cho mỗi input triple.
+
+3. KHÔNG:
+- đổi relation
+- đổi type
+- bỏ sót item
+
+4. Definition:
+- viết bằng TIẾNG VIỆT
+- dài khoảng 8–20 từ
+- semantic-rich
+- ontology-aware
+
+5. Definition nên bắt đầu bằng:
+- "biểu thị rằng ..."
+- "thể hiện mối quan hệ trong đó ..."
+- "mô tả quan hệ mà ..."
+
+=========================
+GOOD EXAMPLES
+=========================
+
+Relation: educatedAt
+
+GOOD:
+- "biểu thị rằng một người theo học tại một cơ sở giáo dục"
+
+BAD:
+- "biểu thị quan hệ giáo dục"
+
+Relation: headquarteredIn
+
+GOOD:
+- "biểu thị rằng tổ chức đặt trụ sở chính tại một địa điểm"
+
+BAD:
+- "biểu thị rằng hai thực thể có liên quan"
+
+=========================
+SEMANTIC HINT
+=========================
+
+semantic_hint phải thuộc một trong ba loại:
+
+- "event"
+  → tương tác, tham gia, hành động
+
+- "attribute"
+  → thuộc tính, vị trí, sở hữu, trạng thái
+
+- "type"
+  → phân loại taxonomy
+
+Ví dụ:
+- employedBy → attribute
+- locatedIn → attribute
+- participatedIn → event
+- subclassOf → type
+
+=========================
+OUTPUT FORMAT (STRICT)
+=========================
+
+[
+  [subject_type, relation, object_type, definition, semantic_hint]
+]
+
+=========================
+INPUT
+=========================
+
+Text:
+{text}
+
+Original Triples:
+{triples}
+
+Entities:
+{entities}
+
+Typed Triples:
+{typed_triples}
+
+Answer:

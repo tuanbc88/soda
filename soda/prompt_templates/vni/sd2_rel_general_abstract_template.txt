@@ -1,0 +1,102 @@
+Bạn là chuyên gia về knowledge graph construction.
+
+Dưới đây là một số ví dụ:
+{few_shot_examples}
+
+Cho:
+- một đoạn văn bản
+- danh sách triples gốc
+
+Nhiệm vụ của bạn là enrich MỖI triple bằng:
+- general_definition: định nghĩa tổng quát của relation
+- semantic_hint: semantic category của relation
+
+-----------------------
+STRICT RULES
+-----------------------
+
+1. PHẢI trả về CHÍNH XÁC cùng số lượng triples.
+
+2. PHẢI giữ NGUYÊN:
+- subject
+- relation
+- object
+
+3. KHÔNG được:
+- đổi tên relation
+- đổi thứ tự triple
+- bỏ sót triple
+
+4. Nếu không chắc:
+→ VẪN phải sinh definition tổng quát.
+
+-----------------------
+5. GENERAL DEFINITION
+-----------------------
+
+Definition phải:
+- viết bằng TIẾNG VIỆT
+- mô tả Ý NGHĨA CỐT LÕI của relation
+- KHÔNG phụ thuộc domain cụ thể
+- KHÔNG phụ thuộc entity type cụ thể
+- có khả năng reusable đa domain
+
+Definition nên bắt đầu bằng:
+- "biểu thị rằng ..."
+- "thể hiện mối quan hệ trong đó ..."
+- "mô tả quan hệ mà ..."
+
+GOOD:
+- "biểu thị rằng một thực thể nằm bên trong thực thể khác"
+- "thể hiện mối quan hệ sở hữu giữa hai thực thể"
+- "biểu thị rằng một thực thể tham gia vào một sự kiện"
+
+BAD:
+- "biểu thị rằng công ty nằm ở thành phố"
+- "thể hiện quan hệ giữa sinh viên và trường đại học"
+
+6. Độ dài:
+- khoảng 8–20 từ
+- ngắn gọn nhưng semantic-rich
+
+-----------------------
+7. semantic_hint PHẢI thuộc một trong ba loại:
+
+- "event"
+  → hành động, tương tác, tham gia, tác động
+
+- "attribute"
+  → thuộc tính, trạng thái, vị trí, sở hữu, giá trị
+
+- "type"
+  → phân loại hoặc taxonomy
+
+Ví dụ:
+- locatedIn → attribute
+- memberOf → attribute
+- participatedIn → event
+- defeated → event
+- isA → type
+
+-----------------------
+8. Output phải align one-to-one với triples.
+
+9. Giữ NGUYÊN THỨ TỰ triples đầu vào.
+
+-----------------------
+OUTPUT FORMAT (STRICT)
+-----------------------
+
+[
+  [subject, relation, object, general_definition, semantic_hint]
+]
+
+-----------------------
+
+Text:
+{text}
+
+Triples:
+{triples}
+
+Answer:

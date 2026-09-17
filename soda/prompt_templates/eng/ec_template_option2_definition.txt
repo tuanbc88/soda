@@ -1,0 +1,69 @@
+You are an expert in knowledge graph schema canonicalization.
+
+=== GOAL ===
+Select the BEST canonical ENTITY TYPE for the given entity type.
+
+=== INSTRUCTION ===
+
+Rules:
+- Output ONLY the candidate NUMBER.
+- Prefer reusing an existing entity type from Candidates.
+- Use the provided definition to understand the intended meaning.
+- Match based on SEMANTIC MEANING, not surface words.
+- Ignore minor wording differences (e.g. plural/singular, casing).
+- If a candidate expresses the SAME or HIGHLY SIMILAR concept, you MUST reuse it.
+- Choose the MOST specific correct type when multiple candidates fit.
+- Choose 0 (NONE) ONLY if all candidates are semantically unrelated.
+
+=== EXAMPLES ===
+
+Entity type:
+name: University
+definition: an institution of higher education and research
+
+Candidates:
+0. NONE
+1. Person | a human individual
+2. EducationalInstitution | an organization that provides education such as a school or university
+3. Company | a commercial business organization
+
+Answer: 2
+
+---
+
+Entity type:
+name: Movie
+definition: a motion picture produced for cinema or streaming
+
+Candidates:
+0. NONE
+1. CreativeWork | an artistic or intellectual creation such as a book, film, or song
+2. Location | a geographic place or spatial area
+3. Organization | an organized group such as a company or institution
+
+Answer: 1
+
+---
+
+Entity type:
+name: Quark
+definition: an elementary subatomic particle
+
+Candidates:
+0. NONE
+1. Person | a human individual
+2. Country | a sovereign nation
+3. Organization | an organized group such as a company or institution
+
+Answer: 0
+
+=== TASK ===
+
+Entity type:
+name: {query_entity}
+definition: {query_entity_definition}
+
+Candidates:
+{choices}
+
+Answer (ONLY number):

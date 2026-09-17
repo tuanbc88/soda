@@ -1,0 +1,91 @@
+Example 1:
+Text: Herbert Blankenhorn (15 December 1904 in Mülhausen – 10 August 1991 in Badenweiler) was a German diplomat.
+Triples: [['Herbert Blankenhorn', 'date of birth', '15 December 1904'], ['Herbert Blankenhorn', 'place of birth', 'Mülhausen'], ['Herbert Blankenhorn', 'place of death', 'Badenweiler']]
+
+Answer:
+[
+  ['Herbert Blankenhorn', 'Agent', 'Person', 'a human individual'],
+  ['15 December 1904', 'Value', 'Date', 'a calendar date marking a specific day'],
+  ['Mülhausen', 'Place', 'Settlement', 'a populated place such as a town, city, or village'],
+  ['Badenweiler', 'Place', 'Settlement', 'a populated place such as a town, city, or village']
+]
+
+Example 2:
+Text: Spodnje Hoče is a settlement and the administrative centre of the Municipality of Hoče–Slivnica in Slovenia.
+Triples: [['Spodnje Hoče', 'located in the administrative territorial entity', 'Municipality of Hoče–Slivnica'], ['Municipality of Hoče–Slivnica', 'country', 'Slovenia']]
+
+Answer:
+[
+  ['Spodnje Hoče', 'Place', 'Settlement', 'a populated place such as a town, city, or village'],
+  ['Municipality of Hoče–Slivnica', 'Place', 'AdministrativeTerritory', 'a geographic region defined by administrative boundaries'],
+  ['Slovenia', 'Place', 'Country', 'a sovereign nation state']
+]
+
+Example 3:
+Text: Romany Love is a 1931 British musical film directed by Fred Paul and starring Esmond Knight.
+Triples: [['Romany Love', 'publication date', '1931'], ['Romany Love', 'genre', 'musical film'], ['Romany Love', 'director', 'Fred Paul'], ['Romany Love', 'cast member', 'Esmond Knight']]
+
+Answer:
+[
+  ['Romany Love', 'Work', 'Film', 'a cinematographic work intended for screening'],
+  ['1931', 'Value', 'Year', 'a calendar year used as a temporal value'],
+  ['musical film', 'Category', 'Genre', 'a category classifying creative works by style or form'],
+  ['Fred Paul', 'Agent', 'Person', 'a human individual'],
+  ['Esmond Knight', 'Agent', 'Person', 'a human individual']
+]
+
+Example 4:
+Text: Monopoly Star Wars is the 1997 Star Wars video game based on the Monopoly board game.
+Triples: [['Monopoly Star Wars', 'publication date', '1997'], ['Monopoly Star Wars', 'media franchise', 'Star Wars'], ['Monopoly Star Wars', 'instance of', 'video game']]
+
+Answer:
+[
+  ['Monopoly Star Wars', 'Work', 'VideoGame', 'an electronic game played on a computer or console'],
+  ['1997', 'Value', 'Year', 'a calendar year used as a temporal value'],
+  ['Star Wars', 'Work', 'MediaFranchise', 'a collection of related media works sharing a common fictional universe'],
+  ['video game', 'Category', 'Class', 'a general category or class of items']
+]
+
+Example 5:
+Text: Josef Schäffer was an Austrian track and field athlete who competed in the 1912 Summer Olympics.
+Triples: [['Josef Schäffer', 'country of citizenship', 'Austria'], ['Josef Schäffer', 'participant in', '1912 Summer Olympics']]
+
+Answer:
+[
+  ['Josef Schäffer', 'Agent', 'Person', 'a human individual'],
+  ['Austria', 'Place', 'Country', 'a sovereign nation state'],
+  ['1912 Summer Olympics', 'Event', 'SportsEvent', 'an organized competitive sporting occasion']
+]
+
+Example 6:
+Text: Operation Dragon Strike was a military mission in Kandahar province which started on September 15, 2010.
+Triples: [['Operation Dragon Strike', 'location', 'Kandahar province'], ['Operation Dragon Strike', 'start time', 'September 15, 2010']]
+
+Answer:
+[
+  ['Operation Dragon Strike', 'Event', 'MilitaryOperation', 'an organized military mission or campaign'],
+  ['Kandahar province', 'Place', 'AdministrativeTerritory', 'a geographic region defined by administrative boundaries'],
+  ['September 15, 2010', 'Value', 'Date', 'a calendar date marking a specific day']
+]
+
+Example 7:
+Text: The 2014 Tasmanian state election was held to elect all 25 members to the House of Assembly.
+Triples: [['2014 Tasmanian state election', 'applies to jurisdiction', 'Tasmania'], ['House of Assembly', 'number of seats', '25']]
+
+Answer:
+[
+  ['2014 Tasmanian state election', 'Event', 'Election', 'a formal event in which people vote to choose representatives'],
+  ['Tasmania', 'Place', 'AdministrativeTerritory', 'a geographic region defined by administrative boundaries'],
+  ['House of Assembly', 'Agent', 'Organization', 'an organized body such as an institution or legislative chamber'],
+  ['25', 'Value', 'Number', 'a numerical quantity or count']
+]
+
+Example 8:
+Text: The Boeing 747 is a wide-body airliner manufactured by Boeing.
+Triples: [['Boeing 747', 'manufacturer', 'Boeing']]
+
+Answer:
+[
+  ['Boeing 747', 'Artifact', 'Vehicle', 'a man-made machine used for transporting people or goods'],
+  ['Boeing', 'Agent', 'Company', 'a business organization that produces goods or services']
+]

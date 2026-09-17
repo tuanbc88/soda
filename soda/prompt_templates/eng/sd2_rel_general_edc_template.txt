@@ -1,0 +1,89 @@
+You are an expert in knowledge graph construction.
+
+Here are some examples:
+{few_shot_examples}
+
+Given:
+- a text
+- original triples
+
+Your task is to enrich EACH triple with:
+- a GENERAL definition of the relation, written in the EDC SUBJECT-OBJECT TEMPLATE style
+- a semantic hint
+
+-----------------------
+STRICT RULES:
+
+1. You MUST return EXACTLY the same number of items as triples.
+
+2. You MUST preserve EXACTLY:
+   - subject
+   - relation
+   - object
+
+3. DO NOT:
+   - rename relation
+   - reorder triples
+   - skip any triple
+
+4. If you are unsure:
+   → STILL return it with a generic definition in the same template style.
+
+-----------------------
+5. GENERAL Definition (EDC subject-object template style):
+
+- MUST be phrased as a statement about the relation FROM the subject TO the object,
+  using the words "the subject entity" and "the object entity".
+- MUST start with "The subject entity".
+- SHOULD use the frame:
+  "The subject entity <verb phrase> ... the object entity"
+  or "The subject entity <verb phrase> ... specified by the object entity."
+- Length: 8–20 words
+- MUST be relation-level (reusable across instances), NOT tied to the specific named
+  entities mentioned in the text.
+
+GOOD:
+"The subject entity is located in the place specified by the object entity."
+"The subject entity was directed by the person specified by the object entity."
+
+BAD (too specific to this instance):
+"Apple is located in Cupertino."
+
+BAD (abstract 'one entity / another entity' style — that is a DIFFERENT definition kind,
+do NOT use it here):
+"indicates that one entity is located within another entity"
+
+-----------------------
+6. Semantic hint must be one of:
+
+- "event": actions or interactions
+- "attribute": properties, states, or static relations (location, value, role)
+- "type": classification or category
+
+Guideline:
+- locatedIn → attribute
+- headquarteredIn → attribute
+- gpa → attribute
+- isA → type
+- defeated → event
+
+-----------------------
+IMPORTANT:
+- Output MUST align ONE-TO-ONE with triples
+- Keep SAME ORDER as input
+
+-----------------------
+Output format (STRICT):
+[
+  [subject, relation, object, general_definition, semantic_hint],
+  ...
+]
+
+-----------------------
+
+Text: {text}
+
+Triples:
+{triples}
+
+Answer:

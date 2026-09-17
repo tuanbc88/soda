@@ -1,0 +1,59 @@
+Example 1:
+Relations:
+[
+  ['Person', 'date of birth', 'Date', 'indicates that a person was born on a specific date', 'attribute'],
+  ['Person', 'place of birth', 'Settlement', 'indicates that a person was born in a particular settlement', 'attribute'],
+  ['Person', 'country of citizenship', 'Country', 'indicates that a person is a citizen of a country', 'attribute']
+]
+
+Answer:
+[
+  ['Person', 'date of birth', 'Date', 'subj_attr', 'subject'],
+  ['Person', 'place of birth', 'Settlement', 'subj_attr', 'subject'],
+  ['Person', 'country of citizenship', 'Country', 'subj_attr', 'subject']
+]
+
+Example 2:
+Relations:
+[
+  ['Film', 'director', 'Person', 'indicates that a film was directed by a person', 'event'],
+  ['Film', 'cast member', 'Person', 'indicates that a person performs in the cast of a film', 'event'],
+  ['Film', 'publication date', 'Year', 'indicates that a film was released in a specific year', 'attribute'],
+  ['Film', 'genre', 'Genre', 'indicates that a film belongs to an artistic genre', 'type']
+]
+
+Answer:
+[
+  ['Film', 'director', 'Person', 'main', 'self'],
+  ['Film', 'cast member', 'Person', 'main', 'self'],
+  ['Film', 'publication date', 'Year', 'subj_attr', 'subject'],
+  ['Film', 'genre', 'Genre', 'subj_attr', 'subject']
+]
+
+Example 3:
+Relations:
+[
+  ['Settlement', 'located in the administrative territorial entity', 'AdministrativeTerritory', 'indicates that a settlement lies within an administrative region', 'event'],
+  ['AdministrativeTerritory', 'country', 'Country', 'indicates that a region belongs to a sovereign country', 'event']
+]
+
+Answer:
+[
+  ['Settlement', 'located in the administrative territorial entity', 'AdministrativeTerritory', 'main', 'self'],
+  ['AdministrativeTerritory', 'country', 'Country', 'main', 'self']
+]
+
+Example 4:
+Relations:
+[
+  ['Person', 'member of sports team', 'SportsTeam', 'indicates that a person plays for a sports team', 'event'],
+  ['Person', 'position played on team', 'Position', 'indicates the position a person plays on a team', 'attribute'],
+  ['Person', 'country for sport', 'Country', 'indicates the country a person represents in sport', 'attribute']
+]
+
+Answer:
+[
+  ['Person', 'member of sports team', 'SportsTeam', 'main', 'self'],
+  ['Person', 'position played on team', 'Position', 'rel_attr', 'member of sports team'],
+  ['Person', 'country for sport', 'Country', 'rel_attr', 'member of sports team']
+]

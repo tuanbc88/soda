@@ -1,0 +1,3 @@
+relation,definition
+student,The subject receives education at the institute specified by the object entity.
+country,The subject entity is located in the country specified by the object entity.

@@ -1,0 +1,114 @@
+{
+  "entity_types": {
+    "Person": {
+      "definition": "A human individual.",
+      "attributes": {
+        "birthDate": {
+          "definition": "The date when a person was born.",
+          "value_type": "Date"
+        },
+        "birthPlace": {
+          "definition": "The place where a person was born.",
+          "value_type": "Location"
+        },
+        "deathDate": {
+          "definition": "The date when a person died.",
+          "value_type": "Date"
+        },
+        "deathPlace": {
+          "definition": "The place where a person died.",
+          "value_type": "Location"
+        }
+      }
+    },
+
+    "Location": {
+      "definition": "A geographic place such as a city, region, or country.",
+      "attributes": {}
+    },
+
+    "Country": {
+      "definition": "A sovereign nation state.",
+      "attributes": {}
+    },
+
+    "AdministrativeTerritory": {
+      "definition": "A geographic area defined by administrative boundaries.",
+      "attributes": {}
+    },
+
+    "Settlement": {
+      "definition": "A populated place such as a city, town, or village.",
+      "attributes": {}
+    },
+
+    "EducationalInstitution": {
+      "definition": "An organization that provides education such as a school or university.",
+      "attributes": {}
+    },
+
+    "Event": {
+      "definition": "An occurrence or activity that happens at a specific time.",
+      "attributes": {
+        "startTime": {
+          "definition": "The time when the event started.",
+          "value_type": "DateTime"
+        }
+      }
+    },
+
+    "Date": {
+      "definition": "A calendar date.",
+      "attributes": {}
+    },
+
+    "DateTime": {
+      "definition": "A specific point in time including date and time.",
+      "attributes": {}
+    }
+  },
+
+  "relation_types": {
+
+    "studiesAt": {
+      "definition": "Indicates that a person studies at an educational institution.",
+      "general_definition": "Relation linking a person to an organization where they receive education.",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {}
+    },
+
+    "locatedInCountry": {
+      "definition": "Indicates that a location is located in a country.",
+      "general_definition": "Relation linking a place to the country it belongs to at the national level.",
+      "head_type": "Location",
+      "tail_type": "Country",
+      "attributes": {}
+    },
+
+    "containsAdministrativeTerritory": {
+      "definition": "Indicates that an administrative territory contains another administrative territory.",
+      "general_definition": "Relation describing hierarchical containment between administrative regions.",
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {}
+    },
+
+    "containsSettlement": {
+      "definition": "Indicates that an administrative territory contains a settlement such as a city or town.",
+      "general_definition": "Relation linking a region to a populated place located within it.",
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Settlement",
+      "attributes": {}
+    },
+
+    "locatedInAdministrativeTerritory": {
+      "definition": "Indicates that a location is located within a specific administrative territorial entity.",
+      "general_definition": "Relation linking a place to a subnational administrative region such as a state or province.",
+      "head_type": "Location",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {}
+    }
+
+  }
+}

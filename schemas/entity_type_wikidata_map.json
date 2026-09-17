@@ -1,0 +1,409 @@
+{
+  "_report": {
+    "n_types": 74,
+    "by_status": {
+      "curated_verified": 70,
+      "UNRESOLVED": 4
+    },
+    "review": {
+      "Date": {
+        "qid": null,
+        "candidates": null,
+        "wd_label": "",
+        "status": "UNRESOLVED"
+      },
+      "Entity": {
+        "qid": null,
+        "candidates": null,
+        "wd_label": "",
+        "status": "UNRESOLVED"
+      },
+      "NumericValue": {
+        "qid": null,
+        "candidates": null,
+        "wd_label": "",
+        "status": "UNRESOLVED"
+      },
+      "TextValue": {
+        "qid": null,
+        "candidates": null,
+        "wd_label": "",
+        "status": "UNRESOLVED"
+      }
+    }
+  },
+  "AdministrativeTerritory": {
+    "qid": "Q56061",
+    "wd_label": "administrative territorial entity",
+    "status": "curated_verified"
+  },
+  "Airport": {
+    "qid": "Q1248784",
+    "wd_label": "airport",
+    "status": "curated_verified"
+  },
+  "Award": {
+    "qid": "Q618779",
+    "wd_label": "award",
+    "status": "curated_verified"
+  },
+  "BodyOfWater": {
+    "qid": "Q15324",
+    "wd_label": "body of water",
+    "status": "curated_verified"
+  },
+  "Book": {
+    "qid": "Q571",
+    "wd_label": "book",
+    "status": "curated_verified"
+  },
+  "Building": {
+    "qid": "Q41176",
+    "wd_label": "building",
+    "status": "curated_verified"
+  },
+  "Class": {
+    "qid": "Q16889133",
+    "wd_label": "class",
+    "status": "curated_verified"
+  },
+  "Company": {
+    "qid": "Q783794",
+    "wd_label": "company",
+    "status": "curated_verified"
+  },
+  "Competition": {
+    "qid": "Q476300",
+    "wd_label": "competition",
+    "status": "curated_verified"
+  },
+  "Conflict": {
+    "qid": "Q180684",
+    "wd_label": "conflict",
+    "status": "curated_verified"
+  },
+  "Continent": {
+    "qid": "Q5107",
+    "wd_label": "continent",
+    "status": "curated_verified"
+  },
+  "Country": {
+    "qid": "Q6256",
+    "wd_label": "country",
+    "status": "curated_verified"
+  },
+  "CreativeWork": {
+    "qid": "Q17537576",
+    "wd_label": "creative work",
+    "status": "curated_verified"
+  },
+  "Currency": {
+    "qid": "Q8142",
+    "wd_label": "currency",
+    "status": "curated_verified"
+  },
+  "Date": {
+    "qid": null,
+    "candidates": null,
+    "wd_label": "",
+    "status": "UNRESOLVED"
+  },
+  "Drug": {
+    "qid": "Q8386",
+    "wd_label": "drug",
+    "status": "curated_verified"
+  },
+  "EducationalInstitution": {
+    "qid": "Q2385804",
+    "wd_label": "educational institution",
+    "status": "curated_verified"
+  },
+  "Election": {
+    "qid": "Q40231",
+    "wd_label": "public election",
+    "status": "curated_verified"
+  },
+  "Engine": {
+    "qid": "Q44167",
+    "wd_label": "engine",
+    "status": "curated_verified"
+  },
+  "Entity": {
+    "qid": null,
+    "candidates": null,
+    "wd_label": "",
+    "status": "UNRESOLVED"
+  },
+  "EthnicGroup": {
+    "qid": "Q41710",
+    "wd_label": "ethnic group",
+    "status": "curated_verified"
+  },
+  "Event": {
+    "qid": "Q1656682",
+    "wd_label": "event",
+    "status": "curated_verified"
+  },
+  "Family": {
+    "qid": "Q8436",
+    "wd_label": "family",
+    "status": "curated_verified"
+  },
+  "Field": {
+    "qid": "Q11862829",
+    "wd_label": "academic discipline",
+    "status": "curated_verified"
+  },
+  "Film": {
+    "qid": "Q11424",
+    "wd_label": "film",
+    "status": "curated_verified"
+  },
+  "Food": {
+    "qid": "Q2095",
+    "wd_label": "food",
+    "status": "curated_verified"
+  },
+  "Franchise": {
+    "qid": "Q196600",
+    "wd_label": "media franchise",
+    "status": "curated_verified"
+  },
+  "Genre": {
+    "qid": "Q483394",
+    "wd_label": "genre",
+    "status": "curated_verified"
+  },
+  "HeritageDesignation": {
+    "qid": "Q17504995",
+    "wd_label": "heritage designation",
+    "status": "curated_verified"
+  },
+  "HistoricalRegion": {
+    "qid": "Q1620908",
+    "wd_label": "historical region",
+    "status": "curated_verified"
+  },
+  "Industry": {
+    "qid": "Q8148",
+    "wd_label": "industrial sector",
+    "status": "curated_verified"
+  },
+  "Instrument": {
+    "qid": "Q34379",
+    "wd_label": "musical instrument",
+    "status": "curated_verified"
+  },
+  "Language": {
+    "qid": "Q34770",
+    "wd_label": "language",
+    "status": "curated_verified"
+  },
+  "Location": {
+    "qid": "Q2221906",
+    "wd_label": "geographic location",
+    "status": "curated_verified"
+  },
+  "MediaWork": {
+    "qid": "Q2431196",
+    "wd_label": "audiovisual work",
+    "status": "curated_verified"
+  },
+  "MedicalCondition": {
+    "qid": "Q12136",
+    "wd_label": "disease",
+    "status": "curated_verified"
+  },
+  "MilitaryBranch": {
+    "qid": "Q781132",
+    "wd_label": "military branch",
+    "status": "curated_verified"
+  },
+  "MilitaryRank": {
+    "qid": "Q56019",
+    "wd_label": "military rank",
+    "status": "curated_verified"
+  },
+  "MilitaryUnit": {
+    "qid": "Q176799",
+    "wd_label": "military unit",
+    "status": "curated_verified"
+  },
+  "MountainRange": {
+    "qid": "Q46831",
+    "wd_label": "mountain range",
+    "status": "curated_verified"
+  },
+  "Movement": {
+    "qid": "Q2198855",
+    "wd_label": "cultural movement",
+    "status": "curated_verified"
+  },
+  "MusicWork": {
+    "qid": "Q2188189",
+    "wd_label": "musical work",
+    "status": "curated_verified"
+  },
+  "NumericValue": {
+    "qid": null,
+    "candidates": null,
+    "wd_label": "",
+    "status": "UNRESOLVED"
+  },
+  "Occupation": {
+    "qid": "Q12737077",
+    "wd_label": "occupation",
+    "status": "curated_verified"
+  },
+  "Organization": {
+    "qid": "Q43229",
+    "wd_label": "organization",
+    "status": "curated_verified"
+  },
+  "Person": {
+    "qid": "Q215627",
+    "wd_label": "person",
+    "status": "curated_verified"
+  },
+  "PoliticalParty": {
+    "qid": "Q7278",
+    "wd_label": "political party",
+    "status": "curated_verified"
+  },
+  "Position": {
+    "qid": "Q4164871",
+    "wd_label": "position",
+    "status": "curated_verified"
+  },
+  "Product": {
+    "qid": "Q2424752",
+    "wd_label": "product",
+    "status": "curated_verified"
+  },
+  "Religion": {
+    "qid": "Q9174",
+    "wd_label": "religion",
+    "status": "curated_verified"
+  },
+  "ReligiousOrder": {
+    "qid": "Q2061186",
+    "wd_label": "religious order",
+    "status": "curated_verified"
+  },
+  "Series": {
+    "qid": "Q5398426",
+    "wd_label": "television series",
+    "status": "curated_verified"
+  },
+  "Settlement": {
+    "qid": "Q486972",
+    "wd_label": "human settlement",
+    "status": "curated_verified"
+  },
+  "Sport": {
+    "qid": "Q349",
+    "wd_label": "sport",
+    "status": "curated_verified"
+  },
+  "SportsDiscipline": {
+    "qid": "Q2312410",
+    "wd_label": "sports discipline",
+    "status": "curated_verified"
+  },
+  "SportsLeague": {
+    "qid": "Q623109",
+    "wd_label": "sports league",
+    "status": "curated_verified"
+  },
+  "SportsPosition": {
+    "qid": "Q1781513",
+    "wd_label": "position",
+    "status": "curated_verified"
+  },
+  "SportsSeason": {
+    "qid": "Q27020041",
+    "wd_label": "sports season",
+    "status": "curated_verified"
+  },
+  "SportsTeam": {
+    "qid": "Q12973014",
+    "wd_label": "sports team",
+    "status": "curated_verified"
+  },
+  "Taxon": {
+    "qid": "Q16521",
+    "wd_label": "taxon",
+    "status": "curated_verified"
+  },
+  "TelevisionShow": {
+    "qid": "Q15416",
+    "wd_label": "television program",
+    "status": "curated_verified"
+  },
+  "TerrainFeature": {
+    "qid": "Q271669",
+    "wd_label": "landform",
+    "status": "curated_verified"
+  },
+  "TextValue": {
+    "qid": null,
+    "candidates": null,
+    "wd_label": "",
+    "status": "UNRESOLVED"
+  },
+  "TimeZone": {
+    "qid": "Q12143",
+    "wd_label": "time zone",
+    "status": "curated_verified"
+  },
+  "Title": {
+    "qid": "Q216353",
+    "wd_label": "title",
+    "status": "curated_verified"
+  },
+  "TransportHub": {
+    "qid": "Q2298537",
+    "wd_label": "transport hub",
+    "status": "curated_verified"
+  },
+  "TransportLine": {
+    "qid": "Q728937",
+    "wd_label": "railway line",
+    "status": "curated_verified"
+  },
+  "Typeface": {
+    "qid": "Q17451",
+    "wd_label": "typeface",
+    "status": "curated_verified"
+  },
+  "Vehicle": {
+    "qid": "Q42889",
+    "wd_label": "vehicle",
+    "status": "curated_verified"
+  },
+  "Venue": {
+    "qid": "Q17350442",
+    "wd_label": "venue",
+    "status": "curated_verified"
+  },
+  "VideoGame": {
+    "qid": "Q7889",
+    "wd_label": "video game",
+    "status": "curated_verified"
+  },
+  "VoiceType": {
+    "qid": "Q1063547",
+    "wd_label": "voice type",
+    "status": "curated_verified"
+  },
+  "Watercourse": {
+    "qid": "Q355304",
+    "wd_label": "watercourse",
+    "status": "curated_verified"
+  },
+  "WritingSystem": {
+    "qid": "Q8192",
+    "wd_label": "writing system",
+    "status": "curated_verified"
+  }
+}

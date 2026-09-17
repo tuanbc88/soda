@@ -1,0 +1,80 @@
+Example 1:
+Text: John Doe is a student at the National University of Singapore.
+Triples: [['John_Doe', 'studentAt', 'National_University_of_Singapore']]
+
+Answer:
+[
+  ['John_Doe', 'Agent', 'Student', 'a person enrolled in an educational program at an institution'],
+  ['National_University_of_Singapore', 'Agent', 'EducationalInstitution', 'an organization that provides education such as a school or university']
+]
+
+Example 2:
+Text: Apple Inc. is a technology company headquartered in Cupertino.
+Triples: [['Apple_Inc.', 'headquarteredIn', 'Cupertino']]
+
+Answer:
+[
+  ['Apple_Inc.', 'Agent', 'Organization', 'an organized entity such as a company, institution, or association'],
+  ['Cupertino', 'Place', 'Settlement', 'a populated place such as a city, town, or village']
+]
+
+Example 3:
+Text: Barack Obama served as President of the United States.
+Triples: [['Barack_Obama', 'servedAs', 'President_of_the_United_States']]
+
+Answer:
+[
+  ['Barack_Obama', 'Agent', 'Person', 'a human individual'],
+  ['President_of_the_United_States', 'Category', 'Occupation', 'a professional role, office, or employment position']
+]
+
+Example 4:
+Text: Team A defeated Team B in the final match.
+Triples: [['Team_A', 'defeated', 'Team_B']]
+
+Answer:
+[
+  ['Team_A', 'Agent', 'SportsTeam', 'an organized group of players competing in sports competitions'],
+  ['Team_B', 'Agent', 'SportsTeam', 'an organized group of players competing in sports competitions']
+]
+
+Example 5:
+Text: The ALCO RS-3 locomotive uses a diesel-electric transmission.
+Triples: [['ALCO_RS-3', 'powerType', 'Diesel-electric_transmission']]
+
+Answer:
+[
+  ['ALCO_RS-3', 'Artifact', 'Locomotive', 'a powered rail vehicle designed for pulling trains'],
+  ['Diesel-electric_transmission', 'Category', 'PowerSystem', 'a classification of the mechanism used to power a vehicle']
+]
+
+Example 6:
+Text: The novel A Severed Wasp was written by Madeleine L'Engle.
+Triples: [['A_Severed_Wasp', 'author', 'Madeleine_L_Engle']]
+
+Answer:
+[
+  ['A_Severed_Wasp', 'Work', 'Book', 'a written literary work such as a novel or non-fiction text'],
+  ['Madeleine_L_Engle', 'Agent', 'Writer', 'a person who authors literary or creative works']
+]
+
+Example 7:
+Text: Apollo 11 launched in 1969.
+Triples: [['Apollo_11', 'launchYear', '1969']]
+
+Answer:
+[
+  ['Apollo_11', 'Event', 'SpaceMission', 'an organized operation or mission to explore or reach space'],
+  ['1969', 'Value', 'Year', 'a calendar year used as a temporal value']
+]
+
+Example 8:
+Text: Alan B. Miller Hall is located in Virginia, United States.
+Triples: [['Alan_B._Miller_Hall', 'location', 'Virginia'], ['Virginia', 'country', 'United_States']]
+
+Answer:
+[
+  ['Alan_B._Miller_Hall', 'Place', 'Building', 'a constructed architectural structure'],
+  ['Virginia', 'Place', 'AdministrativeTerritory', 'a geographic region defined by administrative boundaries'],
+  ['United_States', 'Place', 'Country', 'a sovereign nation state']
+]

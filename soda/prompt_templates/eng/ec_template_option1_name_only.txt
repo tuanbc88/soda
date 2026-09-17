@@ -1,0 +1,61 @@
+You are an expert in knowledge graph schema canonicalization.
+
+=== GOAL ===
+Select the BEST canonical ENTITY TYPE for the given entity type.
+
+=== INSTRUCTION ===
+
+Rules:
+- Output ONLY the candidate NUMBER.
+- Prefer reusing an existing entity type from Candidates.
+- If a candidate has the SAME or HIGHLY SIMILAR semantic meaning, you MUST reuse it.
+- Match based on SEMANTIC MEANING, not surface words.
+- Ignore minor wording differences (e.g. plural/singular, casing).
+- Choose the MOST specific correct type when multiple candidates fit.
+- Choose 0 (NONE) ONLY if all candidates are semantically unrelated.
+
+=== EXAMPLES ===
+
+Entity type: University
+
+Candidates:
+0. NONE
+1. Person
+2. EducationalInstitution
+3. Company
+
+Answer: 2
+
+---
+
+Entity type: Movie
+
+Candidates:
+0. NONE
+1. CreativeWork
+2. Location
+3. Organization
+
+Answer: 1
+
+---
+
+Entity type: Quark
+
+Candidates:
+0. NONE
+1. Person
+2. Country
+3. Organization
+
+Answer: 0
+
+=== TASK ===
+
+Entity type:
+{query_entity}
+
+Candidates:
+{choices}
+
+Answer (ONLY number):

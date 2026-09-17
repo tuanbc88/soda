@@ -1,0 +1,2835 @@
+{
+  "entity_types": {
+    "Person": {
+      "parent": "Agent",
+      "definition": "A human individual.",
+      "attributes": {}
+    },
+    "Organization": {
+      "parent": "Agent",
+      "definition": "An organized entity such as a company, institution, government body, or association.",
+      "attributes": {}
+    },
+    "Location": {
+      "parent": "Place",
+      "definition": "A geographic place or spatial area.",
+      "attributes": {}
+    },
+    "Country": {
+      "parent": "Place",
+      "definition": "A sovereign nation state.",
+      "attributes": {}
+    },
+    "AdministrativeTerritory": {
+      "parent": "Place",
+      "definition": "A geographic region defined by administrative boundaries.",
+      "attributes": {}
+    },
+    "Settlement": {
+      "parent": "Place",
+      "definition": "A populated place such as a city, town, or village.",
+      "attributes": {}
+    },
+    "EducationalInstitution": {
+      "parent": "Agent",
+      "definition": "An organization that provides education such as a school or university.",
+      "attributes": {}
+    },
+    "CreativeWork": {
+      "parent": "Work",
+      "definition": "An intellectual or artistic creation such as a book, song, or article.",
+      "attributes": {}
+    },
+    "MediaWork": {
+      "parent": "Work",
+      "definition": "A media production such as a television show, film, or broadcast.",
+      "attributes": {}
+    },
+    "Building": {
+      "parent": "Place",
+      "definition": "A constructed architectural structure.",
+      "attributes": {}
+    },
+    "Product": {
+      "parent": "Artifact",
+      "definition": "A manufactured or commercially distributed item.",
+      "attributes": {}
+    },
+    "Industry": {
+      "parent": "Category",
+      "definition": "An economic sector or area of commercial activity.",
+      "attributes": {}
+    },
+    "Occupation": {
+      "parent": "Category",
+      "definition": "A professional role, trade, or employment category.",
+      "attributes": {}
+    },
+    "SportsTeam": {
+      "parent": "Agent",
+      "definition": "An organized sports club or team.",
+      "attributes": {}
+    },
+    "SportsLeague": {
+      "parent": "Agent",
+      "definition": "A sports competition league or association.",
+      "attributes": {}
+    },
+    "Award": {
+      "parent": "Category",
+      "definition": "An honor, distinction, or prize granted for achievement.",
+      "attributes": {}
+    },
+    "Genre": {
+      "parent": "Category",
+      "definition": "A stylistic or thematic category of creative works.",
+      "attributes": {}
+    },
+    "Language": {
+      "parent": "Category",
+      "definition": "A human language used for communication.",
+      "attributes": {}
+    },
+    "Currency": {
+      "parent": "Category",
+      "definition": "A monetary unit used for financial exchange.",
+      "attributes": {}
+    },
+    "Event": {
+      "parent": "Event",
+      "definition": "An occurrence, mission, operation, or competition happening at a specific time.",
+      "attributes": {}
+    },
+    "TimeZone": {
+      "parent": "Category",
+      "definition": "A regional standard time definition based on UTC offset.",
+      "attributes": {}
+    },
+    "Date": {
+      "parent": "Value",
+      "definition": "A calendar date or year.",
+      "attributes": {}
+    },
+    "NumericValue": {
+      "parent": "Value",
+      "definition": "A measurable numeric quantity.",
+      "attributes": {}
+    },
+    "TextValue": {
+      "parent": "Value",
+      "definition": "A textual, symbolic, or identifier value.",
+      "attributes": {}
+    },
+    "Entity": {
+      "parent": "Thing",
+      "definition": "Generic catch-all type for an entity whose specific semantic type is unspecified.",
+      "attributes": {}
+    },
+    "Vehicle": {
+      "parent": "Artifact",
+      "definition": "A machine for transporting people or goods.",
+      "attributes": {}
+    },
+    "EthnicGroup": {
+      "parent": "Category",
+      "definition": "A group sharing a common cultural or ancestral identity.",
+      "attributes": {}
+    },
+    "Engine": {
+      "parent": "Artifact",
+      "definition": "A machine that converts energy into mechanical motion (e.g. V12 engine).",
+      "attributes": {}
+    },
+    "Airport": {
+      "parent": "Place",
+      "definition": "An airport, airbase, or aerodrome.",
+      "attributes": {}
+    },
+    "Food": {
+      "parent": "Artifact",
+      "definition": "A food or prepared dish (e.g. Bionico).",
+      "attributes": {}
+    },
+    "Material": {
+      "parent": "Artifact",
+      "definition": "A substance or material (e.g. granite, asphalt, bronze).",
+      "attributes": {}
+    },
+    "Taxon": {
+      "parent": "Thing",
+      "definition": "A biological taxon (family, genus, species).",
+      "attributes": {}
+    },
+    "CelestialBody": {
+      "parent": "Thing",
+      "definition": "An astronomical object such as an asteroid, planet, or star.",
+      "attributes": {}
+    },
+    "MilitaryUnit": {
+      "parent": "Agent",
+      "definition": "An organized military force, branch, or unit.",
+      "attributes": {}
+    },
+    "MilitaryRank": {
+      "parent": "Category",
+      "definition": "A military rank.",
+      "attributes": {}
+    },
+    "MedicalCondition": {
+      "parent": "Category",
+      "definition": "A disease or medical condition.",
+      "attributes": {}
+    },
+    "Religion": {
+      "parent": "Category",
+      "definition": "A religion or denomination.",
+      "attributes": {}
+    },
+    "Watercourse": {
+      "parent": "Place",
+      "definition": "A river or watercourse.",
+      "attributes": {}
+    },
+    "Sport": {
+      "parent": "Category",
+      "definition": "A sport.",
+      "attributes": {}
+    },
+    "SportsPosition": {
+      "parent": "Category",
+      "definition": "A playing position or role within a sports team.",
+      "attributes": {}
+    },
+    "Title": {
+      "parent": "Category",
+      "definition": "An office, title, or honorific.",
+      "attributes": {}
+    },
+    "Field": {
+      "parent": "Category",
+      "definition": "An academic field or discipline.",
+      "attributes": {}
+    },
+    "LaunchPad": {
+      "parent": "Place",
+      "definition": "A rocket launch pad or launch complex.",
+      "attributes": {}
+    },
+    "Hospital": {
+      "parent": "Place",
+      "definition": "A hospital.",
+      "attributes": {}
+    },
+    "SpaceMission": {
+      "parent": "Event",
+      "definition": "A space mission or spaceflight.",
+      "attributes": {}
+    }
+  },
+  "relation_types": {
+    "creator": {
+      "definition": "Indicates that a creative work was created by a person.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is the creator/author of the object.",
+      "general_definition_abstract": "indicates that one entity was created by another entity"
+    },
+    "broadcastedBy": {
+      "definition": "Indicates that a media work is broadcasted by an organization.",
+      "head_type": "MediaWork",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is broadcasted or aired by the object entity.",
+      "general_definition_abstract": "indicates that one entity is transmitted by another entity"
+    },
+    "firstAired": {
+      "definition": "Indicates the first broadcast date of a media work.",
+      "head_type": "MediaWork",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is first aired on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was first transmitted at a time given by another entity"
+    },
+    "established": {
+      "definition": "Indicates when an organization or institution was established.",
+      "head_type": "Organization",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was established or created in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity came into existence at a time given by another entity"
+    },
+    "location": {
+      "definition": "Indicates the geographic location of an entity.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the place specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is physically situated at another entity"
+    },
+    "municipality": {
+      "definition": "Indicates the municipality where a place or entity is located.",
+      "head_type": "Location",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the municipality specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity lies within another entity"
+    },
+    "category": {
+      "definition": "Indicates the category or classification of an entity.",
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity falls under the category specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is classified as another entity"
+    },
+    "hasToItsNorth": {
+      "definition": "Indicates the relation 'has To Its North' between entities.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the object entity located to its north.",
+      "general_definition_abstract": "indicates that one entity lies in a cardinal direction from another entity"
+    },
+    "country": {
+      "definition": "Indicates the country associated with a place or entity.",
+      "head_type": "Location",
+      "tail_type": "Country",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the country specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is situated within the sovereign state of another entity"
+    },
+    "governmentType": {
+      "definition": "Indicates the form of government used by a country.",
+      "head_type": "Country",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity operates under the form of government specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is governed in a form given by another entity"
+    },
+    "address": {
+      "definition": "Indicates the address of an entity.",
+      "head_type": "Organization",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located at the address specified by the object.",
+      "general_definition_abstract": "indicates that one entity is located at another entity"
+    },
+    "currentTenants": {
+      "definition": "Indicates the relation 'current Tenants' between entities.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is currently occupied or used by the object entity.",
+      "general_definition_abstract": "indicates that one entity is currently occupied by another entity"
+    },
+    "owner": {
+      "definition": "Indicates ownership of an entity.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is owned by the object entity.",
+      "general_definition_abstract": "indicates that one entity is owned by another entity"
+    },
+    "operatingOrganisation": {
+      "definition": "Indicates the relation 'operating Organisation' between entities.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is operated or managed by the object entity.",
+      "general_definition_abstract": "indicates that one entity is operated by another entity"
+    },
+    "runwayLength": {
+      "definition": "Indicates the relation 'runway Length' between entities.",
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a runway length as specified by the object.",
+      "general_definition_abstract": "indicates that one entity has a length given by another entity"
+    },
+    "birthDate": {
+      "definition": "Indicates the birth date of a person.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was born on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity came into existence at a time given by another entity"
+    },
+    "nationality": {
+      "definition": "Indicates the nationality held by a person.",
+      "head_type": "Person",
+      "tail_type": "Country",
+      "attributes": {},
+      "general_definition_edc": "The subject entity holds the nationality specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity belongs to another entity"
+    },
+    "deathPlace": {
+      "definition": "Indicates the place where a person died.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity died in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity ended at another entity"
+    },
+    "selectedByNasa": {
+      "definition": "Indicates the relation 'selected By Nasa' between entities.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was selected by NASA in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was chosen by another entity"
+    },
+    "birthPlace": {
+      "definition": "Indicates the birthplace of a person.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was born in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity originates at another entity"
+    },
+    "occupation": {
+      "definition": "Indicates the occupation or profession of a person.",
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the job or profession specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity practices another entity"
+    },
+    "icaoLocationIdentifier": {
+      "definition": "Indicates the relation 'icao Location Identifier' between entities.",
+      "head_type": "Airport",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has an ICAO location identifier as specified by the object.",
+      "general_definition_abstract": "indicates that one entity is identified by a code given as another entity"
+    },
+    "elevationAboveTheSeaLevel": {
+      "definition": "Indicates the relation 'elevation Above The Sea Level' between entities.",
+      "head_type": "Location",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located at the height specified by the object entity above sea level.",
+      "general_definition_abstract": "indicates that one entity has a height given by another entity"
+    },
+    "league": {
+      "definition": "Indicates the sports league in which a team participates.",
+      "head_type": "SportsTeam",
+      "tail_type": "SportsLeague",
+      "attributes": {},
+      "general_definition_edc": "The subject entity participates or competes in the league specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity competes within another entity"
+    },
+    "champions": {
+      "definition": "Indicates the relation 'champions' between entities.",
+      "head_type": "SportsLeague",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was won or was championed by the object entity.",
+      "general_definition_abstract": "indicates that one entity has another entity as its winner"
+    },
+    "numberOfMembers": {
+      "definition": "Indicates the relation 'number Of Members' between entities.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of members as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "ground": {
+      "definition": "Indicates the home ground or venue of a sports team.",
+      "head_type": "SportsTeam",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity uses the facility or location specified by the object entity as their home ground or base.",
+      "general_definition_abstract": "indicates that one entity uses another entity as its base"
+    },
+    "affiliation": {
+      "definition": "Indicates the relation 'affiliation' between entities.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is affiliated or associated with the object entity.",
+      "general_definition_abstract": "indicates that one entity is affiliated with another entity"
+    },
+    "city": {
+      "definition": "Indicates the city associated with an entity.",
+      "head_type": "Location",
+      "tail_type": "Settlement",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the city specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "leader": {
+      "definition": "Indicates the leader of an organization or administrative entity.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is led or governed by the object entity.",
+      "general_definition_abstract": "indicates that one entity is led by another entity"
+    },
+    "course": {
+      "definition": "Indicates the relation 'course' between entities.",
+      "head_type": "Food",
+      "tail_type": "CreativeWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is typically served during the meal course specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "instrument": {
+      "definition": "Indicates the relation 'instrument' between entities.",
+      "head_type": "Person",
+      "tail_type": "Product",
+      "attributes": {},
+      "general_definition_edc": "The subject entity plays the instrument specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity plays another entity"
+    },
+    "associatedBand/associatedMusicalArtist": {
+      "definition": "Indicates the relation 'associated Band/associated Musical Artist' between entities.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is or was associated with the band or musical artist specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is musically associated with another entity"
+    },
+    "activeYearsStartYear": {
+      "definition": "Indicates the relation 'active Years Start Year' between entities.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity started their active career in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity began activity at a time given by another entity"
+    },
+    "foundingDate": {
+      "definition": "Indicates the date an organization was founded.",
+      "head_type": "Organization",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was established or founded on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was established at a time given by another entity"
+    },
+    "product": {
+      "definition": "Indicates a product manufactured or offered by an organization.",
+      "head_type": "Organization",
+      "tail_type": "Product",
+      "attributes": {},
+      "general_definition_edc": "The subject entity produces or manufactures the object entity.",
+      "general_definition_abstract": "indicates that one entity offers another entity"
+    },
+    "industry": {
+      "definition": "Indicates the industry sector of an organization.",
+      "head_type": "Organization",
+      "tail_type": "Industry",
+      "attributes": {},
+      "general_definition_edc": "The subject entity operates in the industry specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity operates within another entity"
+    },
+    "architect": {
+      "definition": "Indicates the architect responsible for designing a structure.",
+      "head_type": "Building",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was designed or planned by the object entity.",
+      "general_definition_abstract": "indicates that one entity was designed by another entity"
+    },
+    "currency": {
+      "definition": "Indicates the official currency used by a country or region.",
+      "head_type": "Country",
+      "tail_type": "Currency",
+      "attributes": {},
+      "general_definition_edc": "The subject entity uses the object entity as its official form of monetary exchange.",
+      "general_definition_abstract": "indicates that one entity uses another entity"
+    },
+    "demonym": {
+      "definition": "Indicates the relation 'demonym' between entities.",
+      "head_type": "Location",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity's inhabitants are referred to by the term specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a name for its people given by another entity"
+    },
+    "mainIngredient": {
+      "definition": "Indicates the relation 'main Ingredient' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is primarily made up of the ingredients specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is chiefly composed of another entity"
+    },
+    "mission": {
+      "definition": "Indicates participation in a mission or operation.",
+      "head_type": "Person",
+      "tail_type": "Event",
+      "attributes": {},
+      "general_definition_edc": "The subject entity participated in the event or operation specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity took part in another entity"
+    },
+    "region": {
+      "definition": "Indicates the region associated with a place or entity.",
+      "head_type": "Location",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is found or originated in the region specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "spouse": {
+      "definition": "Indicates a marital relationship between two people.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is married to the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is married to another entity"
+    },
+    "inOfficeWhilePresident": {
+      "definition": "Indicates the relation 'in Office While President' between entities.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity held office during the presidency of the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity held office during another entity"
+    },
+    "keyPerson": {
+      "definition": "Indicates the relation 'key Person' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the object entity as a significant or influential individual.",
+      "general_definition_abstract": "indicates that one entity has another entity as a key figure"
+    },
+    "type": {
+      "definition": "Indicates the relation 'type' between entities.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is classified or categorized as the type specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is of a kind given by another entity"
+    },
+    "youthclub": {
+      "definition": "Indicates the relation 'youthclub' between entities.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was associated with the object entity during their early or formative years.",
+      "general_definition_abstract": "indicates that one entity was associated in its youth with another entity"
+    },
+    "club": {
+      "definition": "Indicates the relation 'club' between entities.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was previously associated with or played for the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "populationMetro": {
+      "definition": "Indicates the relation 'population Metro' between entities.",
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a metropolitan population as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "leaderTitle": {
+      "definition": "Indicates the relation 'leader Title' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Occupation",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is led or governed by the role specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a title given by another entity"
+    },
+    "populationDensity": {
+      "definition": "Indicates the relation 'population Density' between entities.",
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a population density as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a measure given by another entity"
+    },
+    "apoapsis": {
+      "definition": "Indicates the relation 'apoapsis' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has an apoapsis, the point in its orbit farthest from the body it is orbiting, as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a value given by another entity"
+    },
+    "orbitalPeriod": {
+      "definition": "Indicates the relation 'orbital Period' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has an orbital period as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a duration given by another entity"
+    },
+    "discoverer": {
+      "definition": "Indicates the relation 'discoverer' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was discovered by the object entity.",
+      "general_definition_abstract": "indicates that one entity was discovered by another entity"
+    },
+    "absoluteMagnitude": {
+      "definition": "Indicates the relation 'absolute Magnitude' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has an absolute magnitude, a measure of intrinsic brightness, as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a value given by another entity"
+    },
+    "discovered": {
+      "definition": "Indicates the relation 'discovered' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was discovered on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity discovered another entity"
+    },
+    "rotationPeriod": {
+      "definition": "Indicates the relation 'rotation Period' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a rotation period as specified by the object.",
+      "general_definition_abstract": "indicates that one entity has a duration given by another entity"
+    },
+    "deathDate": {
+      "definition": "Indicates the death date of a person.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity died on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity ceased to exist at a time given by another entity"
+    },
+    "training": {
+      "definition": "Indicates the relation 'training' between entities.",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {},
+      "general_definition_edc": "The subject entity received education or training at the institution specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was formed by another entity"
+    },
+    "professionalField": {
+      "definition": "Indicates the relation 'professional Field' between entities.",
+      "head_type": "Person",
+      "tail_type": "Industry",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is a professional in the field specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity works in a domain that is another entity"
+    },
+    "isPartOf": {
+      "definition": "Indicates the relation 'is Part Of' between entities.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is a part of or located within the object entity.",
+      "general_definition_abstract": "indicates that one entity is a component of another entity"
+    },
+    "productionStartYear": {
+      "definition": "Indicates the relation 'production Start Year' between entities.",
+      "head_type": "Product",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity started its production in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity began production at a time given by another entity"
+    },
+    "assembly": {
+      "definition": "Indicates the relation 'assembly' between entities.",
+      "head_type": "Vehicle",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was assembled or manufactured in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is assembled at another entity"
+    },
+    "productionEndYear": {
+      "definition": "Indicates the relation 'production End Year' between entities.",
+      "head_type": "Product",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity ended its production in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity ended production at a time given by another entity"
+    },
+    "runwayName": {
+      "definition": "Indicates the relation 'runway Name' between entities.",
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a runway named as specified by the object.",
+      "general_definition_abstract": "indicates that one entity is identified by another entity"
+    },
+    "currentteam": {
+      "definition": "Indicates the relation 'currentteam' between entities.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is currently a part of or plays for the object entity.",
+      "general_definition_abstract": "indicates that one entity currently belongs to another entity"
+    },
+    "debutTeam": {
+      "definition": "Indicates the relation 'debut Team' between entities.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity started their professional career with the object entity as their first team.",
+      "general_definition_abstract": "indicates that one entity first appeared with another entity"
+    },
+    "weight": {
+      "definition": "Indicates the relation 'weight' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a weight as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a measure given by another entity"
+    },
+    "buildingStartDate": {
+      "definition": "Indicates the relation 'building Start Date' between entities.",
+      "head_type": "Building",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The construction of the subject entity started on the date specified by the object.",
+      "general_definition_abstract": "indicates that one entity began construction at a time given by another entity"
+    },
+    "completionDate": {
+      "definition": "Indicates the relation 'completion Date' between entities.",
+      "head_type": "Building",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was completed or finished on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was completed at a time given by another entity"
+    },
+    "state": {
+      "definition": "Indicates the relation 'state' between entities.",
+      "head_type": "Settlement",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the state specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity lies within another entity"
+    },
+    "hasToItsSoutheast": {
+      "definition": "Indicates the relation 'has To Its Southeast' between entities.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the object entity located to its southeast.",
+      "general_definition_abstract": "indicates that one entity lies in a cardinal direction from another entity"
+    },
+    "periapsis": {
+      "definition": "Indicates the relation 'periapsis' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a periapsis, the point in its orbit closest to the object it is orbiting, as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a value given by another entity"
+    },
+    "genre": {
+      "definition": "Indicates the genre of a creative work.",
+      "head_type": "CreativeWork",
+      "tail_type": "Genre",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is associated with the music genre specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity belongs to a category that is another entity"
+    },
+    "status": {
+      "definition": "Indicates the relation 'status' between entities.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity holds the status specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a condition given by another entity"
+    },
+    "almaMater": {
+      "definition": "Indicates the educational institution attended by a person.",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {},
+      "general_definition_edc": "The subject entity received education or graduated from the institution specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity received its formation at another entity"
+    },
+    "award": {
+      "definition": "Indicates an award received by a person.",
+      "head_type": "Person",
+      "tail_type": "Award",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was awarded or honored with the award specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity received another entity"
+    },
+    "ethnicGroup": {
+      "definition": "Indicates the relation 'ethnic Group' between entities.",
+      "head_type": "Location",
+      "tail_type": "EthnicGroup",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the object entity as one of its ethnic groups.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "campus": {
+      "definition": "Indicates the relation 'campus' between entities.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located at the campus address specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a site at another entity"
+    },
+    "cityServed": {
+      "definition": "Indicates the relation 'city Served' between entities.",
+      "head_type": "Building",
+      "tail_type": "Settlement",
+      "attributes": {},
+      "general_definition_edc": "The subject entity provides services to the location or entity specified by the object.",
+      "general_definition_abstract": "indicates that one entity provides service to another entity"
+    },
+    "dishVariation": {
+      "definition": "Indicates the relation 'dish Variation' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a variation or type which is specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a variant that is another entity"
+    },
+    "ingredient": {
+      "definition": "Indicates the relation 'ingredient' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity contains or is made with the ingredient specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity contains another entity"
+    },
+    "timeZone": {
+      "definition": "Indicates the time zone of a location.",
+      "head_type": "Location",
+      "tail_type": "TimeZone",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the time zone specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity observes another entity"
+    },
+    "foundedBy": {
+      "definition": "Indicates the founder of an organization.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was established or founded by the object entity.",
+      "general_definition_abstract": "indicates that one entity was established by another entity"
+    },
+    "epoch": {
+      "definition": "Indicates the relation 'epoch' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has an epoch, a specific point in time used as a reference point for some time-varying astronomical quantity, as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is referenced to a time given by another entity"
+    },
+    "engine": {
+      "definition": "Indicates the relation 'engine' between entities.",
+      "head_type": "Product",
+      "tail_type": "Engine",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is equipped with or uses the type of engine specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is equipped with another entity"
+    },
+    "powerType": {
+      "definition": "Indicates the relation 'power Type' between entities.",
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity uses the type of power or energy specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is powered by a type given by another entity"
+    },
+    "length": {
+      "definition": "Indicates the relation 'length' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a length as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a measure given by another entity"
+    },
+    "numberOfUndergraduateStudents": {
+      "definition": "Indicates the relation 'number Of Undergraduate Students' between entities.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of undergraduate students as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "staff": {
+      "definition": "Indicates the relation 'staff' between entities.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of staff members as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "numberOfStudents": {
+      "definition": "Indicates the relation 'number Of Students' between entities.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the total number of students as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "numberOfDoctoralStudents": {
+      "definition": "Indicates the relation 'number Of Doctoral Students' between entities.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of doctoral students as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "numberOfPostgraduateStudents": {
+      "definition": "Indicates the relation 'number Of Postgraduate Students' between entities.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of postgraduate students as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "dateOfRetirement": {
+      "definition": "Indicates the relation 'date Of Retirement' between entities.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity retired on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity withdrew at a time given by another entity"
+    },
+    "numberOfPages": {
+      "definition": "Indicates the relation 'number Of Pages' between entities.",
+      "head_type": "CreativeWork",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a total number of pages as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "author": {
+      "definition": "Indicates the author of a written or creative work.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was written or created by the object entity.",
+      "general_definition_abstract": "indicates that one entity was written by another entity"
+    },
+    "areaCode": {
+      "definition": "Indicates the relation 'area Code' between entities.",
+      "head_type": "Settlement",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the area code specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is identified by a code given as another entity"
+    },
+    "season": {
+      "definition": "Indicates the relation 'season' between entities.",
+      "head_type": "MediaWork",
+      "tail_type": "MediaWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity participated in the season specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "subsidiary": {
+      "definition": "Indicates the relation 'subsidiary' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity owns or controls the object entity as a subsidiary.",
+      "general_definition_abstract": "indicates that one entity controls another entity"
+    },
+    "revenue": {
+      "definition": "Indicates the relation 'revenue' between entities.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity generates the amount of income specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has an amount given by another entity"
+    },
+    "nickname": {
+      "definition": "Indicates the relation 'nickname' between entities.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is also known or referred to by the name specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is informally named by another entity"
+    },
+    "height": {
+      "definition": "Indicates the relation 'height' between entities.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a height as specified by the object.",
+      "general_definition_abstract": "indicates that one entity has a measure given by another entity"
+    },
+    "currentclub": {
+      "definition": "Indicates the relation 'currentclub' between entities.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is currently associated with or plays for the object entity.",
+      "general_definition_abstract": "indicates that one entity currently belongs to another entity"
+    },
+    "starring": {
+      "definition": "Indicates performers appearing in a media production.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity features the object entity as a performer or actor.",
+      "general_definition_abstract": "indicates that one entity features another entity among its participants"
+    },
+    "utcOffset": {
+      "definition": "Indicates the relation 'utc Offset' between entities.",
+      "head_type": "Location",
+      "tail_type": "TimeZone",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the time zone with the UTC offset specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has an offset given by another entity"
+    },
+    "publisher": {
+      "definition": "Indicates the publisher of a work.",
+      "head_type": "CreativeWork",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was published by the object entity.",
+      "general_definition_abstract": "indicates that one entity was issued by another entity"
+    },
+    "literaryGenre": {
+      "definition": "Indicates the relation 'literary Genre' between entities.",
+      "head_type": "CreativeWork",
+      "tail_type": "Genre",
+      "attributes": {},
+      "general_definition_edc": "The subject entity belongs to the literary genre specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity belongs to a category that is another entity"
+    },
+    "followedBy": {
+      "definition": "Indicates the relation 'followed By' between entities.",
+      "head_type": "CreativeWork",
+      "tail_type": "CreativeWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is followed by the object entity in a sequence or series.",
+      "general_definition_abstract": "indicates that one entity is followed by another entity"
+    },
+    "precededBy": {
+      "definition": "Indicates the relation 'preceded By' between entities.",
+      "head_type": "CreativeWork",
+      "tail_type": "CreativeWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is preceded by the object entity in a sequence or series.",
+      "general_definition_abstract": "indicates that one entity is preceded by another entity"
+    },
+    "builder": {
+      "definition": "Indicates the relation 'builder' between entities.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was built or manufactured by the object entity.",
+      "general_definition_abstract": "indicates that one entity was built by another entity"
+    },
+    "cylinderCount": {
+      "definition": "Indicates the relation 'cylinder Count' between entities.",
+      "head_type": "Product",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of cylinders specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "origin": {
+      "definition": "Indicates the relation 'origin' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity originates or comes from the place specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity originates from another entity"
+    },
+    "child": {
+      "definition": "Indicates the relation 'child' between entities.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is a parent to the object entity.",
+      "general_definition_abstract": "indicates that one entity has another entity as an offspring"
+    },
+    "foundationPlace": {
+      "definition": "Indicates the relation 'foundation Place' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was founded or established in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was established at another entity"
+    },
+    "numberOfEmployees": {
+      "definition": "Indicates the relation 'number Of Employees' between entities.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the number of employees as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "bodyStyle": {
+      "definition": "Indicates the relation 'body Style' between entities.",
+      "head_type": "Product",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the body style or design as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a form given by another entity"
+    },
+    "runwaySurfaceType": {
+      "definition": "Indicates the relation 'runway Surface Type' between entities.",
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a runway surface made of the material specified by the object.",
+      "general_definition_abstract": "indicates that one entity has a surface given by another entity"
+    },
+    "director": {
+      "definition": "Indicates the director of a media production.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is directed or managed by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is led or directed by another entity"
+    },
+    "wasGivenTheTechnicalCampusStatusBy": {
+      "definition": "Indicates the relation 'was Given The Technical Campus Status By' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was granted the status of a technical campus by the object entity.",
+      "general_definition_abstract": "indicates that one entity was granted a status by another entity"
+    },
+    "hasToItsWest": {
+      "definition": "Indicates the relation 'has To Its West' between entities.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the object entity located to its west.",
+      "general_definition_abstract": "indicates that one entity lies in a cardinal direction from another entity"
+    },
+    "designer": {
+      "definition": "Indicates the relation 'designer' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was designed or created by the object entity.",
+      "general_definition_abstract": "indicates that one entity was designed by another entity"
+    },
+    "netIncome": {
+      "definition": "Indicates the relation 'net Income' between entities.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a net income as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has an amount given by another entity"
+    },
+    "buildDate": {
+      "definition": "Indicates the relation 'build Date' between entities.",
+      "head_type": "Building",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was built or produced during the time period specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was built at a time given by another entity"
+    },
+    "successor": {
+      "definition": "Indicates the relation 'successor' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was succeeded in their position by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is succeeded by another entity"
+    },
+    "party": {
+      "definition": "Indicates the relation 'party' between entities.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is or was a member of the political party specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is affiliated with another entity"
+    },
+    "senators": {
+      "definition": "Indicates the relation 'senators' between entities.",
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is represented by the object entity in a legislative body.",
+      "general_definition_abstract": "indicates that one entity has another entity as a representative"
+    },
+    "manager": {
+      "definition": "Indicates the relation 'manager' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is managed or overseen by the object entity.",
+      "general_definition_abstract": "indicates that one entity is managed by another entity"
+    },
+    "hasToItsSouthwest": {
+      "definition": "Indicates the relation 'has To Its Southwest' between entities.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the object entity to its southwest.",
+      "general_definition_abstract": "indicates that one entity lies in a cardinal direction from another entity"
+    },
+    "lastAired": {
+      "definition": "Indicates the relation 'last Aired' between entities.",
+      "head_type": "MediaWork",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was last aired on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was last transmitted at a time given by another entity"
+    },
+    "foundingYear": {
+      "definition": "Indicates the relation 'founding Year' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was founded in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was established at a time given by another entity"
+    },
+    "releaseDate": {
+      "definition": "Indicates the release or publication date of a work.",
+      "head_type": "CreativeWork",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was released or published on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was made public at a time given by another entity"
+    },
+    "longName": {
+      "definition": "Indicates the relation 'long Name' between entities.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is officially or formally known by the name specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a full form given by another entity"
+    },
+    "language": {
+      "definition": "Indicates the language used in a work.",
+      "head_type": "CreativeWork",
+      "tail_type": "Language",
+      "attributes": {},
+      "general_definition_edc": "The subject entity uses the language specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is expressed in another entity"
+    },
+    "formerTeam": {
+      "definition": "Indicates the relation 'former Team' between entities.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was previously a part of the object entity, but is no longer associated with them.",
+      "general_definition_abstract": "indicates that one entity formerly belonged to another entity"
+    },
+    "areaTotal": {
+      "definition": "Indicates the relation 'area Total' between entities.",
+      "head_type": "Location",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a total area as specified by the object.",
+      "general_definition_abstract": "indicates that one entity has a size given by another entity"
+    },
+    "manufacturer": {
+      "definition": "Indicates the manufacturer of a product.",
+      "head_type": "Product",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is manufactured or produced by the object entity.",
+      "general_definition_abstract": "indicates that one entity is made by another entity"
+    },
+    "anthem": {
+      "definition": "Indicates the relation 'anthem' between entities.",
+      "head_type": "Organization",
+      "tail_type": "CreativeWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the song specified by the object entity as its official anthem or national song.",
+      "general_definition_abstract": "indicates that one entity is represented by another entity"
+    },
+    "servedAsChiefOfTheAstronautOfficeIn": {
+      "definition": "Indicates the relation 'served As Chief Of The Astronaut Office In' between entities.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity served as the Chief of the Astronaut Office in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity served in a role at another entity"
+    },
+    "fullName": {
+      "definition": "Indicates the relation 'full Name' between entities.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is officially known or recognized by the name specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a full form given by another entity"
+    },
+    "firstAppearanceInFilm": {
+      "definition": "Indicates the relation 'first Appearance In Film' between entities.",
+      "head_type": "Person",
+      "tail_type": "CreativeWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity made its first appearance in the film specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity first appeared in another entity"
+    },
+    "series": {
+      "definition": "Indicates the relation 'series' between entities.",
+      "head_type": "MediaWork",
+      "tail_type": "MediaWork",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is part of the film or series specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity belongs to another entity"
+    },
+    "regionServed": {
+      "definition": "Indicates the relation 'region Served' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity provides services or operates in the region specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity provides service to another entity"
+    },
+    "office": {
+      "definition": "Indicates the relation 'office' between entities.",
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "attributes": {},
+      "general_definition_edc": "The subject entity held or currently holds the official position specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity holds a position given by another entity"
+    },
+    "populationTotal": {
+      "definition": "Indicates the total population of a location.",
+      "head_type": "Location",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has a total population as specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "tenant": {
+      "definition": "Indicates the relation 'tenant' between entities.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is occupied or used by the object entity.",
+      "general_definition_abstract": "indicates that one entity is occupied by another entity"
+    },
+    "bird": {
+      "definition": "Indicates the relation 'bird' between entities.",
+      "head_type": "Country",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is home to the bird species specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is represented by another entity"
+    },
+    "coach": {
+      "definition": "Indicates the relation 'coach' between entities.",
+      "head_type": "SportsTeam",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is coached or managed by the object entity.",
+      "general_definition_abstract": "indicates that one entity is led by another entity"
+    },
+    "postalCode": {
+      "definition": "Indicates the postal code of a location.",
+      "head_type": "Location",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has the postal code specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is identified by a code given as another entity"
+    },
+    "extinctionDate": {
+      "definition": "Indicates the relation 'extinction Date' between entities.",
+      "head_type": "Entity",
+      "tail_type": "Date",
+      "attributes": {},
+      "general_definition_edc": "The subject entity ceased to exist or became extinct on the date specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity ceased to exist at a time given by another entity"
+    },
+    "cosparId": {
+      "definition": "Indicates the relation 'cospar Id' between entities.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is identified by the COSPAR ID specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is identified by a code given as another entity"
+    },
+    "service": {
+      "definition": "Indicates the relation 'service' between entities.",
+      "head_type": "Organization",
+      "tail_type": "TextValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity provides the service specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with another entity"
+    },
+    "draftPick": {
+      "definition": "Indicates the relation 'draft Pick' between entities.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was selected as the number specified by the object entity in a draft.",
+      "general_definition_abstract": "indicates that one entity was selected as given by another entity"
+    },
+    "academicStaffSize": {
+      "definition": "Indicates the relation 'academic Staff Size' between entities.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has an academic staff of the size specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity"
+    },
+    "sportsOffered": {
+      "definition": "Indicates the relation 'sports Offered' between entities.",
+      "head_type": "Organization",
+      "tail_type": "Industry",
+      "attributes": {},
+      "general_definition_edc": "The subject entity offers the sport specified by the object entity as part of its activities.",
+      "general_definition_abstract": "indicates that one entity offers another entity"
+    },
+    "parentCompany": {
+      "definition": "Indicates the parent company of an organization.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is owned or controlled by the object entity.",
+      "general_definition_abstract": "indicates that one entity is controlled by another entity"
+    },
+    "founder": {
+      "definition": "Indicates the founder of an organization.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was founded or established by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was established by another entity"
+    },
+    "president": {
+      "definition": "Indicates the president of an organization or country.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is presided over by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is led by another entity"
+    },
+    "ceremonialCounty": {
+      "definition": "Indicates the relation 'ceremonial County' between entities.",
+      "head_type": "Settlement",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is part of the ceremonial county specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity lies within another entity"
+    },
+    "1stRunwayLengthFeet": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation '1stRunwayLengthFeet' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "1stRunwayLengthMetre": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation '1stRunwayLengthMetre' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "1stRunwayNumber": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation '1stRunwayNumber' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "1stRunwaySurfaceType": {
+      "head_type": "Airport",
+      "tail_type": "Material",
+      "general_definition": "Relation '1stRunwaySurfaceType' linking a Airport to a Material.",
+      "role": "main"
+    },
+    "2ndRunwaySurfaceType": {
+      "head_type": "Airport",
+      "tail_type": "Material",
+      "general_definition": "Relation '2ndRunwaySurfaceType' linking a Airport to a Material.",
+      "role": "main"
+    },
+    "3rdRunwayLengthFeet": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation '3rdRunwayLengthFeet' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "3rdRunwaySurfaceType": {
+      "head_type": "Airport",
+      "tail_type": "Material",
+      "general_definition": "Relation '3rdRunwaySurfaceType' linking a Airport to a Material.",
+      "role": "main"
+    },
+    "4thRunwayLengthFeet": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation '4thRunwayLengthFeet' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "4thRunwaySurfaceType": {
+      "head_type": "Airport",
+      "tail_type": "Material",
+      "general_definition": "Relation '4thRunwaySurfaceType' linking a Airport to a Material.",
+      "role": "main"
+    },
+    "5thRunwayNumber": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation '5thRunwayNumber' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "5thRunwaySurfaceType": {
+      "head_type": "Airport",
+      "tail_type": "Material",
+      "general_definition": "Relation '5thRunwaySurfaceType' linking a Airport to a Material.",
+      "role": "main"
+    },
+    "LCCN_number": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'LCCN_number' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "NationalRegisterOfHistoricPlacesReferenceNumber": {
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'NationalRegisterOfHistoricPlacesReferenceNumber' linking a Building to a TextValue.",
+      "role": "main"
+    },
+    "abbreviation": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'abbreviation' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "academicDiscipline": {
+      "head_type": "CreativeWork",
+      "tail_type": "Field",
+      "general_definition": "Relation 'academicDiscipline' linking a CreativeWork to a Field.",
+      "role": "main"
+    },
+    "activeYearsEndDate": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'activeYearsEndDate' linking a Person to a Date.",
+      "role": "main"
+    },
+    "activeYearsEndYear": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'activeYearsEndYear' linking a Person to a Date.",
+      "role": "main"
+    },
+    "activeYearsStartDate": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'activeYearsStartDate' linking a Person to a Date.",
+      "role": "main"
+    },
+    "addedToTheNationalRegisterOfHistoricPlaces": {
+      "head_type": "Building",
+      "tail_type": "Date",
+      "general_definition": "Relation 'addedToTheNationalRegisterOfHistoricPlaces' linking a Building to a Date.",
+      "role": "main"
+    },
+    "administrativeArrondissement": {
+      "head_type": "Settlement",
+      "tail_type": "AdministrativeTerritory",
+      "general_definition": "Relation 'administrativeArrondissement' linking a Settlement to a AdministrativeTerritory.",
+      "role": "main"
+    },
+    "aircraftFighter": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'aircraftFighter' linking a MilitaryUnit to a Vehicle.",
+      "role": "main"
+    },
+    "aircraftHelicopter": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'aircraftHelicopter' linking a MilitaryUnit to a Vehicle.",
+      "role": "main"
+    },
+    "alternativeName": {
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'alternativeName' linking a Entity to a TextValue.",
+      "role": "main"
+    },
+    "architecturalStyle": {
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'architecturalStyle' linking a Building to a TextValue.",
+      "role": "main"
+    },
+    "architecture": {
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'architecture' linking a Building to a TextValue.",
+      "role": "main"
+    },
+    "areaOfLand": {
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'areaOfLand' linking a Settlement to a NumericValue.",
+      "role": "main"
+    },
+    "areaOfWater": {
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'areaOfWater' linking a Settlement to a NumericValue.",
+      "role": "main"
+    },
+    "areaUrban": {
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'areaUrban' linking a Settlement to a NumericValue.",
+      "role": "main"
+    },
+    "associatedRocket": {
+      "head_type": "LaunchPad",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'associatedRocket' linking a LaunchPad to a Vehicle.",
+      "role": "main"
+    },
+    "attackAircraft": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'attackAircraft' linking a MilitaryUnit to a Vehicle.",
+      "role": "main"
+    },
+    "averageSpeed": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'averageSpeed' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "awards": {
+      "head_type": "Person",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'awards' linking a Person to a NumericValue.",
+      "role": "main"
+    },
+    "background": {
+      "head_type": "Person",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'background' linking a Person to a TextValue.",
+      "role": "main"
+    },
+    "backupPilot": {
+      "head_type": "Vehicle",
+      "tail_type": "Person",
+      "general_definition": "Relation 'backupPilot' linking a Vehicle to a Person.",
+      "role": "main"
+    },
+    "bandMember": {
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "general_definition": "Relation 'bandMember' linking a Organization to a Person.",
+      "role": "main"
+    },
+    "battle": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Event",
+      "general_definition": "Relation 'battle' linking a MilitaryUnit to a Event.",
+      "role": "main"
+    },
+    "bedCount": {
+      "head_type": "Hospital",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'bedCount' linking a Hospital to a NumericValue.",
+      "role": "main"
+    },
+    "birthName": {
+      "head_type": "Person",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'birthName' linking a Person to a TextValue.",
+      "role": "main"
+    },
+    "birthYear": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'birthYear' linking a Person to a Date.",
+      "role": "main"
+    },
+    "buildingType": {
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'buildingType' linking a Building to a TextValue.",
+      "role": "main"
+    },
+    "capital": {
+      "head_type": "Country",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'capital' linking a Country to a Settlement.",
+      "role": "main"
+    },
+    "carbohydrate": {
+      "head_type": "Food",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'carbohydrate' linking a Food to a NumericValue.",
+      "role": "main"
+    },
+    "chairman": {
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "general_definition": "Relation 'chairman' linking a Organization to a Person.",
+      "role": "main"
+    },
+    "chairmanTitle": {
+      "head_type": "Organization",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'chairmanTitle' linking a Organization to a TextValue.",
+      "role": "main"
+    },
+    "chairperson": {
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "general_definition": "Relation 'chairperson' linking a Organization to a Person.",
+      "role": "main"
+    },
+    "chancellor": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "Person",
+      "general_definition": "Relation 'chancellor' linking a EducationalInstitution to a Person.",
+      "role": "main"
+    },
+    "chief": {
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "general_definition": "Relation 'chief' linking a Organization to a Person.",
+      "role": "main"
+    },
+    "christeningDate": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'christeningDate' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "class": {
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'class' linking a Vehicle to a TextValue.",
+      "role": "main"
+    },
+    "codenCode": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'codenCode' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "college": {
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "general_definition": "Relation 'college' linking a Person to a EducationalInstitution.",
+      "role": "main"
+    },
+    "colour": {
+      "head_type": "Organization",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'colour' linking a Organization to a TextValue.",
+      "role": "main"
+    },
+    "commander": {
+      "head_type": "Event",
+      "tail_type": "Person",
+      "general_definition": "Relation 'commander' linking a Event to a Person.",
+      "role": "main"
+    },
+    "comparable": {
+      "head_type": "Vehicle",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'comparable' linking a Vehicle to a Vehicle.",
+      "role": "main"
+    },
+    "competeIn": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "SportsLeague",
+      "general_definition": "Relation 'competeIn' linking a EducationalInstitution to a SportsLeague.",
+      "role": "main"
+    },
+    "cost": {
+      "head_type": "Building",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'cost' linking a Building to a NumericValue.",
+      "role": "main"
+    },
+    "countryOrigin": {
+      "head_type": "Vehicle",
+      "tail_type": "Country",
+      "general_definition": "Relation 'countryOrigin' linking a Vehicle to a Country.",
+      "role": "main"
+    },
+    "countySeat": {
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'countySeat' linking a AdministrativeTerritory to a Settlement.",
+      "role": "main"
+    },
+    "creatorOfDish": {
+      "head_type": "Food",
+      "tail_type": "Person",
+      "general_definition": "Relation 'creatorOfDish' linking a Food to a Person.",
+      "role": "main"
+    },
+    "crewMembers": {
+      "head_type": "Vehicle",
+      "tail_type": "Person",
+      "general_definition": "Relation 'crewMembers' linking a Vehicle to a Person.",
+      "role": "main"
+    },
+    "dean": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "Person",
+      "general_definition": "Relation 'dean' linking a EducationalInstitution to a Person.",
+      "role": "main"
+    },
+    "deathCause": {
+      "head_type": "Person",
+      "tail_type": "MedicalCondition",
+      "general_definition": "Relation 'deathCause' linking a Person to a MedicalCondition.",
+      "role": "main"
+    },
+    "deathYear": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'deathYear' linking a Person to a Date.",
+      "role": "main"
+    },
+    "dedicatedTo": {
+      "head_type": "Building",
+      "tail_type": "Person",
+      "general_definition": "Relation 'dedicatedTo' linking a Building to a Person.",
+      "role": "main"
+    },
+    "density": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'density' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "derivative": {
+      "head_type": "Genre",
+      "tail_type": "Genre",
+      "general_definition": "Relation 'derivative' linking a Genre to a Genre.",
+      "role": "main"
+    },
+    "designCompany": {
+      "head_type": "Vehicle",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'designCompany' linking a Vehicle to a Organization.",
+      "role": "main"
+    },
+    "developer": {
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'developer' linking a Building to a Organization.",
+      "role": "main"
+    },
+    "diameter": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'diameter' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "distributingCompany": {
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'distributingCompany' linking a Organization to a Organization.",
+      "role": "main"
+    },
+    "distributor": {
+      "head_type": "MediaWork",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'distributor' linking a MediaWork to a Organization.",
+      "role": "main"
+    },
+    "district": {
+      "head_type": "Building",
+      "tail_type": "Location",
+      "general_definition": "Relation 'district' linking a Building to a Location.",
+      "role": "main"
+    },
+    "division": {
+      "head_type": "Taxon",
+      "tail_type": "Taxon",
+      "general_definition": "Relation 'division' linking a Taxon to a Taxon.",
+      "role": "main"
+    },
+    "doctoralAdvisor": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'doctoralAdvisor' linking a Person to a Person.",
+      "role": "main"
+    },
+    "doctoralStudent": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'doctoralStudent' linking a Person to a Person.",
+      "role": "main"
+    },
+    "draftRound": {
+      "head_type": "Person",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'draftRound' linking a Person to a NumericValue.",
+      "role": "main"
+    },
+    "draftTeam": {
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "general_definition": "Relation 'draftTeam' linking a Person to a SportsTeam.",
+      "role": "main"
+    },
+    "draftYear": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'draftYear' linking a Person to a Date.",
+      "role": "main"
+    },
+    "editor": {
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "general_definition": "Relation 'editor' linking a CreativeWork to a Person.",
+      "role": "main"
+    },
+    "eissnNumber": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'eissnNumber' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "elevationAboveTheSeaLevelInFeet": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'elevationAboveTheSeaLevelInFeet' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "elevationAboveTheSeaLevelInMetres": {
+      "head_type": "Airport",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'elevationAboveTheSeaLevelInMetres' linking a Airport to a NumericValue.",
+      "role": "main"
+    },
+    "employer": {
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'employer' linking a Person to a Organization.",
+      "role": "main"
+    },
+    "escapeVelocity": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'escapeVelocity' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "failedLaunches": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'failedLaunches' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "family": {
+      "head_type": "Taxon",
+      "tail_type": "Taxon",
+      "general_definition": "Relation 'family' linking a Taxon to a Taxon.",
+      "role": "main"
+    },
+    "fat": {
+      "head_type": "Food",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'fat' linking a Food to a NumericValue.",
+      "role": "main"
+    },
+    "fate": {
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'fate' linking a Organization to a Organization.",
+      "role": "main"
+    },
+    "finalFlight": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'finalFlight' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "firstPublicationYear": {
+      "head_type": "CreativeWork",
+      "tail_type": "Date",
+      "general_definition": "Relation 'firstPublicationYear' linking a CreativeWork to a Date.",
+      "role": "main"
+    },
+    "floorArea": {
+      "head_type": "Building",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'floorArea' linking a Building to a NumericValue.",
+      "role": "main"
+    },
+    "floorCount": {
+      "head_type": "Building",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'floorCount' linking a Building to a NumericValue.",
+      "role": "main"
+    },
+    "formerName": {
+      "head_type": "CelestialBody",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'formerName' linking a CelestialBody to a TextValue.",
+      "role": "main"
+    },
+    "fossil": {
+      "head_type": "Taxon",
+      "tail_type": "Taxon",
+      "general_definition": "Relation 'fossil' linking a Taxon to a Taxon.",
+      "role": "main"
+    },
+    "frequency": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'frequency' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "function": {
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'function' linking a Vehicle to a TextValue.",
+      "role": "main"
+    },
+    "garrison": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'garrison' linking a MilitaryUnit to a Settlement.",
+      "role": "main"
+    },
+    "gemstone": {
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Material",
+      "general_definition": "Relation 'gemstone' linking a AdministrativeTerritory to a Material.",
+      "role": "main"
+    },
+    "generalManager": {
+      "head_type": "SportsTeam",
+      "tail_type": "Person",
+      "general_definition": "Relation 'generalManager' linking a SportsTeam to a Person.",
+      "role": "main"
+    },
+    "genus": {
+      "head_type": "Taxon",
+      "tail_type": "Taxon",
+      "general_definition": "Relation 'genus' linking a Taxon to a Taxon.",
+      "role": "main"
+    },
+    "governingBody": {
+      "head_type": "Settlement",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'governingBody' linking a Settlement to a Organization.",
+      "role": "main"
+    },
+    "hasDeputy": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'hasDeputy' linking a Person to a Person.",
+      "role": "main"
+    },
+    "hasToItsNortheast": {
+      "head_type": "Settlement",
+      "tail_type": "Location",
+      "general_definition": "Relation 'hasToItsNortheast' linking a Settlement to a Location.",
+      "role": "main"
+    },
+    "hasToItsNorthwest": {
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Location",
+      "general_definition": "Relation 'hasToItsNorthwest' linking a AdministrativeTerritory to a Location.",
+      "role": "main"
+    },
+    "headquarter": {
+      "head_type": "Organization",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'headquarter' linking a Organization to a Settlement.",
+      "role": "main"
+    },
+    "higher": {
+      "head_type": "Award",
+      "tail_type": "Award",
+      "general_definition": "Relation 'higher' linking a Award to a Award.",
+      "role": "main"
+    },
+    "hubAirport": {
+      "head_type": "Organization",
+      "tail_type": "Airport",
+      "general_definition": "Relation 'hubAirport' linking a Organization to a Airport.",
+      "role": "main"
+    },
+    "iataLocationIdentifier": {
+      "head_type": "Airport",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'iataLocationIdentifier' linking a Airport to a TextValue.",
+      "role": "main"
+    },
+    "impactFactor": {
+      "head_type": "CreativeWork",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'impactFactor' linking a CreativeWork to a NumericValue.",
+      "role": "main"
+    },
+    "inOfficeWhileGovernor": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'inOfficeWhileGovernor' linking a Person to a Person.",
+      "role": "main"
+    },
+    "inOfficeWhileMonarch": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'inOfficeWhileMonarch' linking a Person to a Person.",
+      "role": "main"
+    },
+    "inOfficeWhilePrimeMinister": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'inOfficeWhilePrimeMinister' linking a Person to a Person.",
+      "role": "main"
+    },
+    "inOfficeWhileVicePresident": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'inOfficeWhileVicePresident' linking a Person to a Person.",
+      "role": "main"
+    },
+    "inaugurationDate": {
+      "head_type": "Building",
+      "tail_type": "Date",
+      "general_definition": "Relation 'inaugurationDate' linking a Building to a Date.",
+      "role": "main"
+    },
+    "influencedBy": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'influencedBy' linking a Person to a Person.",
+      "role": "main"
+    },
+    "isPartOfMilitaryConflict": {
+      "head_type": "Event",
+      "tail_type": "Event",
+      "general_definition": "Relation 'isPartOfMilitaryConflict' linking a Event to a Event.",
+      "role": "main"
+    },
+    "isbnNumber": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'isbnNumber' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "issnNumber": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'issnNumber' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "jurisdiction": {
+      "head_type": "Organization",
+      "tail_type": "AdministrativeTerritory",
+      "general_definition": "Relation 'jurisdiction' linking a Organization to a AdministrativeTerritory.",
+      "role": "main"
+    },
+    "largestCity": {
+      "head_type": "Country",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'largestCity' linking a Country to a Settlement.",
+      "role": "main"
+    },
+    "latinName": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'latinName' linking a EducationalInstitution to a TextValue.",
+      "role": "main"
+    },
+    "launchSite": {
+      "head_type": "SpaceMission",
+      "tail_type": "Building",
+      "general_definition": "Relation 'launchSite' linking a SpaceMission to a Building.",
+      "role": "main"
+    },
+    "layout": {
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'layout' linking a Vehicle to a TextValue.",
+      "role": "main"
+    },
+    "leaderParty": {
+      "head_type": "Settlement",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'leaderParty' linking a Settlement to a Organization.",
+      "role": "main"
+    },
+    "legislature": {
+      "head_type": "Country",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'legislature' linking a Country to a Organization.",
+      "role": "main"
+    },
+    "libraryofCongressClassification": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'libraryofCongressClassification' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "locationIdentifier": {
+      "head_type": "Airport",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'locationIdentifier' linking a Airport to a TextValue.",
+      "role": "main"
+    },
+    "maidenFlight": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'maidenFlight' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "maidenVoyage": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'maidenVoyage' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "mascot": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "Entity",
+      "general_definition": "Relation 'mascot' linking a EducationalInstitution to a Entity.",
+      "role": "main"
+    },
+    "mass": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'mass' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "material": {
+      "head_type": "Building",
+      "tail_type": "Material",
+      "general_definition": "Relation 'material' linking a Building to a Material.",
+      "role": "main"
+    },
+    "maximumTemperature": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'maximumTemperature' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "mayor": {
+      "head_type": "Settlement",
+      "tail_type": "Person",
+      "general_definition": "Relation 'mayor' linking a Settlement to a Person.",
+      "role": "main"
+    },
+    "meanTemperature": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'meanTemperature' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "mediaType": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'mediaType' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "militaryBranch": {
+      "head_type": "Person",
+      "tail_type": "MilitaryUnit",
+      "general_definition": "Relation 'militaryBranch' linking a Person to a MilitaryUnit.",
+      "role": "main"
+    },
+    "militaryRank": {
+      "head_type": "Person",
+      "tail_type": "MilitaryRank",
+      "general_definition": "Relation 'militaryRank' linking a Person to a MilitaryRank.",
+      "role": "main"
+    },
+    "minimumTemperature": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'minimumTemperature' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "modelStartYear": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'modelStartYear' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "modelYears": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'modelYears' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "mostChampions": {
+      "head_type": "SportsLeague",
+      "tail_type": "SportsTeam",
+      "general_definition": "Relation 'mostChampions' linking a SportsLeague to a SportsTeam.",
+      "role": "main"
+    },
+    "motto": {
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'motto' linking a Entity to a TextValue.",
+      "role": "main"
+    },
+    "musicFusionGenre": {
+      "head_type": "Genre",
+      "tail_type": "Genre",
+      "general_definition": "Relation 'musicFusionGenre' linking a Genre to a Genre.",
+      "role": "main"
+    },
+    "musicSubgenre": {
+      "head_type": "Genre",
+      "tail_type": "Genre",
+      "general_definition": "Relation 'musicSubgenre' linking a Genre to a Genre.",
+      "role": "main"
+    },
+    "nativeName": {
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'nativeName' linking a Building to a TextValue.",
+      "role": "main"
+    },
+    "nearestCity": {
+      "head_type": "Building",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'nearestCity' linking a Building to a Settlement.",
+      "role": "main"
+    },
+    "neighboringMunicipality": {
+      "head_type": "Settlement",
+      "tail_type": "Settlement",
+      "general_definition": "Relation 'neighboringMunicipality' linking a Settlement to a Settlement.",
+      "role": "main"
+    },
+    "notableWork": {
+      "head_type": "Person",
+      "tail_type": "CreativeWork",
+      "general_definition": "Relation 'notableWork' linking a Person to a CreativeWork.",
+      "role": "main"
+    },
+    "numberOfLocations": {
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'numberOfLocations' linking a Organization to a NumericValue.",
+      "role": "main"
+    },
+    "numberOfRooms": {
+      "head_type": "Building",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'numberOfRooms' linking a Building to a NumericValue.",
+      "role": "main"
+    },
+    "numberOfVotesAttained": {
+      "head_type": "Person",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'numberOfVotesAttained' linking a Person to a NumericValue.",
+      "role": "main"
+    },
+    "oclcNumber": {
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'oclcNumber' linking a CreativeWork to a TextValue.",
+      "role": "main"
+    },
+    "officialLanguage": {
+      "head_type": "Country",
+      "tail_type": "Language",
+      "general_definition": "Relation 'officialLanguage' linking a Country to a Language.",
+      "role": "main"
+    },
+    "officialSchoolColour": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'officialSchoolColour' linking a EducationalInstitution to a TextValue.",
+      "role": "main"
+    },
+    "operatingIncome": {
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'operatingIncome' linking a Organization to a NumericValue.",
+      "role": "main"
+    },
+    "operator": {
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'operator' linking a Building to a Organization.",
+      "role": "main"
+    },
+    "order": {
+      "head_type": "Taxon",
+      "tail_type": "Taxon",
+      "general_definition": "Relation 'order' linking a Taxon to a Taxon.",
+      "role": "main"
+    },
+    "outlookRanking": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'outlookRanking' linking a EducationalInstitution to a NumericValue.",
+      "role": "main"
+    },
+    "owningOrganisation": {
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'owningOrganisation' linking a Building to a Organization.",
+      "role": "main"
+    },
+    "part": {
+      "head_type": "Settlement",
+      "tail_type": "AdministrativeTerritory",
+      "general_definition": "Relation 'part' linking a Settlement to a AdministrativeTerritory.",
+      "role": "main"
+    },
+    "partialFailures": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'partialFailures' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "partsType": {
+      "head_type": "Settlement",
+      "tail_type": "CreativeWork",
+      "general_definition": "Relation 'partsType' linking a Settlement to a CreativeWork.",
+      "role": "main"
+    },
+    "patronSaint": {
+      "head_type": "Country",
+      "tail_type": "Person",
+      "general_definition": "Relation 'patronSaint' linking a Country to a Person.",
+      "role": "main"
+    },
+    "percentageOfAreaWater": {
+      "head_type": "Country",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'percentageOfAreaWater' linking a Country to a NumericValue.",
+      "role": "main"
+    },
+    "place": {
+      "head_type": "Event",
+      "tail_type": "Location",
+      "general_definition": "Relation 'place' linking a Event to a Location.",
+      "role": "main"
+    },
+    "playerNumber": {
+      "head_type": "Person",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'playerNumber' linking a Person to a NumericValue.",
+      "role": "main"
+    },
+    "position": {
+      "head_type": "Person",
+      "tail_type": "SportsPosition",
+      "general_definition": "Relation 'position' linking a Person to a SportsPosition.",
+      "role": "main"
+    },
+    "predecessor": {
+      "head_type": "Person",
+      "tail_type": "Person",
+      "general_definition": "Relation 'predecessor' linking a Person to a Person.",
+      "role": "main"
+    },
+    "profession": {
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "general_definition": "Relation 'profession' linking a Person to a Occupation.",
+      "role": "main"
+    },
+    "protein": {
+      "head_type": "Food",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'protein' linking a Food to a NumericValue.",
+      "role": "main"
+    },
+    "recordLabel": {
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'recordLabel' linking a Person to a Organization.",
+      "role": "main"
+    },
+    "rector": {
+      "head_type": "EducationalInstitution",
+      "tail_type": "Person",
+      "general_definition": "Relation 'rector' linking a EducationalInstitution to a Person.",
+      "role": "main"
+    },
+    "related": {
+      "head_type": "Food",
+      "tail_type": "Food",
+      "general_definition": "Relation 'related' linking a Food to a Food.",
+      "role": "main"
+    },
+    "relatedMeanOfTransportation": {
+      "head_type": "Vehicle",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'relatedMeanOfTransportation' linking a Vehicle to a Vehicle.",
+      "role": "main"
+    },
+    "religion": {
+      "head_type": "Country",
+      "tail_type": "Religion",
+      "general_definition": "Relation 'religion' linking a Country to a Religion.",
+      "role": "main"
+    },
+    "representative": {
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Person",
+      "general_definition": "Relation 'representative' linking a AdministrativeTerritory to a Person.",
+      "role": "main"
+    },
+    "residence": {
+      "head_type": "Person",
+      "tail_type": "Location",
+      "general_definition": "Relation 'residence' linking a Person to a Location.",
+      "role": "main"
+    },
+    "ribbonAward": {
+      "head_type": "Person",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'ribbonAward' linking a Person to a TextValue.",
+      "role": "main"
+    },
+    "river": {
+      "head_type": "Country",
+      "tail_type": "Watercourse",
+      "general_definition": "Relation 'river' linking a Country to a Watercourse.",
+      "role": "main"
+    },
+    "rocketStages": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'rocketStages' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "saint": {
+      "head_type": "Settlement",
+      "tail_type": "Person",
+      "general_definition": "Relation 'saint' linking a Settlement to a Person.",
+      "role": "main"
+    },
+    "served": {
+      "head_type": "Food",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'served' linking a Food to a TextValue.",
+      "role": "main"
+    },
+    "serviceStartYear": {
+      "head_type": "Person",
+      "tail_type": "Date",
+      "general_definition": "Relation 'serviceStartYear' linking a Person to a Date.",
+      "role": "main"
+    },
+    "servingSize": {
+      "head_type": "Food",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'servingSize' linking a Food to a NumericValue.",
+      "role": "main"
+    },
+    "servingTemperature": {
+      "head_type": "Food",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'servingTemperature' linking a Food to a TextValue.",
+      "role": "main"
+    },
+    "shipBeam": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'shipBeam' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "shipClass": {
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'shipClass' linking a Vehicle to a TextValue.",
+      "role": "main"
+    },
+    "shipDisplacement": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'shipDisplacement' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "shipDraft": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'shipDraft' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "shipInService": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'shipInService' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "shipLaidDown": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'shipLaidDown' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "shipLaunch": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'shipLaunch' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "shipOrdered": {
+      "head_type": "Vehicle",
+      "tail_type": "Date",
+      "general_definition": "Relation 'shipOrdered' linking a Vehicle to a Date.",
+      "role": "main"
+    },
+    "shipPower": {
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'shipPower' linking a Vehicle to a TextValue.",
+      "role": "main"
+    },
+    "significantBuilding": {
+      "head_type": "Person",
+      "tail_type": "Building",
+      "general_definition": "Relation 'significantBuilding' linking a Person to a Building.",
+      "role": "main"
+    },
+    "significantProject": {
+      "head_type": "Person",
+      "tail_type": "Building",
+      "general_definition": "Relation 'significantProject' linking a Person to a Building.",
+      "role": "main"
+    },
+    "similarDish": {
+      "head_type": "Food",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'similarDish' linking a Food to a TextValue.",
+      "role": "main"
+    },
+    "site": {
+      "head_type": "Building",
+      "tail_type": "Location",
+      "general_definition": "Relation 'site' linking a Building to a Location.",
+      "role": "main"
+    },
+    "spokenIn": {
+      "head_type": "Language",
+      "tail_type": "Country",
+      "general_definition": "Relation 'spokenIn' linking a Language to a Country.",
+      "role": "main"
+    },
+    "sportGoverningBody": {
+      "head_type": "Sport",
+      "tail_type": "Organization",
+      "general_definition": "Relation 'sportGoverningBody' linking a Sport to a Organization.",
+      "role": "main"
+    },
+    "stadium": {
+      "head_type": "SportsTeam",
+      "tail_type": "Building",
+      "general_definition": "Relation 'stadium' linking a SportsTeam to a Building.",
+      "role": "main"
+    },
+    "stateOfOrigin": {
+      "head_type": "Person",
+      "tail_type": "Country",
+      "general_definition": "Relation 'stateOfOrigin' linking a Person to a Country.",
+      "role": "main"
+    },
+    "stylisticOrigin": {
+      "head_type": "Genre",
+      "tail_type": "Genre",
+      "general_definition": "Relation 'stylisticOrigin' linking a Genre to a Genre.",
+      "role": "main"
+    },
+    "surfaceArea": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'surfaceArea' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "temperature": {
+      "head_type": "CelestialBody",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'temperature' linking a CelestialBody to a NumericValue.",
+      "role": "main"
+    },
+    "timeInSpace": {
+      "head_type": "Person",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'timeInSpace' linking a Person to a NumericValue.",
+      "role": "main"
+    },
+    "title": {
+      "head_type": "Person",
+      "tail_type": "Title",
+      "general_definition": "Relation 'title' linking a Person to a Title.",
+      "role": "main"
+    },
+    "topSpeed": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'topSpeed' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "totalLaunches": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'totalLaunches' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "totalProduction": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'totalProduction' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "trainerAircraft": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'trainerAircraft' linking a MilitaryUnit to a Vehicle.",
+      "role": "main"
+    },
+    "transmission": {
+      "head_type": "Vehicle",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'transmission' linking a Vehicle to a TextValue.",
+      "role": "main"
+    },
+    "transportAircraft": {
+      "head_type": "MilitaryUnit",
+      "tail_type": "Vehicle",
+      "general_definition": "Relation 'transportAircraft' linking a MilitaryUnit to a Vehicle.",
+      "role": "main"
+    },
+    "unit": {
+      "head_type": "Person",
+      "tail_type": "MilitaryUnit",
+      "general_definition": "Relation 'unit' linking a Person to a MilitaryUnit.",
+      "role": "main"
+    },
+    "universityTeam": {
+      "head_type": "SportsTeam",
+      "tail_type": "EducationalInstitution",
+      "general_definition": "Relation 'universityTeam' linking a SportsTeam to a EducationalInstitution.",
+      "role": "main"
+    },
+    "voice": {
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "general_definition": "Relation 'voice' linking a MediaWork to a Person.",
+      "role": "main"
+    },
+    "website": {
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "general_definition": "Relation 'website' linking a Building to a TextValue.",
+      "role": "main"
+    },
+    "wheelbase": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'wheelbase' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "width": {
+      "head_type": "Vehicle",
+      "tail_type": "NumericValue",
+      "general_definition": "Relation 'width' linking a Vehicle to a NumericValue.",
+      "role": "main"
+    },
+    "year": {
+      "head_type": "Food",
+      "tail_type": "Date",
+      "general_definition": "Relation 'year' linking a Food to a Date.",
+      "role": "main"
+    },
+    "yearOfConstruction": {
+      "head_type": "Building",
+      "tail_type": "Date",
+      "general_definition": "Relation 'yearOfConstruction' linking a Building to a Date.",
+      "role": "main"
+    }
+  }
+}

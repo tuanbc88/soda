@@ -1,2 +1,34 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Keep shell scripts LF-only.
+#
+# WHY THIS FILE EXISTS: this repo is edited on Windows but almost every script is
+# executed on Linux (the H100 pods, the T4 box, the A100). Git's autocrlf would
+# hand those scripts back with CRLF endings, and Linux then fails them with
+# "bad interpreter: /bin/bash^M" -- or, more insidiously, keeps a trailing \r
+# inside variables so paths and comparisons silently misbehave.
+#
+# This is the same CRLF trap DEPLOY_H100_POD.md documents for the Windows
+# tar-pipe, where it had to be re-discovered on BOTH 07/07 and 07/17. Pinning it
+# here stops it recurring by way of a plain `git clone`.
+*.sh text eol=lf
+
+# Python is likewise run on the servers.
+*.py text eol=lf
+
+# Keep data/artefact formats byte-stable.
+*.jsonl -text
+*.json text eol=lf
+*.tar.gz binary
+*.png binary
+*.pdf binary
+
+# ★ ALL .txt are consumed on the Linux servers (datasets, eval-gold references,
+# few-shot fixtures, prompt templates). git STORES them LF, but core.autocrlf on
+# Windows hands them back CRLF, and the Windows tar-pipe then carries that \r to
+# the pods. A trailing \r there does two kinds of silent damage:
+#   1) it rides into model input, and
+#   2) it rides into the eval GOLD -- the tail entity of every reference triple
+#      gets a \r, so NO strict full-triple match lands and strict/exact/partial
+#      collapse to 0.000 while B-cubed (which normalises) reads a healthy ~0.75.
+# That exact signature cost a backbone webnlg run on 2026-07-20 (DECISIONS
+# 2026-07-20b; DEPLOY_H100_POD.md 5a). Pin them LF so a plain clone is safe.
+*.txt text eol=lf

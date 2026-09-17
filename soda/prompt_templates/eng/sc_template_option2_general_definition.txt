@@ -1,0 +1,120 @@
+You are an expert in knowledge graph schema canonicalization.
+
+=== GOAL ===
+Select the BEST canonical relation for the given triplet.
+
+=== INSTRUCTION ===
+
+Rules:
+- Output ONLY the candidate NUMBER.
+- Prefer reusing an existing relation from Candidates.
+- Match based on GENERAL SEMANTIC MEANING, not surface words.
+- Use the provided general_definition to understand the intended meaning.
+- Ignore minor wording differences.
+- If a candidate expresses the SAME or HIGHLY SIMILAR real-world relationship,
+  you MUST reuse it.
+- Choose the MOST specific correct relation when multiple candidates are related.
+- Choose 0 (NONE) ONLY if all candidates are semantically unrelated.
+- Do NOT rely only on lexical similarity between relation names.
+
+=== EXAMPLES ===
+
+Text: Barack Obama was born in Hawaii.
+Triplet: (Barack Obama, bornIn, Hawaii)
+
+Relation:
+name: bornIn
+general_definition: place where a person was born
+
+Candidates:
+0. NONE
+1. spouse | relationship between married individuals
+2. birthPlace | place where an entity originates from by birth
+3. nationality | citizenship or national identity
+
+Answer: 2
+
+---
+
+Text: Microsoft purchased GitHub in 2018.
+Triplet: (Microsoft, purchased, GitHub)
+
+Relation:
+name: purchased
+general_definition: organization acquires another company or asset
+
+Candidates:
+0. NONE
+1. acquisitionTarget | entity acquired by another organization
+2. founder | person who established an organization
+3. subsidiary | organization controlled by another organization
+
+Answer: 1
+
+---
+
+Text: Tesla is headquartered in Austin.
+Triplet: (Tesla, headquartersLocation, Austin)
+
+Relation:
+name: headquartersLocation
+general_definition: primary administrative location of an organization
+
+Candidates:
+0. NONE
+1. locatedInCountry | sovereign country where an entity is situated
+2. headquarters | main office or administrative center of an organization
+3. foundedBy | person or organization that established another organization
+
+Answer: 2
+
+---
+
+Text: John was born in Paris.
+Triplet: (John, bornIn, Paris)
+
+Relation:
+name: bornIn
+general_definition: place where a person was born
+
+Candidates:
+0. NONE
+1. locatedIn | general spatial containment or location relation
+2. birthPlace | location where an entity originates from by birth
+3. nationality | citizenship or legal national affiliation
+
+Answer: 2
+
+---
+
+Text: The city has a population density of 1000 people per square kilometer.
+Triplet: (City, populationDensity, 1000)
+
+Relation:
+name: populationDensity
+general_definition: number of people per unit area
+
+Candidates:
+0. NONE
+1. population | total number of inhabitants
+2. locatedInCountry | sovereign country where a place is situated
+3. containsSettlement | relation indicating a region includes settlements
+
+Answer: 0
+
+=== TASK ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+name: {query_relation}
+general_definition: {query_relation_definition}
+
+Candidates:
+{choices}
+
+Answer (ONLY number):

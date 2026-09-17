@@ -1,0 +1,115 @@
+Example 1:
+Text: Quy chế đào tạo đại học được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+Candidate entities:
+[
+  'Quy_chế_đào_tạo_đại_học',
+  'Thông_tư_08_2021_TT_BGDĐT'
+]
+
+Triplets:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'ban_hanh_theo', 'Thông_tư_08_2021_TT_BGDĐT']
+]
+
+Example 2:
+Text: Bộ Giáo dục và Đào tạo ban hành Thông tư 08/2021/TT-BGDĐT vào ngày 15/03/2021.
+Candidate entities:
+[
+  'Bộ_Giáo_dục_và_Đào_tạo',
+  'Thông_tư_08_2021_TT_BGDĐT',
+  '15/03/2021'
+]
+
+Triplets:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'ban_hanh_boi', 'Bộ_Giáo_dục_và_Đào_tạo'],
+  ['Thông_tư_08_2021_TT_BGDĐT', 'ban_hanh_ngay', '15/03/2021']
+]
+
+Example 3:
+Text: Chương trình đào tạo ngành Khoa học máy tính bao gồm học phần bắt buộc và chuẩn đầu ra.
+Candidate entities:
+[
+  'Chương_trình_đào_tạo_ngành_Khoa_học_máy_tính',
+  'Học_phần_bắt_buộc',
+  'Chuẩn_đầu_ra'
+]
+
+Triplets:
+[
+  ['Chương_trình_đào_tạo_ngành_Khoa_học_máy_tính', 'bao_gom', 'Học_phần_bắt_buộc'],
+  ['Chương_trình_đào_tạo_ngành_Khoa_học_máy_tính', 'bao_gom', 'Chuẩn_đầu_ra']
+]
+
+
+Example 4:
+Text: Đại học Quốc gia TP.HCM trực thuộc Bộ Giáo dục và Đào tạo.
+Candidate entities:
+[
+  'Đại_học_Quốc_gia_TP.HCM',
+  'Bộ_Giáo_dục_và_Đào_tạo'
+]
+
+Triplets:
+[
+  ['Đại_học_Quốc_gia_TP.HCM', 'thuoc', 'Bộ_Giáo_dục_và_Đào_tạo']
+]
+
+
+Example 5:
+Text: Quy định học vụ áp dụng cho đào tạo đại học tại Đại học Bách khoa TP.HCM.
+Candidate entities:
+[
+  'Quy_định_học_vụ',
+  'Đào_tạo_đại_học',
+  'Đại_học_Bách_khoa_TP.HCM'
+]
+
+Triplets:
+[
+  ['Quy_định_học_vụ', 'ap_dung_cho', 'Đào_tạo_đại_học'],
+  ['Quy_định_học_vụ', 'ap_dung_tai', 'Đại_học_Bách_khoa_TP.HCM']
+]
+
+
+Example 6:
+Text: Chuẩn đầu ra phù hợp với Khung trình độ quốc gia Việt Nam.
+Candidate entities:
+[
+  'Chuẩn_đầu_ra',
+  'Khung_trình_độ_quốc_gia_Việt_Nam'
+]
+
+Triplets:
+[
+  ['Chuẩn_đầu_ra', 'phu_hop_voi', 'Khung_trình_độ_quốc_gia_Việt_Nam']
+]
+
+
+Example 7:
+Text: Quy định đào tạo được sửa đổi bổ sung theo Quyết định 123/QĐ-BGDĐT.
+Candidate entities:
+[
+  'Quy_định_đào_tạo',
+  'Quyết_định_123_QĐ_BGDĐT'
+]
+
+Triplets:
+[
+  ['Quy_định_đào_tạo', 'sua_doi_bo_sung_theo', 'Quyết_định_123_QĐ_BGDĐT']
+]
+
+Example 8:
+Text: Khoa Khoa học và Kỹ thuật Máy tính thuộc Đại học Bách khoa TP.HCM và có tên gọi tắt là CSE.
+Candidate entities:
+[
+  'Khoa_Khoa_học_và_Kỹ_thuật_Máy_tính',
+  'Đại_học_Bách_khoa_TP.HCM',
+  'CSE'
+]
+
+Triplets:
+[
+  ['Khoa_Khoa_học_và_Kỹ_thuật_Máy_tính', 'thuoc', 'Đại_học_Bách_khoa_TP.HCM'],
+  ['Khoa_Khoa_học_và_Kỹ_thuật_Máy_tính', 'ten_goi_tat', 'CSE']
+]

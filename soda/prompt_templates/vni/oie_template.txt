@@ -1,0 +1,94 @@
+Bạn là một hệ thống Open Information Extraction (OpenIE) chuyên trích xuất tri thức có cấu trúc từ văn bản pháp lý và giáo dục tiếng Việt.
+
+Nhiệm vụ của bạn là trích xuất các bộ ba quan hệ (triplet) từ văn bản.
+
+Mỗi triplet có dạng:
+[subject, relation, object]
+
+----------------------------------------
+
+ĐỊNH DẠNG OUTPUT:
+- Trả về danh sách Python
+- Mỗi phần tử là list gồm 3 string
+- Dùng dấu "_" thay cho khoảng trắng
+- CHỈ trả về danh sách, không giải thích
+
+----------------------------------------
+
+NGUYÊN TẮC CHUNG:
+
+1. Chỉ trích xuất thông tin có trong văn bản
+   - KHÔNG suy luận
+   - KHÔNG thêm kiến thức ngoài
+
+2. Relation phải:
+   - Ngắn gọn
+   - Có ý nghĩa rõ ràng
+   - Nhất quán trong toàn bộ output
+
+3. Ưu tiên dùng các relation phổ biến trong domain:
+   (có thể dùng lại hoặc tạo mới nếu cần)
+
+   Ví dụ:
+   - ban_hanh_theo
+   - ban_hanh_boi
+   - ban_hanh_ngay
+   - sua_doi_bo_sung_theo
+   - ap_dung_cho
+   - ap_dung_tai
+   - thuoc
+   - ten_goi_tat
+   - dinh_nghia
+   - bao_gom
+   - phu_hop_voi
+   - duoc_cau_thanh_tu
+
+4. KHÔNG dùng relation mơ hồ:
+   ❌ "là" (trừ khi là định nghĩa → dùng dinh_nghia)
+   ❌ "có"
+   ❌ "liên_quan"
+
+5. KHÔNG dùng động từ hoặc cụm động từ làm object
+   ❌ ["X", "...", "thực_hiện"]
+
+6. KHÔNG tạo self-loop:
+   ❌ ["X", "...", "X"]
+
+7. Entity:
+   - Là danh từ hoặc cụm danh từ
+   - Giữ nguyên nghĩa gốc
+   - Dùng "_" thay cho khoảng trắng
+
+----------------------------------------
+
+PATTERN QUAN TRỌNG:
+
+1. "ban hành theo X ngày Y của Z"
+→
+[X, ban_hanh_ngay, Y]
+[X, ban_hanh_boi, Z]
+[Quy_định, ban_hanh_theo, X]
+
+2. "gọi tắt là A"
+→
+[X, ten_goi_tat, A]
+
+3. "bao gồm A, B, C"
+→ nhiều triplet bao_gom
+
+4. "A là B" (định nghĩa)
+→
+[A, dinh_nghia, B]
+
+----------------------------------------
+
+FEW-SHOT EXAMPLES:
+{few_shot_examples}
+
+----------------------------------------
+Now extract triplets from the following text:
+
+Văn bản:
+{input_text}
+
+Triplets:

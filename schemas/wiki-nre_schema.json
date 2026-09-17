@@ -1,0 +1,466 @@
+{
+  "entity_types": {
+    "Person": {
+      "parent": "Agent",
+      "definition": "A human individual.",
+      "attributes": {}
+    },
+    "Organization": {
+      "parent": "Agent",
+      "definition": "An organized body such as an institution, association, or government entity.",
+      "attributes": {}
+    },
+    "EducationalInstitution": {
+      "parent": "Agent",
+      "definition": "An organization that provides education, such as a school or university.",
+      "attributes": {}
+    },
+    "SportsTeam": {
+      "parent": "Agent",
+      "definition": "An organized group of athletes competing together.",
+      "attributes": {}
+    },
+    "MilitaryBranch": {
+      "parent": "Agent",
+      "definition": "A branch or division of armed forces (e.g. army, navy, air force).",
+      "attributes": {}
+    },
+    "Location": {
+      "parent": "Place",
+      "definition": "A geographic place or spatial area.",
+      "attributes": {}
+    },
+    "Country": {
+      "parent": "Place",
+      "definition": "A sovereign nation state.",
+      "attributes": {}
+    },
+    "AdministrativeTerritory": {
+      "parent": "Place",
+      "definition": "A region defined by administrative boundaries.",
+      "attributes": {}
+    },
+    "Continent": {
+      "parent": "Place",
+      "definition": "One of the principal large continuous land masses of the Earth.",
+      "attributes": {}
+    },
+    "BodyOfWater": {
+      "parent": "Place",
+      "definition": "A significant accumulation of water such as a lake, sea, or ocean.",
+      "attributes": {}
+    },
+    "TerrainFeature": {
+      "parent": "Place",
+      "definition": "A natural physical feature of the land surface.",
+      "attributes": {}
+    },
+    "TransportHub": {
+      "parent": "Place",
+      "definition": "A transportation facility such as an airport, station, or port.",
+      "attributes": {}
+    },
+    "TransportLine": {
+      "parent": "Place",
+      "definition": "A transportation route or transit line.",
+      "attributes": {}
+    },
+    "CreativeWork": {
+      "parent": "Work",
+      "definition": "An intellectual or artistic creation.",
+      "attributes": {}
+    },
+    "MediaWork": {
+      "parent": "Work",
+      "definition": "A film, television, or media production.",
+      "attributes": {}
+    },
+    "Award": {
+      "parent": "Category",
+      "definition": "A prize or recognition granted for achievement.",
+      "attributes": {}
+    },
+    "Language": {
+      "parent": "Category",
+      "definition": "A system of human communication.",
+      "attributes": {}
+    },
+    "Event": {
+      "parent": "Event",
+      "definition": "Something that happens at a given time and place.",
+      "attributes": {}
+    },
+    "Conflict": {
+      "parent": "Event",
+      "definition": "An armed conflict, war, or battle.",
+      "attributes": {}
+    },
+    "Entity": {
+      "parent": "Thing",
+      "definition": "A generic entity used when the domain or range is open or heterogeneous.",
+      "attributes": {}
+    }
+  },
+  "relation_types": {
+    "located in the administrative territorial entity": {
+      "definition": "Links a place to the administrative region that contains it.",
+      "head_type": "Location",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is situated within the administrative territorial entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity lies within the administrative area of another entity"
+    },
+    "country": {
+      "definition": "Links a place to the sovereign country in which it is located.",
+      "head_type": "Location",
+      "tail_type": "Country",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the country specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is situated within the sovereign state of another entity"
+    },
+    "director": {
+      "definition": "Links a film or show to the person who directed it.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was directed by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is led or directed by another entity"
+    },
+    "cast member": {
+      "definition": "Links a film or show to a performer in its cast.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity includes the person specified by the object entity as a member of its cast.",
+      "general_definition_abstract": "indicates that one entity features another entity among its participants"
+    },
+    "screenwriter": {
+      "definition": "Links a film or show to the person who wrote its screenplay.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was written by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has its written content authored by another entity"
+    },
+    "part of": {
+      "definition": "Links an item to a larger whole of which it is a part.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is a part of the entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is a component of another entity"
+    },
+    "located on terrain feature": {
+      "definition": "Links a place to the terrain feature it sits on.",
+      "head_type": "Location",
+      "tail_type": "TerrainFeature",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is situated on the terrain feature specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity rests upon or within another entity"
+    },
+    "original language of film or TV show": {
+      "definition": "Links a film or show to its original language.",
+      "head_type": "MediaWork",
+      "tail_type": "Language",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is originally in the language specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is expressed in another entity"
+    },
+    "employer": {
+      "definition": "Links a person to their employer.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is employed by the entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity works for another entity"
+    },
+    "place served by transport hub": {
+      "definition": "Links a transport hub to the place it serves.",
+      "head_type": "TransportHub",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is a location that is served by the transport hub specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity provides service to another entity"
+    },
+    "named after": {
+      "definition": "Links an item to the entity it is named after.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is named after the entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity derives its name from another entity"
+    },
+    "owned by": {
+      "definition": "Links an item to the organization that owns it.",
+      "head_type": "Entity",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is owned by the entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is owned by another entity"
+    },
+    "country of citizenship": {
+      "definition": "Links a person to the country of which they are a citizen.",
+      "head_type": "Person",
+      "tail_type": "Country",
+      "attributes": {},
+      "general_definition_edc": "The subject entity holds the citizenship of the country specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity holds membership or citizenship of another entity"
+    },
+    "participant in": {
+      "definition": "Links a person or group to an event they took part in.",
+      "head_type": "Person",
+      "tail_type": "Event",
+      "attributes": {},
+      "general_definition_edc": "The subject entity took part in the event specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity takes part in another entity"
+    },
+    "place of birth": {
+      "definition": "Links a person to the place where they were born.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was born in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity originates at another entity"
+    },
+    "educated at": {
+      "definition": "Links a person to an institution where they were educated.",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {},
+      "general_definition_edc": "The subject entity received education or training at the institution specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity received its formation at another entity"
+    },
+    "production company": {
+      "definition": "Links a work to the organization that produced it.",
+      "head_type": "MediaWork",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was produced by the company specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is produced by another entity"
+    },
+    "distributed by": {
+      "definition": "Links a work to the organization that distributes it.",
+      "head_type": "CreativeWork",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was distributed by the company specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is distributed by another entity"
+    },
+    "film editor": {
+      "definition": "Links a film to the person who edited it.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was edited by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is edited by another entity"
+    },
+    "member of sports team": {
+      "definition": "Links an athlete to a sports team they play for.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is a member of the sports team specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity belongs to another entity"
+    },
+    "place of death": {
+      "definition": "Links a person to the place where they died.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity died in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity ended at another entity"
+    },
+    "place of burial": {
+      "definition": "Links a person to the place where they were buried.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was buried at the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is interred at another entity"
+    },
+    "country of origin": {
+      "definition": "Links a work or product to the country it originates from.",
+      "head_type": "Entity",
+      "tail_type": "Country",
+      "attributes": {},
+      "general_definition_edc": "The subject entity originates from the country specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity originates from another entity"
+    },
+    "operator": {
+      "definition": "Links a facility to the organization that operates it.",
+      "head_type": "Entity",
+      "tail_type": "Organization",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is operated by the entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is operated by another entity"
+    },
+    "located in or next to body of water": {
+      "definition": "Links a place to the body of water in or next to which it lies.",
+      "head_type": "Location",
+      "tail_type": "BodyOfWater",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is situated in close proximity to or directly within the body of water specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity lies in or beside another entity"
+    },
+    "work location": {
+      "definition": "Links a person to the place where they worked.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity worked at the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity carries out its activity at another entity"
+    },
+    "producer": {
+      "definition": "Links a work to the person who produced it.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was produced by the person or entity specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is brought about by another entity"
+    },
+    "language of work or name": {
+      "definition": "Links a work or name to its language.",
+      "head_type": "CreativeWork",
+      "tail_type": "Language",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is written or named in the language specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is expressed in another entity"
+    },
+    "filming location": {
+      "definition": "Links a film to a location where it was filmed.",
+      "head_type": "MediaWork",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was filmed at the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was recorded at another entity"
+    },
+    "location": {
+      "definition": "Links an item to the place where it is physically located.",
+      "head_type": "Entity",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located in the place specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is physically situated at another entity"
+    },
+    "conflict": {
+      "definition": "Links a person (or military unit) to an armed conflict they were involved in.",
+      "head_type": "Person",
+      "tail_type": "Conflict",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was involved in the conflict specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was involved in another entity"
+    },
+    "composer": {
+      "definition": "Links a musical work to the person who composed it.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was composed by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was composed by another entity"
+    },
+    "residence": {
+      "definition": "Links a person to the place where they reside.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity resides or lives in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity dwells at another entity"
+    },
+    "after a work by": {
+      "definition": "Links a work to the person (author/artist) whose original work it is based on or inspired by.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was created or inspired by the work of the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is derived from the work of another entity"
+    },
+    "basin country": {
+      "definition": "Links a body of water to a country in its drainage basin.",
+      "head_type": "BodyOfWater",
+      "tail_type": "Country",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is part of the basin country specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity drains through the territory of another entity"
+    },
+    "lake outflow": {
+      "definition": "Links a lake to the watercourse through which it drains.",
+      "head_type": "BodyOfWater",
+      "tail_type": "BodyOfWater",
+      "attributes": {},
+      "general_definition_edc": "The subject entity releases water into the body of water specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity discharges into another entity"
+    },
+    "inflows": {
+      "definition": "Links a body of water to a watercourse that flows into it.",
+      "head_type": "BodyOfWater",
+      "tail_type": "BodyOfWater",
+      "attributes": {},
+      "general_definition_edc": "The subject entity receives water from the body of water specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity receives flow from another entity"
+    },
+    "executive producer": {
+      "definition": "Links a work to one of its executive producers.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity had the person specified by the object entity as one of the executive producers involved in the production process.",
+      "general_definition_abstract": "indicates that one entity is overseen in production by another entity"
+    },
+    "connecting line": {
+      "definition": "Links a transit line or station to a transport line that connects to it.",
+      "head_type": "TransportLine",
+      "tail_type": "TransportLine",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is connected to the entity specified by the object entity through the relation specified.",
+      "general_definition_abstract": "indicates that one entity is linked to another entity"
+    },
+    "continent": {
+      "definition": "Links a place to the continent it is part of.",
+      "head_type": "Location",
+      "tail_type": "Continent",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is located on the continent specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is part of another entity"
+    },
+    "headquarters location": {
+      "definition": "Links an organization to the place of its headquarters.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {},
+      "general_definition_edc": "The subject entity has its headquarters located in the place specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is based at another entity"
+    },
+    "student of": {
+      "definition": "Links a person to their teacher or mentor.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity studied under the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was taught or mentored by another entity"
+    },
+    "creator": {
+      "definition": "Links a work to the person who created it.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {},
+      "general_definition_edc": "The subject entity was created by the person specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity was created by another entity"
+    },
+    "award received": {
+      "definition": "Links a recipient to an award they received.",
+      "head_type": "Person",
+      "tail_type": "Award",
+      "attributes": {},
+      "general_definition_edc": "The subject entity received the award specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity received another entity"
+    },
+    "military branch": {
+      "definition": "Links a person (or unit) to the military branch they belong to.",
+      "head_type": "Person",
+      "tail_type": "MilitaryBranch",
+      "attributes": {},
+      "general_definition_edc": "The subject entity is associated with or belongs to the military branch specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity belongs to a division of another entity"
+    }
+  }
+}

@@ -1,0 +1,73 @@
+You are an expert in knowledge graph schema canonicalization.
+
+=== GOAL ===
+Select the BEST canonical ENTITY TYPE for the given entity type.
+
+=== INSTRUCTION ===
+
+Rules:
+- Output ONLY the candidate NUMBER.
+- Prefer reusing an existing entity type from Candidates.
+- Use the provided definition AND the parent (coarse) type to understand the meaning.
+- A candidate is a strong match when both its meaning AND its parent type are compatible.
+- Match based on SEMANTIC MEANING, not surface words.
+- Ignore minor wording differences (e.g. plural/singular, casing).
+- Choose the MOST specific correct type when multiple candidates fit.
+- Choose 0 (NONE) ONLY if all candidates are semantically unrelated.
+
+=== EXAMPLES ===
+
+Entity type:
+name: University
+definition: an institution of higher education and research
+parent: Organization
+
+Candidates:
+0. NONE
+1. Person | a human individual | parent: Agent
+2. EducationalInstitution | an organization that provides education | parent: Organization
+3. Company | a commercial business organization | parent: Organization
+
+Answer: 2
+
+---
+
+Entity type:
+name: Movie
+definition: a motion picture produced for cinema or streaming
+parent: CreativeWork
+
+Candidates:
+0. NONE
+1. CreativeWork | an artistic or intellectual creation | parent: Thing
+2. Location | a geographic place or spatial area | parent: Thing
+3. Film | a cinematic creative work | parent: CreativeWork
+
+Answer: 3
+
+---
+
+Entity type:
+name: Quark
+definition: an elementary subatomic particle
+parent: PhysicalObject
+
+Candidates:
+0. NONE
+1. Person | a human individual | parent: Agent
+2. Country | a sovereign nation | parent: Location
+3. Organization | an organized group | parent: Agent
+
+Answer: 0
+
+=== TASK ===
+
+Entity type:
+name: {query_entity}
+definition: {query_entity_definition}
+parent: {query_entity_parent}
+
+Candidates:
+{choices}
+
+Answer (ONLY number):

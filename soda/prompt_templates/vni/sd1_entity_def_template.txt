@@ -1,0 +1,123 @@
+Bạn là chuyên gia về ontology engineering và knowledge graph construction.
+
+Nhiệm vụ của bạn là gán semantic type cho entity và viết định nghĩa ontology-level bằng TIẾNG VIỆT.
+
+=========================
+FEW-SHOT EXAMPLES
+=========================
+{few_shot_examples}
+
+=========================
+INPUT
+=========================
+
+Text:
+{text}
+
+Triples:
+{triples}
+
+Entities:
+{entities}
+
+=========================
+TASK
+=========================
+
+Với MỖI entity, hãy sinh:
+- coarse_type: loại khái quát cấp cao
+- fine_type: semantic class cụ thể
+- definition: định nghĩa ontology-level của fine_type bằng tiếng Việt
+
+=========================
+STRICT RULES
+=========================
+
+1. CHỈ được dùng các entity đã cho.
+   - KHÔNG tạo entity mới.
+   - KHÔNG xóa entity.
+
+2. KHÔNG dùng các type quá chung chung như:
+   - Entity
+   - Thing
+   - Object
+   - Stuff
+
+3. Fine_type phải:
+   - có ý nghĩa semantic rõ ràng
+   - có khả năng tái sử dụng
+   - phù hợp ontology-level
+
+4. Definition PHẢI là ĐỊNH NGHĨA CHO CLASS, KHÔNG phải mô tả entity cụ thể.
+
+GOOD:
+- "trường đại học cung cấp chương trình đào tạo bậc cao"
+- "quốc gia có chủ quyền được công nhận về mặt chính trị"
+- "giải thưởng dùng để ghi nhận thành tựu trong một lĩnh vực"
+
+BAD:
+- "Harvard là trường đại học nổi tiếng tại Mỹ"
+- "Việt Nam là quốc gia ở Đông Nam Á"
+
+5. Definition:
+   - viết bằng tiếng Việt
+   - KHÔNG chứa tên entity
+   - KHÔNG phụ thuộc context cụ thể trong text
+   - phải reusable cho nhiều entity cùng type
+
+6. Ưu tiên definitional style:
+   - "loại thực thể dùng để ..."
+   - "tổ chức cung cấp ..."
+   - "địa điểm đại diện cho ..."
+   - "người đảm nhiệm ..."
+
+7. Đảm bảo consistency:
+   - cùng semantic class → cùng fine_type
+   - KHÔNG dùng synonym ngẫu nhiên
+
+GOOD:
+- luôn dùng "University"
+
+BAD:
+- University / College / HigherEducationInstitute lẫn lộn
+
+8. Ưu tiên ontology-level semantic types:
+
+GOOD:
+- Person
+- University
+- Company
+- Country
+- AcademicField
+- Award
+- Score
+- Year
+
+BAD:
+- StudentWhoStudiesAI
+- CityWhereCompanyLocated
+- MatchWinningScore
+
+9. Giá trị số và thời gian PHẢI có semantic type:
+
+Ví dụ:
+- Year
+- Date
+- GPA
+- Population
+- Percentage
+- Quantity
+- Temperature
+
+10. Fine_type nên dùng PascalCase tiếng Anh.
+Definition phải dùng tiếng Việt.
+
+=========================
+OUTPUT FORMAT (STRICT)
+=========================
+
+[
+  [entity, coarse_type, fine_type, definition]
+]
+
+KHÔNG output thêm bất kỳ nội dung nào khác.

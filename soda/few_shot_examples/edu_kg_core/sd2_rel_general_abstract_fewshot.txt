@@ -1,0 +1,78 @@
+Example 1:
+Text: Quy chế đào tạo đại học được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Triples:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'ban_hanh_theo', 'Thông_tư_08_2021_TT_BGDĐT']
+]
+
+Answer:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'ban_hanh_theo', 'Thông_tư_08_2021_TT_BGDĐT',
+   'biểu thị rằng một quy định được xây dựng dựa trên văn bản pháp lý khác',
+   'attribute']
+]
+
+
+Example 2:
+Text: Bộ Giáo dục và Đào tạo ban hành Thông tư 08/2021/TT-BGDĐT.
+
+Triples:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'ban_hanh_boi', 'Bộ_Giáo_dục_và_Đào_tạo']
+]
+
+Answer:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'ban_hanh_boi', 'Bộ_Giáo_dục_và_Đào_tạo',
+   'biểu thị rằng một văn bản được phát hành bởi chủ thể có thẩm quyền',
+   'event']
+]
+
+
+Example 3:
+Text: Chương trình đào tạo bao gồm học phần bắt buộc.
+
+Triples:
+[
+  ['Chương_trình_đào_tạo', 'bao_gom', 'Học_phần_bắt_buộc']
+]
+
+Answer:
+[
+  ['Chương_trình_đào_tạo', 'bao_gom', 'Học_phần_bắt_buộc',
+   'biểu thị rằng một thực thể được cấu thành từ các thành phần khác',
+   'attribute']
+]
+
+
+Example 4:
+Text: Đại học Quốc gia TP.HCM thuộc Bộ Giáo dục và Đào tạo.
+
+Triples:
+[
+  ['Đại_học_Quốc_gia_TP.HCM', 'thuoc', 'Bộ_Giáo_dục_và_Đào_tạo']
+]
+
+Answer:
+[
+  ['Đại_học_Quốc_gia_TP.HCM', 'thuoc', 'Bộ_Giáo_dục_và_Đào_tạo',
+   'biểu thị quan hệ phân cấp hoặc trực thuộc giữa hai tổ chức',
+   'attribute']
+]
+
+
+Example 5:
+Text: Chuẩn đầu ra phù hợp với khung trình độ quốc gia.
+
+Triples:
+[
+  ['Chuẩn_đầu_ra', 'phu_hop_voi', 'Khung_trình_độ_quốc_gia']
+]
+
+Answer:
+[
+  ['Chuẩn_đầu_ra', 'phu_hop_voi', 'Khung_trình_độ_quốc_gia',
+   'biểu thị rằng một thực thể đáp ứng hoặc tương thích với chuẩn mực khác',
+   'attribute']
+]

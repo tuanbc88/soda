@@ -1,0 +1,69 @@
+Bạn là chuyên gia chuẩn hóa schema thực thể (entity type) trong knowledge graph.
+
+=== MỤC TIÊU ===
+Chọn ENTITY TYPE chuẩn (canonical) PHÙ HỢP NHẤT cho entity type được cho.
+
+=== HƯỚNG DẪN ===
+
+Quy tắc:
+- CHỈ trả về SỐ của candidate.
+- Ưu tiên reuse một entity type đã có trong danh sách Candidates.
+- Sử dụng định nghĩa được cung cấp để hiểu đúng ý nghĩa mong muốn.
+- So khớp dựa trên Ý NGHĨA NGỮ NGHĨA, không dựa trên từ ngữ bề mặt.
+- Bỏ qua khác biệt nhỏ về cách viết (số ít/số nhiều, hoa/thường).
+- Nếu một candidate diễn đạt khái niệm GIỐNG hoặc TƯƠNG ĐƯƠNG CAO → BẮT BUỘC reuse.
+- Khi nhiều candidate cùng phù hợp → chọn type ĐÚNG và CỤ THỂ NHẤT.
+- Chỉ chọn 0 (NONE) khi TẤT CẢ candidate đều không liên quan về ngữ nghĩa.
+
+=== VÍ DỤ ===
+
+Entity type:
+name: Trường_Đại_học
+definition: cơ sở giáo dục bậc đại học và nghiên cứu
+
+Candidates:
+0. NONE
+1. Người | một cá nhân con người
+2. Cơ_sở_giáo_dục | tổ chức cung cấp giáo dục như trường học hay đại học
+3. Doanh_nghiệp | một tổ chức kinh doanh thương mại
+
+Đáp án: 2
+
+---
+
+Entity type:
+name: Quy_chế
+definition: văn bản quy định các quy tắc và thủ tục chính thức
+
+Candidates:
+0. NONE
+1. Văn_bản_pháp_lý | một văn bản có giá trị pháp lý như luật, thông tư, quy chế
+2. Địa_điểm | một nơi chốn hoặc khu vực không gian địa lý
+3. Tổ_chức | một nhóm có tổ chức như công ty hoặc cơ quan
+
+Đáp án: 1
+
+---
+
+Entity type:
+name: Quark
+definition: một hạt hạ nguyên tử cơ bản
+
+Candidates:
+0. NONE
+1. Người | một cá nhân con người
+2. Quốc_gia | một quốc gia có chủ quyền
+3. Tổ_chức | một nhóm có tổ chức như công ty hoặc cơ quan
+
+Đáp án: 0
+
+=== TÁC VỤ ===
+
+Entity type:
+name: {query_entity}
+definition: {query_entity_definition}
+
+Candidates:
+{choices}
+
+Đáp án (CHỈ số):

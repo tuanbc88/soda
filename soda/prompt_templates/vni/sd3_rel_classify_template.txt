@@ -1,0 +1,152 @@
+```text
+Bạn là chuyên gia về knowledge graph construction và ontology engineering.
+
+Dưới đây là một số ví dụ:
+{few_shot_examples}
+
+Bạn được cung cấp các relation ở mức type-level gồm:
+- subject_type
+- relation
+- object_type
+- normalized_relation
+- definition
+- semantic_hint
+
+Nhiệm vụ của bạn là PHÂN LOẠI semantic role của từng relation
+và xác định semantic attachment phù hợp.
+
+=========================
+TASK
+=========================
+
+Với mỗi relation, hãy xác định:
+
+1. role:
+- "main"
+  → relation trung tâm mô tả event hoặc semantic interaction chính
+
+- "rel_attr"
+  → relation dùng để mô tả hoặc bổ sung thông tin cho một main relation khác
+
+- "subj_attr"
+  → relation mô tả thuộc tính tổng quát hoặc trạng thái của subject_type
+
+-------------------------
+
+2. anchor:
+
+- nếu role = "main"
+  → anchor = "self"
+
+- nếu role = "rel_attr"
+  → anchor = tên relation mà nó mô tả
+
+- nếu role = "subj_attr"
+  → anchor = "subject"
+
+=========================
+SEMANTIC INTERPRETATION
+=========================
+
+main:
+- event hoặc interaction trung tâm
+- thường biểu diễn:
+  - hành động
+  - tham gia
+  - tạo ra
+  - sở hữu
+  - di chuyển
+  - tác động
+  - quan hệ chính giữa thực thể
+
+Ví dụ:
+- worksAt
+- participatedIn
+- createdBy
+- defeated
+- founded
+- marriedTo
+
+-------------------------
+
+rel_attr:
+- bổ sung thông tin cho một main relation
+- thường mô tả:
+  - thời gian
+  - địa điểm
+  - cách thức
+  - trạng thái
+  - vai trò phụ
+  - điều kiện
+
+Ví dụ:
+- startDate → attach vào employedBy
+- workLocation → attach vào worksAt
+- awardYear → attach vào receivedAward
+
+-------------------------
+
+subj_attr:
+- thuộc tính ổn định hoặc mô tả tổng quát của subject
+- không phụ thuộc event cụ thể
+
+Ví dụ:
+- birthDate
+- nationality
+- population
+- area
+- gender
+- officialLanguage
+
+=========================
+STRICT RULES
+=========================
+
+1. PHẢI giữ NGUYÊN:
+- subject_type
+- relation
+- object_type
+
+2. Mỗi relation xuất hiện CHÍNH XÁC một lần.
+
+3. KHÔNG:
+- đổi tên relation
+- bỏ relation
+- reorder output
+
+4. anchor:
+- PHẢI là:
+  - "self"
+  - "subject"
+  - HOẶC tên của một relation có tồn tại trong input
+
+5. Nếu role = "rel_attr":
+- anchor PHẢI tham chiếu tới relation phù hợp về semantic
+
+6. Ưu tiên semantic meaning thay vì lexical similarity.
+
+BAD:
+- workDate → attach vào birthDate
+
+GOOD:
+- workDate → attach vào employedBy
+
+=========================
+OUTPUT FORMAT (STRICT)
+=========================
+
+[
+  [subject_type, relation, object_type, role, anchor]
+]
+
+KHÔNG output thêm bất kỳ nội dung nào khác.
+
+=========================
+INPUT
+=========================
+
+Relations:
+{relations}
+
+Answer:
+```

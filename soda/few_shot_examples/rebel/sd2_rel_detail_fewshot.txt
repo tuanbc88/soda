@@ -1,0 +1,172 @@
+Example 1:
+Text: Herbert Blankenhorn was born on 15 December 1904 in Mülhausen.
+
+Original Triples:
+[
+  ['Herbert Blankenhorn', 'date of birth', '15 December 1904'],
+  ['Herbert Blankenhorn', 'place of birth', 'Mülhausen']
+]
+
+Entities:
+[
+  ['Herbert Blankenhorn', 'Person', 'Person', 'a human individual'],
+  ['15 December 1904', 'Value', 'Date', 'a calendar date'],
+  ['Mülhausen', 'Location', 'Settlement', 'a populated place']
+]
+
+Typed Triples:
+[
+  ['Person', 'date of birth', 'Date'],
+  ['Person', 'place of birth', 'Settlement']
+]
+
+Answer:
+[
+  ['Person', 'date of birth', 'Date', 'indicates that a person was born on a specific calendar date', 'attribute'],
+  ['Person', 'place of birth', 'Settlement', 'indicates that a person was born in a particular settlement', 'attribute']
+]
+
+
+Example 2:
+Text: Romany Love is a 1931 film directed by Fred Paul and starring Esmond Knight.
+
+Original Triples:
+[
+  ['Romany Love', 'director', 'Fred Paul'],
+  ['Romany Love', 'cast member', 'Esmond Knight'],
+  ['Romany Love', 'publication date', '1931']
+]
+
+Entities:
+[
+  ['Romany Love', 'Work', 'Film', 'a cinematographic work'],
+  ['Fred Paul', 'Person', 'Person', 'a human individual'],
+  ['Esmond Knight', 'Person', 'Person', 'a human individual'],
+  ['1931', 'Value', 'Year', 'a calendar year']
+]
+
+Typed Triples:
+[
+  ['Film', 'director', 'Person'],
+  ['Film', 'cast member', 'Person'],
+  ['Film', 'publication date', 'Year']
+]
+
+Answer:
+[
+  ['Film', 'director', 'Person', 'indicates that a film was directed by a particular person', 'event'],
+  ['Film', 'cast member', 'Person', 'indicates that a person performs in the cast of a film', 'event'],
+  ['Film', 'publication date', 'Year', 'indicates that a film was released in a specific year', 'attribute']
+]
+
+
+Example 3:
+Text: Spodnje Hoče is located in the Municipality of Hoče–Slivnica, which is in Slovenia.
+
+Original Triples:
+[
+  ['Spodnje Hoče', 'located in the administrative territorial entity', 'Municipality of Hoče–Slivnica'],
+  ['Municipality of Hoče–Slivnica', 'country', 'Slovenia']
+]
+
+Entities:
+[
+  ['Spodnje Hoče', 'Location', 'Settlement', 'a populated place'],
+  ['Municipality of Hoče–Slivnica', 'Location', 'AdministrativeTerritory', 'an administrative region'],
+  ['Slovenia', 'Location', 'Country', 'a sovereign nation state']
+]
+
+Typed Triples:
+[
+  ['Settlement', 'located in the administrative territorial entity', 'AdministrativeTerritory'],
+  ['AdministrativeTerritory', 'country', 'Country']
+]
+
+Answer:
+[
+  ['Settlement', 'located in the administrative territorial entity', 'AdministrativeTerritory', 'indicates that a settlement lies within a larger administrative region', 'event'],
+  ['AdministrativeTerritory', 'country', 'Country', 'indicates that an administrative region belongs to a sovereign country', 'event']
+]
+
+
+Example 4:
+Text: Monopoly Star Wars is a video game in the Star Wars media franchise.
+
+Original Triples:
+[
+  ['Monopoly Star Wars', 'media franchise', 'Star Wars'],
+  ['Monopoly Star Wars', 'instance of', 'video game']
+]
+
+Entities:
+[
+  ['Monopoly Star Wars', 'Work', 'VideoGame', 'an electronic game'],
+  ['Star Wars', 'Work', 'MediaFranchise', 'a collection of related media works'],
+  ['video game', 'Category', 'Class', 'a general category of items']
+]
+
+Typed Triples:
+[
+  ['VideoGame', 'media franchise', 'MediaFranchise'],
+  ['VideoGame', 'instance of', 'Class']
+]
+
+Answer:
+[
+  ['VideoGame', 'media franchise', 'MediaFranchise', 'indicates that a video game belongs to a larger media franchise', 'event'],
+  ['VideoGame', 'instance of', 'Class', 'represents the relationship where a video game is an instance of a class', 'type']
+]
+
+
+Example 5:
+Text: Josef Schäffer, an Austrian, was a participant in the 1912 Summer Olympics.
+
+Original Triples:
+[
+  ['Josef Schäffer', 'country of citizenship', 'Austria'],
+  ['Josef Schäffer', 'participant in', '1912 Summer Olympics']
+]
+
+Entities:
+[
+  ['Josef Schäffer', 'Person', 'Athlete', 'a person who competes in sport'],
+  ['Austria', 'Location', 'Country', 'a sovereign nation state'],
+  ['1912 Summer Olympics', 'Event', 'SportsEvent', 'a competitive sporting occasion']
+]
+
+Typed Triples:
+[
+  ['Athlete', 'country of citizenship', 'Country'],
+  ['Athlete', 'participant in', 'SportsEvent']
+]
+
+Answer:
+[
+  ['Athlete', 'country of citizenship', 'Country', 'indicates that an athlete holds the citizenship of a particular country', 'attribute'],
+  ['Athlete', 'participant in', 'SportsEvent', 'indicates that an athlete took part in a sporting event', 'event']
+]
+
+
+Example 6:
+Text: The Boeing 747 is an airliner manufactured by Boeing.
+
+Original Triples:
+[
+  ['Boeing 747', 'manufacturer', 'Boeing']
+]
+
+Entities:
+[
+  ['Boeing 747', 'Artifact', 'Vehicle', 'a man-made transport machine'],
+  ['Boeing', 'Organization', 'Company', 'a business organization']
+]
+
+Typed Triples:
+[
+  ['Vehicle', 'manufacturer', 'Company']
+]
+
+Answer:
+[
+  ['Vehicle', 'manufacturer', 'Company', 'indicates that a vehicle is produced by a particular manufacturing company', 'event']
+]

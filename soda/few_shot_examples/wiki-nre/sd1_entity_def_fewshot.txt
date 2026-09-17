@@ -1,0 +1,92 @@
+Example 1:
+Text: John Doe is a student at the National University of Singapore.
+Triples: [['John_Doe', 'educated at', 'National_University_of_Singapore']]
+
+Answer:
+[
+  ['John_Doe', 'Agent', 'Person', 'a human individual'],
+  ['National_University_of_Singapore', 'Agent', 'EducationalInstitution', 'an organization that provides education such as a school or university']
+]
+
+Example 2:
+Text: Inception is a 2010 film directed by Christopher Nolan.
+Triples: [['Inception', 'publication date', '2010'], ['Inception', 'director', 'Christopher_Nolan']]
+
+Answer:
+[
+  ['Inception', 'Work', 'Film', 'a cinematographic work intended for screening'],
+  ['2010', 'Value', 'Year', 'a calendar year used as a temporal value'],
+  ['Christopher_Nolan', 'Agent', 'Person', 'a human individual']
+]
+
+Example 3:
+Text: Munich is located in Bavaria, Germany.
+Triples: [['Munich', 'located in the administrative territorial entity', 'Bavaria'], ['Bavaria', 'country', 'Germany']]
+
+Answer:
+[
+  ['Munich', 'Place', 'Settlement', 'a populated place such as a city or town'],
+  ['Bavaria', 'Place', 'AdministrativeTerritory', 'a geographic region defined by administrative boundaries'],
+  ['Germany', 'Place', 'Country', 'a sovereign nation state']
+]
+
+Example 4:
+Text: Marie Curie was born in Warsaw and was a citizen of Poland.
+Triples: [['Marie_Curie', 'place of birth', 'Warsaw'], ['Marie_Curie', 'country of citizenship', 'Poland']]
+
+Answer:
+[
+  ['Marie_Curie', 'Agent', 'Person', 'a human individual'],
+  ['Warsaw', 'Place', 'Settlement', 'a populated place such as a city or town'],
+  ['Poland', 'Place', 'Country', 'a sovereign nation state']
+]
+
+Example 5:
+Text: Apple Inc. is a technology company headquartered in Cupertino.
+Triples: [['Apple_Inc.', 'headquarters location', 'Cupertino']]
+
+Answer:
+[
+  ['Apple_Inc.', 'Agent', 'Company', 'a business organization that produces goods or services'],
+  ['Cupertino', 'Place', 'Settlement', 'a populated place such as a city or town']
+]
+
+Example 6:
+Text: Lionel Messi is a member of the Argentina national football team.
+Triples: [['Lionel_Messi', 'member of sports team', 'Argentina_national_football_team']]
+
+Answer:
+[
+  ['Lionel_Messi', 'Agent', 'Person', 'a human individual'],
+  ['Argentina_national_football_team', 'Agent', 'SportsTeam', 'an organized group of players competing in sports']
+]
+
+Example 7:
+Text: The film Parasite received an Academy Award.
+Triples: [['Parasite', 'award received', 'Academy_Award']]
+
+Answer:
+[
+  ['Parasite', 'Work', 'Film', 'a cinematographic work intended for screening'],
+  ['Academy_Award', 'Category', 'Award', 'a prize or recognition granted for achievement']
+]
+
+Example 8:
+Text: Ferdinand Le Quesne served in the Second Boer War.
+Triples: [['Ferdinand_Le_Quesne', 'conflict', 'Second_Boer_War']]
+
+Answer:
+[
+  ['Ferdinand_Le_Quesne', 'Agent', 'Person', 'a human individual'],
+  ['Second_Boer_War', 'Event', 'Conflict', 'an armed conflict, war, or battle']
+]
+
+Example 9:
+Text: The ALCO RS-3 is a locomotive that uses a diesel-electric transmission.
+Triples: [['ALCO_RS-3', 'powerType', 'Diesel-electric_transmission']]
+
+Answer:
+[
+  ['ALCO_RS-3', 'Artifact', 'Locomotive', 'a powered rail vehicle designed for pulling trains'],
+  ['Diesel-electric_transmission', 'Category', 'PowerSystem', 'a classification of the mechanism used to power a vehicle']
+]

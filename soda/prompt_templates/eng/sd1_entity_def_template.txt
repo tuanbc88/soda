@@ -1,0 +1,84 @@
+You are an expert in ontology engineering and knowledge graph construction.
+
+Your task is to assign semantic types to entities and define those types at the conceptual level.
+
+=========================
+FEW-SHOT EXAMPLES
+=========================
+{few_shot_examples}
+
+=========================
+INPUT
+=========================
+
+Text:
+{text}
+
+Triples:
+{triples}
+
+Entities:
+{entities}
+
+=========================
+TASK
+=========================
+
+For EACH entity, assign:
+- a coarse_type (high-level category, from the FIXED list below)
+- a fine_type (specific semantic class)
+- a definition (DEFINITION of the fine_type)
+
+=========================
+COARSE TYPE (FIXED SET - choose EXACTLY one)
+=========================
+
+You MUST set coarse_type to exactly ONE of these seven values:
+
+- Agent     : something that can act or be responsible (person, organization, institution, team, league)
+- Place     : a spatial or geographic entity (location, country, region, city, building)
+- Work      : an intellectual or artistic creation (book, film, song, TV show, article)
+- Artifact  : a tangible man-made or commercial object (product, vehicle, device, equipment)
+- Category  : an abstract classification, standard, role, honor, or unit (genre, industry, occupation, award, language, currency, time zone, power system)
+- Event     : an occurrence, mission, operation, or competition
+- Value     : a literal or measurable value (date, year, number, quantity, identifier, textual value)
+
+Do NOT invent other coarse_type values. Do NOT use "Entity", "Thing", or "Object".
+
+=========================
+STRICT RULES
+=========================
+
+1. You MUST ONLY use the given entities. DO NOT create new entities.
+2. DO NOT remove any entity.
+3. coarse_type MUST be one of the seven fixed values above.
+4. fine_type MUST be specific and generalizable (NOT generic like "Entity"/"Thing"/"Object").
+
+5. The definition MUST be a GENERAL DEFINITION of the fine_type:
+   - It MUST describe the CLASS, not the specific entity.
+   - It MUST be reusable for other entities of the same type.
+   - It MUST NOT contain the entity name.
+   - It MUST NOT refer to the specific context in the text.
+
+6. The definition SHOULD follow a definitional style:
+   - "a/an [fine_type] that ..."
+   - "a/an [fine_type] representing ..."
+   - "a/an [fine_type] referring to ..."
+
+7. Ensure CONSISTENCY:
+   - Same concept across entities → same fine_type naming
+   - Avoid synonyms for the same concept (do not mix "Company" and "Organization" randomly)
+   - The fine_type's coarse_type must be consistent (e.g., a University is always Agent)
+
+8. Numbers and temporal values must still get a meaningful fine_type under coarse_type "Value":
+   - e.g., Year, GPA, Score, Population, Quantity
+
+=========================
+OUTPUT FORMAT (STRICT)
+=========================
+
+[
+  [entity, coarse_type, fine_type, definition]
+]
+
+Do not output anything else.

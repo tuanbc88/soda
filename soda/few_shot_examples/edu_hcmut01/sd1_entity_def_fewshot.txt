@@ -1,0 +1,60 @@
+Example 1:
+Text: Quy chế đào tạo đại học được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Triples:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'ban_hanh_theo', 'Thông_tư_08_2021_TT_BGDĐT']
+]
+
+Answer:
+[
+  ['Quy_chế_đào_tạo_đại_học', 'VanBan', 'VanBanQuyDinh', 'quy định chính thức dùng để quản lý hoặc hướng dẫn hoạt động giáo dục'],
+  ['Thông_tư_08_2021_TT_BGDĐT', 'VanBan', 'VanBanPhapLy', 'văn bản pháp lý được ban hành bởi cơ quan có thẩm quyền']
+]
+
+
+Example 2:
+Text: Bộ Giáo dục và Đào tạo ban hành Thông tư 08/2021/TT-BGDĐT.
+
+Triples:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'ban_hanh_boi', 'Bộ_Giáo_dục_và_Đào_tạo']
+]
+
+Answer:
+[
+  ['Thông_tư_08_2021_TT_BGDĐT', 'VanBan', 'VanBanPhapLy', 'văn bản pháp lý được ban hành bởi cơ quan có thẩm quyền'],
+  ['Bộ_Giáo_dục_và_Đào_tạo', 'ToChuc', 'CoQuanQuanLyGiaoDuc', 'tổ chức thực hiện quản lý và điều hành hoạt động giáo dục']
+]
+
+
+Example 3:
+Text: Chương trình đào tạo ngành Khoa học máy tính bao gồm chuẩn đầu ra và học phần bắt buộc.
+
+Triples:
+[
+  ['Chương_trình_đào_tạo_ngành_Khoa_học_máy_tính', 'bao_gom', 'Chuẩn_đầu_ra'],
+  ['Chương_trình_đào_tạo_ngành_Khoa_học_máy_tính', 'bao_gom', 'Học_phần_bắt_buộc']
+]
+
+Answer:
+[
+  ['Chương_trình_đào_tạo_ngành_Khoa_học_máy_tính', 'DaoTao', 'ChuongTrinhDaoTao', 'chương trình quy định nội dung và kế hoạch đào tạo cho một ngành học'],
+  ['Chuẩn_đầu_ra', 'DaoTao', 'ChuanDauRa', 'tập hợp yêu cầu về năng lực mà người học cần đạt được sau đào tạo'],
+  ['Học_phần_bắt_buộc', 'DaoTao', 'ThanhPhanDaoTao', 'thành phần cấu thành chương trình đào tạo']
+]
+
+
+Example 4:
+Text: Đại học Quốc gia TP.HCM trực thuộc Bộ Giáo dục và Đào tạo.
+
+Triples:
+[
+  ['Đại_học_Quốc_gia_TP.HCM', 'thuoc', 'Bộ_Giáo_dục_và_Đào_tạo']
+]
+
+Answer:
+[
+  ['Đại_học_Quốc_gia_TP.HCM', 'ToChuc', 'TruongDaiHoc', 'tổ chức giáo dục cung cấp đào tạo và nghiên cứu bậc cao'],
+  ['Bộ_Giáo_dục_và_Đào_tạo', 'ToChuc', 'CoQuanQuanLyGiaoDuc', 'tổ chức thực hiện quản lý và điều hành hoạt động giáo dục']
+]

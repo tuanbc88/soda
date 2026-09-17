@@ -1,0 +1,110 @@
+Example 1:
+Text: Herbert Blankenhorn was born on 15 December 1904.
+
+Triples:
+[
+  ['Herbert Blankenhorn', 'date of birth', '15 December 1904']
+]
+
+Answer:
+[
+  ['Herbert Blankenhorn', 'date of birth', '15 December 1904',
+   'indicates that an entity came into existence on a specific date',
+   'attribute']
+]
+
+
+Example 2:
+Text: Spodnje Hoče is located in the Municipality of Hoče–Slivnica.
+
+Triples:
+[
+  ['Spodnje Hoče', 'located in the administrative territorial entity', 'Municipality of Hoče–Slivnica']
+]
+
+Answer:
+[
+  ['Spodnje Hoče', 'located in the administrative territorial entity', 'Municipality of Hoče–Slivnica',
+   'indicates that one entity lies within the administrative region of another entity',
+   'attribute']
+]
+
+
+Example 3:
+Text: Romany Love was directed by Fred Paul.
+
+Triples:
+[
+  ['Romany Love', 'director', 'Fred Paul']
+]
+
+Answer:
+[
+  ['Romany Love', 'director', 'Fred Paul',
+   'indicates that a creative work was directed by a particular person',
+   'event']
+]
+
+
+Example 4:
+Text: Slovenia is the country of the Municipality of Hoče–Slivnica.
+
+Triples:
+[
+  ['Municipality of Hoče–Slivnica', 'country', 'Slovenia']
+]
+
+Answer:
+[
+  ['Municipality of Hoče–Slivnica', 'country', 'Slovenia',
+   'indicates that one entity is located in the sovereign country specified by another entity',
+   'attribute']
+]
+
+
+Example 5:
+Text: Monopoly Star Wars is an instance of a video game.
+
+Triples:
+[
+  ['Monopoly Star Wars', 'instance of', 'video game']
+]
+
+Answer:
+[
+  ['Monopoly Star Wars', 'instance of', 'video game',
+   'represents the relationship where an entity is a specific instance of a class',
+   'type']
+]
+
+
+Example 6:
+Text: Esmond Knight was a cast member of Romany Love.
+
+Triples:
+[
+  ['Romany Love', 'cast member', 'Esmond Knight']
+]
+
+Answer:
+[
+  ['Romany Love', 'cast member', 'Esmond Knight',
+   'indicates that a person performs as a member of the cast of a work',
+   'event']
+]
+
+
+Example 7:
+Text: Josef Schäffer was a participant in the 1912 Summer Olympics.
+
+Triples:
+[
+  ['Josef Schäffer', 'participant in', '1912 Summer Olympics']
+]
+
+Answer:
+[
+  ['Josef Schäffer', 'participant in', '1912 Summer Olympics',
+   'indicates that an entity took part in an event or competition',
+   'event']
+]

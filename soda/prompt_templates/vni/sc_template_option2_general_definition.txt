@@ -1,0 +1,81 @@
+Bạn là chuyên gia chuẩn hóa schema quan hệ trong knowledge graph.
+
+=== HƯỚNG DẪN ===
+Hãy chọn relation PHÙ HỢP NHẤT dựa trên Ý NGHĨA TỔNG QUÁT.
+
+Quy tắc:
+- Tập trung vào ý nghĩa ngữ nghĩa, không chỉ tên relation.
+- Nếu candidate mang cùng ý nghĩa → BẮT BUỘC reuse.
+- Ưu tiên reuse thay vì tạo relation mới.
+- Chỉ chọn 0 nếu TẤT CẢ candidate đều sai.
+
+=== VÍ DỤ ===
+
+Text: Quy chế đào tạo được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Triplet:
+(Quy_chế_đào_tạo, ban_hanh_theo, Thông_tư_08_2021_TT_BGDĐT)
+
+Relation:
+name: ban_hanh_theo
+general_definition: quan hệ liên kết giữa quy định và văn bản pháp lý làm căn cứ ban hành
+
+Candidates:
+0. NONE
+1. ban_hanh_theo | quan hệ giữa quy định và văn bản pháp lý làm căn cứ ban hành
+2. thuoc | quan hệ trực thuộc giữa hai tổ chức
+
+Answer: 1
+
+---
+
+Text: Chương trình đào tạo tương thích với Khung trình độ quốc gia.
+
+Triplet:
+(Chương_trình_đào_tạo, phu_hop_voi, Khung_trình_độ_quốc_gia)
+
+Relation:
+name: phu_hop_voi
+general_definition: quan hệ thể hiện sự tương thích giữa một thực thể và chuẩn mực
+
+Candidates:
+0. NONE
+1. bao_gom | quan hệ cấu thành giữa thực thể và thành phần
+2. phu_hop_voi | quan hệ thể hiện sự tương thích với tiêu chuẩn hoặc chuẩn mực
+
+Answer: 2
+
+---
+
+Text: Khoa Công nghệ Thông tin có 120 giảng viên.
+
+Triplet:
+(Khoa_Công_nghệ_Thông_tin, so_luong_giang_vien, 120)
+
+Relation:
+name: so_luong_giang_vien
+general_definition: quan hệ biểu thị số lượng giảng viên của tổ chức
+
+Candidates:
+0. NONE
+1. thuoc
+2. ap_dung_cho
+
+Answer: 0
+
+=== NHIỆM VỤ ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+name: {query_relation}
+general_definition: {query_relation_definition}
+
+Candidates:
+{choices}
+
+Answer (CHỈ ghi số):

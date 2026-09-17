@@ -1,0 +1,76 @@
+Example 1:
+Text: Quy chế đào tạo trình độ đại học (gọi tắt là TT08) ban hành theo Thông tư số 08/2021/TT-BGĐT ngày 18/3/2021 của Bộ Giáo dục và Đào tạo.
+Triplets:
+[
+["Quy_chế_đào_tạo_trình_độ_đại_học", "ten_goi_tat", "TT08"],
+["Quy_chế_đào_tạo_trình_độ_đại_học", "ban_hanh_theo", "Thông_tư_08/2021/TT-BGĐT"],
+["Thông_tư_08/2021/TT-BGĐT", "ban_hanh_ngay", "18/3/2021"],
+["Thông_tư_08/2021/TT-BGĐT", "ban_hanh_boi", "Bộ_Giáo_dục_và_Đào_tạo"]
+]
+
+Example 2:
+Text: Trường Đại học Bách Khoa thuộc Đại học Quốc gia Thành phố Hồ Chí Minh.
+Triplets:
+[
+["Trường_Đại_học_Bách_Khoa", "thuoc", "Đại_học_Quốc_gia_Thành_phố_Hồ_Chí_Minh"]
+]
+
+Example 3:
+Text: Quy định này áp dụng cho học vụ và đào tạo bậc đại học.
+Triplets:
+[
+["Quy_định_này", "ap_dung_cho", "học_vụ"],
+["Quy_định_này", "ap_dung_cho", "đào_tạo_bậc_đại_học"]
+]
+
+Example 4:
+Text: Quy định này áp dụng tại Trường Đại học Bách Khoa.
+Triplets:
+[
+["Quy_định_này", "ap_dung_tai", "Trường_Đại_học_Bách_Khoa"]
+]
+
+Example 5:
+Text: Quy định này được sửa đổi bổ sung theo Quyết định số 1887/QĐ-ĐHBK ngày 01/6/2022.
+Triplets:
+[
+["Quy_định_này", "sua_doi_bo_sung_theo", "Quyết_định_1887/QĐ-ĐHBK"],
+["Quyết_định_1887/QĐ-ĐHBK", "ban_hanh_ngay", "01/6/2022"]
+]
+
+Example 6:
+Text: Chương trình đào tạo bao gồm mục tiêu, nội dung và phương pháp.
+Triplets:
+[
+["Chương_trình_đào_tạo", "bao_gom", "mục_tiêu"],
+["Chương_trình_đào_tạo", "bao_gom", "nội_dung"],
+["Chương_trình_đào_tạo", "bao_gom", "phương_pháp"]
+]
+
+Example 7:
+Text: Chương trình đào tạo phù hợp với Khung trình độ quốc gia Việt Nam.
+Triplets:
+[
+["Chương_trình_đào_tạo", "phu_hop_voi", "Khung_trình_độ_quốc_gia_Việt_Nam"]
+]
+
+Example 8:
+Text: Chương trình đào tạo được cấu thành từ các học phần.
+Triplets:
+[
+["Chương_trình_đào_tạo", "duoc_cau_thanh_tu", "học_phần"]
+]
+
+Example 9:
+Text: Chuẩn đầu ra là yêu cầu cần đạt về kiến thức và kỹ năng.
+Triplets:
+[
+["Chuẩn_đầu_ra", "dinh_nghia", "yêu_cầu_cần_đạt_về_kiến_thức_và_kỹ_năng"]
+]
+
+Example 10:
+Text: Quy định tổng hợp này tổng hợp các quy định từ các văn bản sau.
+Triplets:
+[
+["Quy_định_tổng_hợp", "duoc_xay_dung_theo", "các_văn_bản"]
+]

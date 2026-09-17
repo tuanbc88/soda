@@ -1,0 +1,89 @@
+{
+  "_doc": "Author adjudication of grounding mismatches (gold_entity_types_MISMATCH_review.md, DECISIONS 2026-06-25). For an accepted slot the grounding status is forced to \"accepted\" (counted KB-consistent: the schema low-level type is correct per the dataset even where the KB property models it differently / more narrowly). FIX cases were applied to the schema JSON directly and re-grounded. (course->Food: webnlg meal-course relation collides with dbo:course = race course; Food is data-correct, KB cannot validate.)",
+  "wiki-nre": {
+    "basin country": {
+      "tail": "accepted"
+    }
+  },
+  "rebel": {
+    "home venue": {
+      "tail": "accepted"
+    },
+    "narrative location": {
+      "tail": "accepted"
+    },
+    "writing language": {
+      "head": "accepted"
+    },
+    "basin country": {
+      "tail": "accepted"
+    },
+    "head of state": {
+      "head": "accepted"
+    },
+    "foundational text": {
+      "tail": "accepted"
+    },
+    "medical condition treated": {
+      "head": "accepted"
+    },
+    "shares border with": {
+      "tail": "accepted"
+    },
+    "type foundry": {
+      "tail": "accepted"
+    },
+    "is a list of": {
+      "head": "accepted"
+    },
+    "diplomatic relation": {
+      "head": "accepted"
+    }
+  },
+  "webnlg": {
+    "creator": {
+      "tail": "accepted"
+    },
+    "established": {
+      "head": "accepted"
+    },
+    "address": {
+      "head": "accepted"
+    },
+    "occupation": {
+      "tail": "accepted"
+    },
+    "ground": {
+      "head": "accepted"
+    },
+    "leaderTitle": {
+      "head": "accepted"
+    },
+    "completionDate": {
+      "head": "accepted"
+    },
+    "foundedBy": {
+      "tail": "accepted"
+    },
+    "season": {
+      "head": "accepted"
+    },
+    "course": {
+      "head": "accepted"
+    }
+  },
+  "webnlg_full": {
+    "district": {
+      "head": "accepted"
+    },
+    "editor": {
+      "tail": "accepted"
+    },
+    "nearestCity": {
+      "head": "accepted"
+    },
+    "yearOfConstruction": {
+      "head": "accepted"
+    }
+  }
+}

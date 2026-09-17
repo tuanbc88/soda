@@ -1,0 +1,164 @@
+Example 1:
+Text: John Doe studied Computer Science at National University of Singapore with a GPA of 3.8.
+
+Original Triples:
+[
+  ['John_Doe', 'studiedAt', 'National_University_of_Singapore'],
+  ['John_Doe', 'fieldOfStudy', 'Computer_Science'],
+  ['John_Doe', 'gpa', '3.8']
+]
+
+Entities:
+[
+  ['John_Doe', 'Person', 'Student', 'a person enrolled in an educational program'],
+  ['National_University_of_Singapore', 'Organization', 'University', 'an institution for higher education'],
+  ['Computer_Science', 'Field', 'AcademicField', 'a domain of study focused on computation'],
+  ['3.8', 'Concept', 'Score', 'a numerical academic performance value']
+]
+
+Typed Triples:
+[
+  ['Student', 'studiedAt', 'University'],
+  ['Student', 'fieldOfStudy', 'AcademicField'],
+  ['Student', 'gpa', 'Score']
+]
+
+Answer:
+[
+  ['Student', 'studiedAt', 'University', 'indicates that a student studies at an educational institution', 'event'],
+  ['Student', 'fieldOfStudy', 'AcademicField', 'indicates that a student specializes in a particular academic field', 'attribute'],
+  ['Student', 'gpa', 'Score', 'indicates that a student has a numerical academic performance score', 'attribute']
+]
+
+
+Example 2:
+Text: Apple Inc. is headquartered in Cupertino.
+
+Original Triples:
+[
+  ['Apple_Inc.', 'headquarteredIn', 'Cupertino']
+]
+
+Entities:
+[
+  ['Apple_Inc.', 'Organization', 'Company', 'a business entity'],
+  ['Cupertino', 'Location', 'City', 'an urban geographic area']
+]
+
+Typed Triples:
+[
+  ['Company', 'headquarteredIn', 'City']
+]
+
+Answer:
+[
+  ['Company', 'headquarteredIn', 'City', 'represents the relationship where a company operates from a primary city location', 'event']
+]
+
+
+Example 3:
+Text: Barack Obama served as president of the United States.
+
+Original Triples:
+[
+  ['Barack_Obama', 'servedAs', 'President_of_the_United_States']
+]
+
+Entities:
+[
+  ['Barack_Obama', 'Person', 'Politician', 'a person in governance'],
+  ['President_of_the_United_States', 'Position', 'HeadOfState', 'a national leadership role']
+]
+
+Typed Triples:
+[
+  ['Politician', 'servedAs', 'HeadOfState']
+]
+
+Answer:
+[
+  ['Politician', 'servedAs', 'HeadOfState', 'represents the relationship where a politician holds a national leadership position', 'event']
+]
+
+
+Example 4:
+Text: Team A defeated Team B in the final match.
+
+Original Triples:
+[
+  ['Team_A', 'defeated', 'Team_B']
+]
+
+Entities:
+[
+  ['Team_A', 'Organization', 'SportsTeam', 'a competitive sports group'],
+  ['Team_B', 'Organization', 'SportsTeam', 'a competitive sports group']
+]
+
+Typed Triples:
+[
+  ['SportsTeam', 'defeated', 'SportsTeam']
+]
+
+Answer:
+[
+  ['SportsTeam', 'defeated', 'SportsTeam', 'indicates that one team wins against another team in a competition', 'event']
+]
+
+
+Example 5:
+Text: Alice Smith joined Google as a software engineer in 2020.
+
+Original Triples:
+[
+  ['Alice_Smith', 'workedAt', 'Google'],
+  ['Alice_Smith', 'jobTitle', 'software_engineer'],
+  ['Alice_Smith', 'startYear', '2020']
+]
+
+Entities:
+[
+  ['Alice_Smith', 'Person', 'Employee', 'a person employed by an organization'],
+  ['Google', 'Organization', 'Company', 'a business entity'],
+  ['software_engineer', 'Concept', 'JobTitle', 'a professional role'],
+  ['2020', 'Time', 'Year', 'a calendar year']
+]
+
+Typed Triples:
+[
+  ['Employee', 'workedAt', 'Company'],
+  ['Employee', 'jobTitle', 'JobTitle'],
+  ['Employee', 'startYear', 'Year']
+]
+
+Answer:
+[
+  ['Employee', 'workedAt', 'Company', 'indicates that a person is employed and works at a company', 'event'],
+  ['Employee', 'jobTitle', 'JobTitle', 'indicates that a person holds a specific professional job title', 'attribute'],
+  ['Employee', 'startYear', 'Year', 'indicates that a person begins employment in a specific year', 'event']
+]
+
+
+Example 6:
+Text: Apple Inc. is a technology company.
+
+Original Triples:
+[
+  ['Apple_Inc.', 'isA', 'Technology_company']
+]
+
+Entities:
+[
+  ['Apple_Inc.', 'Organization', 'Company', 'a business entity'],
+  ['Technology_company', 'Concept', 'IndustryType', 'a category of companies']
+]
+
+Typed Triples:
+[
+  ['Company', 'isA', 'IndustryType']
+]
+
+Answer:
+[
+  ['Company', 'isA', 'IndustryType', 'represents the relationship where an entity belongs to a broader classification category', 'type']
+]

@@ -1,0 +1,81 @@
+Bạn là chuyên gia chuẩn hóa schema quan hệ trong knowledge graph.
+
+=== HƯỚNG DẪN ===
+Hãy chọn relation PHÙ HỢP NHẤT bằng cách sử dụng TÊN + ĐỊNH NGHĨA.
+
+Quy tắc:
+- Sử dụng CẢ tên relation và định nghĩa.
+- Nếu ý nghĩa tương đương → BẮT BUỘC reuse.
+- Ưu tiên reuse thay vì tạo relation mới.
+- Chỉ chọn 0 nếu không có candidate nào phù hợp.
+
+=== VÍ DỤ ===
+
+Text: Quy chế đào tạo được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Triplet:
+(Quy_chế_đào_tạo, ban_hanh_theo, Thông_tư_08_2021_TT_BGDĐT)
+
+Relation:
+name: ban_hanh_theo
+definition: quy định được ban hành dựa trên một văn bản pháp lý cụ thể
+
+Candidates:
+0. NONE
+1. ban_hanh_theo | quy định được ban hành dựa trên văn bản pháp lý
+2. thuoc | tổ chức trực thuộc tổ chức khác
+
+Answer: 1
+
+---
+
+Text: Chương trình đào tạo bao gồm học phần bắt buộc.
+
+Triplet:
+(Chương_trình_đào_tạo, bao_gom, Học_phần_bắt_buộc)
+
+Relation:
+name: bao_gom
+definition: một thực thể bao gồm nhiều thành phần
+
+Candidates:
+0. NONE
+1. bao_gom | quan hệ phân rã giữa thực thể tổng thể và các thành phần cấu thành
+2. phu_hop_voi | quan hệ tương thích với chuẩn mực
+
+Answer: 1
+
+---
+
+Text: Khoa Công nghệ Thông tin có 120 giảng viên.
+
+Triplet:
+(Khoa_Công_nghệ_Thông_tin, so_luong_giang_vien, 120)
+
+Relation:
+name: so_luong_giang_vien
+definition: số lượng giảng viên thuộc một tổ chức giáo dục
+
+Candidates:
+0. NONE
+1. thuoc
+2. ap_dung_tai
+
+Answer: 0
+
+=== NHIỆM VỤ ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+name: {query_relation}
+definition: {query_relation_definition}
+
+Candidates:
+{choices}
+
+Answer (CHỈ ghi số):

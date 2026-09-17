@@ -1,0 +1,104 @@
+Example 1:
+Text: John Doe is a student at National University of Singapore.
+Triples: [['John_Doe', 'studentAt', 'National_University_of_Singapore']]
+Entities: ['John_Doe', 'National_University_of_Singapore']
+
+Answer:
+[
+  ['John_Doe', 'Person', 'Student', 'a person enrolled in an educational program at an institution'],
+  ['National_University_of_Singapore', 'Organization', 'University', 'an institution that provides higher education and academic research']
+]
+
+
+Example 2:
+Text: Tuan Bui studied Computer Science at the National University of Singapore from 2023 to 2026 with a GPA of 3.8.
+Triples: [
+  ['Tuan_Bui', 'studiedAt', 'National_University_of_Singapore'],
+  ['Tuan_Bui', 'fieldOfStudy', 'Computer_Science'],
+  ['Tuan_Bui', 'gpa', '3.8'],
+  ['Tuan_Bui', 'studyPeriodStart', '2023'],
+  ['Tuan_Bui', 'studyPeriodEnd', '2026']
+]
+Entities: ['Tuan_Bui', 'National_University_of_Singapore', 'Computer_Science', '3.8', '2023', '2026']
+
+Answer:
+[
+  ['Tuan_Bui', 'Person', 'Student', 'a person pursuing an academic program'],
+  ['National_University_of_Singapore', 'Organization', 'University', 'an institution that provides higher education and academic research'],
+  ['Computer_Science', 'Concept', 'AcademicField', 'a field of study related to computation'],
+  ['3.8', 'Number', 'GPA', 'a numerical measure of academic performance'],
+  ['2023', 'Event', 'Year', 'a specific calendar year'],
+  ['2026', 'Event', 'Year', 'a specific calendar year']
+]
+
+
+Example 3:
+Text: Barack Obama served as the president of the United States from 2009 to 2017.
+Triples: [
+  ['Barack_Obama', 'servedAs', 'President_of_the_United_States'],
+  ['Barack_Obama', 'termStart', '2009'],
+  ['Barack_Obama', 'termEnd', '2017']
+]
+Entities: ['Barack_Obama', 'President_of_the_United_States', '2009', '2017']
+
+Answer:
+[
+  ['Barack_Obama', 'Person', 'Politician', 'a person involved in political leadership and public governance'],
+  ['President_of_the_United_States', 'Position', 'HeadOfState', 'a leadership role responsible for governing a nation'],
+  ['2009', 'Event', 'Year', 'a specific calendar year'],
+  ['2017', 'Event', 'Year', 'a specific calendar year']
+]
+
+
+Example 4:
+Text: Team A defeated Team B with a score of 3-1 in the final match.
+Triples: [
+  ['Team_A', 'defeated', 'Team_B'],
+  ['Team_A', 'score', '3-1']
+]
+Entities: ['Team_A', 'Team_B', '3-1']
+
+Answer:
+[
+  ['Team_A', 'Organization', 'SportsTeam', 'an organized group of players competing in sports competitions'],
+  ['Team_B', 'Organization', 'SportsTeam', 'an organized group of players competing in sports competitions'],
+  ['3-1', 'Number', 'Score', 'a numerical result representing the outcome of a competition']
+]
+
+
+Example 5:
+Text: Alice Smith joined Google as a software engineer in 2020.
+Triples: [
+  ['Alice_Smith', 'workedAt', 'Google'],
+  ['Alice_Smith', 'jobTitle', 'software_engineer'],
+  ['Alice_Smith', 'startYear', '2020']
+]
+Entities: ['Alice_Smith', 'Google', 'software_engineer', '2020']
+
+Answer:
+[
+  ['Alice_Smith', 'Person', 'SoftwareEngineer', 'a person working in software development'],
+  ['Google', 'Organization', 'Company', 'a business organization'],
+  ['software_engineer', 'Concept', 'JobTitle', 'a role in software development'],
+  ['2020', 'Event', 'Year', 'a specific calendar year']
+]
+
+
+Example 6:
+Text: Apple Inc. is a technology company headquartered in Cupertino. The company was founded in 1976 and has over 160000 employees.
+Triples: [
+  ['Apple_Inc.', 'isA', 'Technology_company'],
+  ['Apple_Inc.', 'headquarteredIn', 'Cupertino'],
+  ['Apple_Inc.', 'foundedIn', '1976'],
+  ['Apple_Inc.', 'hasEmployees', 'over_160000']
+]
+Entities: ['Apple_Inc.', 'Technology_company', 'Cupertino', '1976', 'over_160000']
+
+Answer:
+[
+  ['Apple_Inc.', 'Organization', 'Company', 'a business entity that develops and sells products or services'],
+  ['Technology_company', 'Concept', 'Industry', 'a category of companies focused on technology products and services'],
+  ['Cupertino', 'Location', 'City', 'a geographic area serving as an administrative or urban center'],
+  ['1976', 'Event', 'Year', 'a specific calendar year'],
+  ['over_160000', 'Number', 'EmployeeCount', 'a numerical measure of the number of employees in an organization']
+]

@@ -1,0 +1,40 @@
+Example 1:
+Relations:
+[
+  ['VanBanPhapLy', 'ban_hanh_boi', 'CoQuanQuanLyGiaoDuc', 'issueBy', 'biểu thị rằng một văn bản được ban hành bởi cơ quan có thẩm quyền', 'event'],
+  ['VanBanPhapLy', 'ban_hanh_ngay', 'Date', 'issuedOn', 'biểu thị thời điểm ban hành của văn bản', 'attribute']
+]
+
+Answer:
+[
+  ['VanBanPhapLy', 'ban_hanh_boi', 'CoQuanQuanLyGiaoDuc', 'main', 'self'],
+  ['VanBanPhapLy', 'ban_hanh_ngay', 'Date', 'rel_attr', 'ban_hanh_boi']
+]
+
+
+Example 2:
+Relations:
+[
+  ['ChuongTrinhDaoTao', 'bao_gom', 'ThanhPhanDaoTao', 'containComponent', 'biểu thị rằng chương trình đào tạo chứa các thành phần cấu thành', 'attribute'],
+  ['ChuongTrinhDaoTao', 'phu_hop_voi', 'KhaiNiem', 'alignWith', 'biểu thị rằng chương trình đào tạo tương thích với chuẩn mực', 'attribute']
+]
+
+Answer:
+[
+  ['ChuongTrinhDaoTao', 'bao_gom', 'ThanhPhanDaoTao', 'main', 'self'],
+  ['ChuongTrinhDaoTao', 'phu_hop_voi', 'KhaiNiem', 'subj_attr', 'subject']
+]
+
+
+Example 3:
+Relations:
+[
+  ['ToChuc', 'thuoc', 'ToChuc', 'belongTo', 'biểu thị quan hệ trực thuộc giữa các tổ chức', 'attribute'],
+  ['ToChuc', 'ten_goi_tat', 'String', 'abbreviation', 'biểu thị tên viết tắt của tổ chức', 'attribute']
+]
+
+Answer:
+[
+  ['ToChuc', 'thuoc', 'ToChuc', 'main', 'self'],
+  ['ToChuc', 'ten_goi_tat', 'String', 'subj_attr', 'subject']
+]

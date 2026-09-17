@@ -1,0 +1,1244 @@
+{
+  "entity_types": {
+    "Person": {
+      "parent": "Agent",
+      "definition": "A human individual.",
+      "attributes": {}
+    },
+    "Organization": {
+      "parent": "Agent",
+      "definition": "An organized entity such as a company, institution, government body, or association.",
+      "attributes": {}
+    },
+    "Location": {
+      "parent": "Place",
+      "definition": "A geographic place or spatial area.",
+      "attributes": {}
+    },
+    "Country": {
+      "parent": "Place",
+      "definition": "A sovereign nation state.",
+      "attributes": {}
+    },
+    "AdministrativeTerritory": {
+      "parent": "Place",
+      "definition": "A geographic region defined by administrative boundaries.",
+      "attributes": {}
+    },
+    "Settlement": {
+      "parent": "Place",
+      "definition": "A populated place such as a city, town, or village.",
+      "attributes": {}
+    },
+    "EducationalInstitution": {
+      "parent": "Agent",
+      "definition": "An organization that provides education such as a school or university.",
+      "attributes": {}
+    },
+    "CreativeWork": {
+      "parent": "Work",
+      "definition": "An intellectual or artistic creation such as a book, song, or article.",
+      "attributes": {}
+    },
+    "MediaWork": {
+      "parent": "Work",
+      "definition": "A media production such as a television show, film, or broadcast.",
+      "attributes": {}
+    },
+    "Building": {
+      "parent": "Place",
+      "definition": "A constructed architectural structure.",
+      "attributes": {}
+    },
+    "Product": {
+      "parent": "Artifact",
+      "definition": "A manufactured or commercially distributed item.",
+      "attributes": {}
+    },
+    "Industry": {
+      "parent": "Category",
+      "definition": "An economic sector or area of commercial activity.",
+      "attributes": {}
+    },
+    "Occupation": {
+      "parent": "Category",
+      "definition": "A professional role, trade, or employment category.",
+      "attributes": {}
+    },
+    "SportsTeam": {
+      "parent": "Agent",
+      "definition": "An organized sports club or team.",
+      "attributes": {}
+    },
+    "SportsLeague": {
+      "parent": "Agent",
+      "definition": "A sports competition league or association.",
+      "attributes": {}
+    },
+    "Award": {
+      "parent": "Category",
+      "definition": "An honor, distinction, or prize granted for achievement.",
+      "attributes": {}
+    },
+    "Genre": {
+      "parent": "Category",
+      "definition": "A stylistic or thematic category of creative works.",
+      "attributes": {}
+    },
+    "Language": {
+      "parent": "Category",
+      "definition": "A human language used for communication.",
+      "attributes": {}
+    },
+    "Currency": {
+      "parent": "Category",
+      "definition": "A monetary unit used for financial exchange.",
+      "attributes": {}
+    },
+    "Event": {
+      "parent": "Event",
+      "definition": "An occurrence, mission, operation, or competition happening at a specific time.",
+      "attributes": {}
+    },
+    "TimeZone": {
+      "parent": "Category",
+      "definition": "A regional standard time definition based on UTC offset.",
+      "attributes": {}
+    },
+    "Date": {
+      "parent": "Value",
+      "definition": "A calendar date or year.",
+      "attributes": {}
+    },
+    "NumericValue": {
+      "parent": "Value",
+      "definition": "A measurable numeric quantity.",
+      "attributes": {}
+    },
+    "TextValue": {
+      "parent": "Value",
+      "definition": "A textual, symbolic, or identifier value.",
+      "attributes": {}
+    },
+    "Entity": {
+      "parent": "Thing",
+      "definition": "Generic catch-all type for an entity whose specific semantic type is unspecified.",
+      "attributes": {}
+    }
+  },
+  "relation_types": {
+    "creator": {
+      "definition": "Indicates that a creative work was created by a person.",
+      "general_definition": "Relation linking a creative or intellectual work to its author, creator, or originator.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "broadcastedBy": {
+      "definition": "Indicates that a media work is broadcasted by an organization.",
+      "general_definition": "Relation linking a television, radio, or media production to the broadcaster distributing it.",
+      "head_type": "MediaWork",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "firstAired": {
+      "definition": "Indicates the first broadcast date of a media work.",
+      "general_definition": "Relation linking a broadcast media production to the date it was first aired.",
+      "head_type": "MediaWork",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "established": {
+      "definition": "Indicates when an organization or institution was established.",
+      "general_definition": "Relation linking an organization to its establishment or creation date.",
+      "head_type": "Organization",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "location": {
+      "definition": "Indicates the geographic location of an entity.",
+      "general_definition": "Relation linking an entity to the place where it is physically located.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "municipality": {
+      "definition": "Indicates the municipality where a place or entity is located.",
+      "general_definition": "Relation linking an entity to its municipal administrative region.",
+      "head_type": "Location",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {}
+    },
+    "category": {
+      "definition": "Indicates the category or classification of an entity.",
+      "general_definition": "Relation describing the conceptual or topical classification assigned to an entity.",
+      "head_type": "CreativeWork",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "hasToItsNorth": {
+      "definition": "Indicates the relation 'has To Its North' between entities.",
+      "general_definition": "Semantic relation representing 'has To Its North' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "country": {
+      "definition": "Indicates the country associated with a place or entity.",
+      "general_definition": "Relation linking an entity to the sovereign country where it is located or belongs.",
+      "head_type": "Location",
+      "tail_type": "Country",
+      "attributes": {}
+    },
+    "governmentType": {
+      "definition": "Indicates the form of government used by a country.",
+      "general_definition": "Relation describing the governing system or political structure of a state.",
+      "head_type": "Country",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "address": {
+      "definition": "Indicates the address of an entity.",
+      "general_definition": "Relation linking an entity to its postal or street address.",
+      "head_type": "Organization",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "currentTenants": {
+      "definition": "Indicates the relation 'current Tenants' between entities.",
+      "general_definition": "Semantic relation representing 'current Tenants' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "owner": {
+      "definition": "Indicates ownership of an entity.",
+      "general_definition": "Relation linking an asset, organization, or property to the entity that owns it.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "operatingOrganisation": {
+      "definition": "Indicates the relation 'operating Organisation' between entities.",
+      "general_definition": "Semantic relation representing 'operating Organisation' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "runwayLength": {
+      "definition": "Indicates the relation 'runway Length' between entities.",
+      "general_definition": "Semantic relation representing 'runway Length' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "birthDate": {
+      "definition": "Indicates the birth date of a person.",
+      "general_definition": "Relation linking a person to the date on which they were born.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "nationality": {
+      "definition": "Indicates the nationality held by a person.",
+      "general_definition": "Relation linking a person to a sovereign state representing their nationality or citizenship.",
+      "head_type": "Person",
+      "tail_type": "Country",
+      "attributes": {}
+    },
+    "deathPlace": {
+      "definition": "Indicates the place where a person died.",
+      "general_definition": "Relation linking a person to the geographic place where they died.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "selectedByNasa": {
+      "definition": "Indicates the relation 'selected By Nasa' between entities.",
+      "general_definition": "Semantic relation representing 'selected By Nasa' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "birthPlace": {
+      "definition": "Indicates the birthplace of a person.",
+      "general_definition": "Relation linking a person to the geographic place where they were born.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "occupation": {
+      "definition": "Indicates the occupation or profession of a person.",
+      "general_definition": "Relation linking a person to their professional role, trade, or occupation.",
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "attributes": {}
+    },
+    "icaoLocationIdentifier": {
+      "definition": "Indicates the relation 'icao Location Identifier' between entities.",
+      "general_definition": "Semantic relation representing 'icao Location Identifier' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "elevationAboveTheSeaLevel": {
+      "definition": "Indicates the relation 'elevation Above The Sea Level' between entities.",
+      "general_definition": "Semantic relation representing 'elevation Above The Sea Level' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "league": {
+      "definition": "Indicates the sports league in which a team participates.",
+      "general_definition": "Relation linking a sports organization to the competition league where it competes.",
+      "head_type": "SportsTeam",
+      "tail_type": "SportsLeague",
+      "attributes": {}
+    },
+    "champions": {
+      "definition": "Indicates the relation 'champions' between entities.",
+      "general_definition": "Semantic relation representing 'champions' within the ontology schema.",
+      "head_type": "SportsLeague",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "numberOfMembers": {
+      "definition": "Indicates the relation 'number Of Members' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Members' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "ground": {
+      "definition": "Indicates the home ground or venue of a sports team.",
+      "general_definition": "Relation linking a sports team to the stadium or venue it primarily uses.",
+      "head_type": "SportsTeam",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "affiliation": {
+      "definition": "Indicates the relation 'affiliation' between entities.",
+      "general_definition": "Semantic relation representing 'affiliation' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "city": {
+      "definition": "Indicates the city associated with an entity.",
+      "general_definition": "Relation linking an entity to a populated urban settlement.",
+      "head_type": "Location",
+      "tail_type": "Settlement",
+      "attributes": {}
+    },
+    "leader": {
+      "definition": "Indicates the leader of an organization or administrative entity.",
+      "general_definition": "Relation linking an organization, region, or institution to the person leading it.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "course": {
+      "definition": "Indicates the relation 'course' between entities.",
+      "general_definition": "Semantic relation representing 'course' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "CreativeWork",
+      "attributes": {}
+    },
+    "instrument": {
+      "definition": "Indicates the relation 'instrument' between entities.",
+      "general_definition": "Semantic relation representing 'instrument' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Product",
+      "attributes": {}
+    },
+    "associatedBand/associatedMusicalArtist": {
+      "definition": "Indicates the relation 'associated Band/associated Musical Artist' between entities.",
+      "general_definition": "Semantic relation representing 'associated Band/associated Musical Artist' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "activeYearsStartYear": {
+      "definition": "Indicates the relation 'active Years Start Year' between entities.",
+      "general_definition": "Semantic relation representing 'active Years Start Year' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "foundingDate": {
+      "definition": "Indicates the date an organization was founded.",
+      "general_definition": "Relation linking an organization to its official founding date.",
+      "head_type": "Organization",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "product": {
+      "definition": "Indicates a product manufactured or offered by an organization.",
+      "general_definition": "Relation linking a company or organization to a product it produces.",
+      "head_type": "Organization",
+      "tail_type": "Product",
+      "attributes": {}
+    },
+    "industry": {
+      "definition": "Indicates the industry sector of an organization.",
+      "general_definition": "Relation linking an organization to the economic sector in which it operates.",
+      "head_type": "Organization",
+      "tail_type": "Industry",
+      "attributes": {}
+    },
+    "architect": {
+      "definition": "Indicates the architect responsible for designing a structure.",
+      "general_definition": "Relation linking a building or structure to the architect who designed it.",
+      "head_type": "Building",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "currency": {
+      "definition": "Indicates the official currency used by a country or region.",
+      "general_definition": "Relation linking a geopolitical entity to its monetary currency system.",
+      "head_type": "Country",
+      "tail_type": "Currency",
+      "attributes": {}
+    },
+    "demonym": {
+      "definition": "Indicates the relation 'demonym' between entities.",
+      "general_definition": "Semantic relation representing 'demonym' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "mainIngredient": {
+      "definition": "Indicates the relation 'main Ingredient' between entities.",
+      "general_definition": "Semantic relation representing 'main Ingredient' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {}
+    },
+    "mission": {
+      "definition": "Indicates participation in a mission or operation.",
+      "general_definition": "Relation linking a person or organization to a mission, expedition, or operational event.",
+      "head_type": "Person",
+      "tail_type": "Event",
+      "attributes": {}
+    },
+    "region": {
+      "definition": "Indicates the region associated with a place or entity.",
+      "general_definition": "Relation linking a place to a broader administrative or geographic region.",
+      "head_type": "Location",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {}
+    },
+    "spouse": {
+      "definition": "Indicates a marital relationship between two people.",
+      "general_definition": "Relation linking two individuals who are married.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "inOfficeWhilePresident": {
+      "definition": "Indicates the relation 'in Office While President' between entities.",
+      "general_definition": "Semantic relation representing 'in Office While President' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "keyPerson": {
+      "definition": "Indicates the relation 'key Person' between entities.",
+      "general_definition": "Semantic relation representing 'key Person' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "type": {
+      "definition": "Indicates the relation 'type' between entities.",
+      "general_definition": "Semantic relation representing 'type' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "youthclub": {
+      "definition": "Indicates the relation 'youthclub' between entities.",
+      "general_definition": "Semantic relation representing 'youthclub' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "club": {
+      "definition": "Indicates the relation 'club' between entities.",
+      "general_definition": "Semantic relation representing 'club' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "populationMetro": {
+      "definition": "Indicates the relation 'population Metro' between entities.",
+      "general_definition": "Semantic relation representing 'population Metro' within the ontology schema.",
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "leaderTitle": {
+      "definition": "Indicates the relation 'leader Title' between entities.",
+      "general_definition": "Semantic relation representing 'leader Title' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {}
+    },
+    "populationDensity": {
+      "definition": "Indicates the relation 'population Density' between entities.",
+      "general_definition": "Semantic relation representing 'population Density' within the ontology schema.",
+      "head_type": "Settlement",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "apoapsis": {
+      "definition": "Indicates the relation 'apoapsis' between entities.",
+      "general_definition": "Semantic relation representing 'apoapsis' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "orbitalPeriod": {
+      "definition": "Indicates the relation 'orbital Period' between entities.",
+      "general_definition": "Semantic relation representing 'orbital Period' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "discoverer": {
+      "definition": "Indicates the relation 'discoverer' between entities.",
+      "general_definition": "Semantic relation representing 'discoverer' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "absoluteMagnitude": {
+      "definition": "Indicates the relation 'absolute Magnitude' between entities.",
+      "general_definition": "Semantic relation representing 'absolute Magnitude' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "discovered": {
+      "definition": "Indicates the relation 'discovered' between entities.",
+      "general_definition": "Semantic relation representing 'discovered' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "rotationPeriod": {
+      "definition": "Indicates the relation 'rotation Period' between entities.",
+      "general_definition": "Semantic relation representing 'rotation Period' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "deathDate": {
+      "definition": "Indicates the death date of a person.",
+      "general_definition": "Relation linking a person to the date on which they died.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "training": {
+      "definition": "Indicates the relation 'training' between entities.",
+      "general_definition": "Semantic relation representing 'training' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "professionalField": {
+      "definition": "Indicates the relation 'professional Field' between entities.",
+      "general_definition": "Semantic relation representing 'professional Field' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Industry",
+      "attributes": {}
+    },
+    "isPartOf": {
+      "definition": "Indicates the relation 'is Part Of' between entities.",
+      "general_definition": "Semantic relation representing 'is Part Of' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "productionStartYear": {
+      "definition": "Indicates the relation 'production Start Year' between entities.",
+      "general_definition": "Semantic relation representing 'production Start Year' within the ontology schema.",
+      "head_type": "Product",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "assembly": {
+      "definition": "Indicates the relation 'assembly' between entities.",
+      "general_definition": "Semantic relation representing 'assembly' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "productionEndYear": {
+      "definition": "Indicates the relation 'production End Year' between entities.",
+      "general_definition": "Semantic relation representing 'production End Year' within the ontology schema.",
+      "head_type": "Product",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "runwayName": {
+      "definition": "Indicates the relation 'runway Name' between entities.",
+      "general_definition": "Semantic relation representing 'runway Name' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "currentteam": {
+      "definition": "Indicates the relation 'currentteam' between entities.",
+      "general_definition": "Semantic relation representing 'currentteam' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "debutTeam": {
+      "definition": "Indicates the relation 'debut Team' between entities.",
+      "general_definition": "Semantic relation representing 'debut Team' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "weight": {
+      "definition": "Indicates the relation 'weight' between entities.",
+      "general_definition": "Semantic relation representing 'weight' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "buildingStartDate": {
+      "definition": "Indicates the relation 'building Start Date' between entities.",
+      "general_definition": "Semantic relation representing 'building Start Date' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "completionDate": {
+      "definition": "Indicates the relation 'completion Date' between entities.",
+      "general_definition": "Semantic relation representing 'completion Date' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "state": {
+      "definition": "Indicates the relation 'state' between entities.",
+      "general_definition": "Semantic relation representing 'state' within the ontology schema.",
+      "head_type": "Settlement",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {}
+    },
+    "hasToItsSoutheast": {
+      "definition": "Indicates the relation 'has To Its Southeast' between entities.",
+      "general_definition": "Semantic relation representing 'has To Its Southeast' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "periapsis": {
+      "definition": "Indicates the relation 'periapsis' between entities.",
+      "general_definition": "Semantic relation representing 'periapsis' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "genre": {
+      "definition": "Indicates the genre of a creative work.",
+      "general_definition": "Relation linking a work to a stylistic or thematic category.",
+      "head_type": "CreativeWork",
+      "tail_type": "Genre",
+      "attributes": {}
+    },
+    "status": {
+      "definition": "Indicates the relation 'status' between entities.",
+      "general_definition": "Semantic relation representing 'status' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "almaMater": {
+      "definition": "Indicates the educational institution attended by a person.",
+      "general_definition": "Relation linking a person to an institution from which they graduated or studied.",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {}
+    },
+    "award": {
+      "definition": "Indicates an award received by a person.",
+      "general_definition": "Relation linking an individual to an honor, prize, or distinction they received.",
+      "head_type": "Person",
+      "tail_type": "Award",
+      "attributes": {}
+    },
+    "ethnicGroup": {
+      "definition": "Indicates the relation 'ethnic Group' between entities.",
+      "general_definition": "Semantic relation representing 'ethnic Group' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "campus": {
+      "definition": "Indicates the relation 'campus' between entities.",
+      "general_definition": "Semantic relation representing 'campus' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "cityServed": {
+      "definition": "Indicates the relation 'city Served' between entities.",
+      "general_definition": "Semantic relation representing 'city Served' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Settlement",
+      "attributes": {}
+    },
+    "dishVariation": {
+      "definition": "Indicates the relation 'dish Variation' between entities.",
+      "general_definition": "Semantic relation representing 'dish Variation' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {}
+    },
+    "ingredient": {
+      "definition": "Indicates the relation 'ingredient' between entities.",
+      "general_definition": "Semantic relation representing 'ingredient' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {}
+    },
+    "timeZone": {
+      "definition": "Indicates the time zone of a location.",
+      "general_definition": "Relation linking a geographic location to its standard time zone.",
+      "head_type": "Location",
+      "tail_type": "TimeZone",
+      "attributes": {}
+    },
+    "foundedBy": {
+      "definition": "Indicates the founder of an organization.",
+      "general_definition": "Relation linking an organization to the person who established it.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "epoch": {
+      "definition": "Indicates the relation 'epoch' between entities.",
+      "general_definition": "Semantic relation representing 'epoch' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "engine": {
+      "definition": "Indicates the relation 'engine' between entities.",
+      "general_definition": "Semantic relation representing 'engine' within the ontology schema.",
+      "head_type": "Product",
+      "tail_type": "Product",
+      "attributes": {}
+    },
+    "powerType": {
+      "definition": "Indicates the relation 'power Type' between entities.",
+      "general_definition": "Semantic relation representing 'power Type' within the ontology schema.",
+      "head_type": "Product",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "length": {
+      "definition": "Indicates the relation 'length' between entities.",
+      "general_definition": "Semantic relation representing 'length' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "numberOfUndergraduateStudents": {
+      "definition": "Indicates the relation 'number Of Undergraduate Students' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Undergraduate Students' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "staff": {
+      "definition": "Indicates the relation 'staff' between entities.",
+      "general_definition": "Semantic relation representing 'staff' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "numberOfStudents": {
+      "definition": "Indicates the relation 'number Of Students' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Students' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "numberOfDoctoralStudents": {
+      "definition": "Indicates the relation 'number Of Doctoral Students' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Doctoral Students' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "numberOfPostgraduateStudents": {
+      "definition": "Indicates the relation 'number Of Postgraduate Students' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Postgraduate Students' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "dateOfRetirement": {
+      "definition": "Indicates the relation 'date Of Retirement' between entities.",
+      "general_definition": "Semantic relation representing 'date Of Retirement' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "numberOfPages": {
+      "definition": "Indicates the relation 'number Of Pages' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Pages' within the ontology schema.",
+      "head_type": "CreativeWork",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "author": {
+      "definition": "Indicates the author of a written or creative work.",
+      "general_definition": "Relation linking a creative work to the person who authored it.",
+      "head_type": "CreativeWork",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "areaCode": {
+      "definition": "Indicates the relation 'area Code' between entities.",
+      "general_definition": "Semantic relation representing 'area Code' within the ontology schema.",
+      "head_type": "Settlement",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "season": {
+      "definition": "Indicates the relation 'season' between entities.",
+      "general_definition": "Semantic relation representing 'season' within the ontology schema.",
+      "head_type": "MediaWork",
+      "tail_type": "MediaWork",
+      "attributes": {}
+    },
+    "subsidiary": {
+      "definition": "Indicates the relation 'subsidiary' between entities.",
+      "general_definition": "Semantic relation representing 'subsidiary' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "revenue": {
+      "definition": "Indicates the relation 'revenue' between entities.",
+      "general_definition": "Semantic relation representing 'revenue' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "nickname": {
+      "definition": "Indicates the relation 'nickname' between entities.",
+      "general_definition": "Semantic relation representing 'nickname' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "height": {
+      "definition": "Indicates the relation 'height' between entities.",
+      "general_definition": "Semantic relation representing 'height' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "currentclub": {
+      "definition": "Indicates the relation 'currentclub' between entities.",
+      "general_definition": "Semantic relation representing 'currentclub' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "starring": {
+      "definition": "Indicates performers appearing in a media production.",
+      "general_definition": "Relation linking a media production to actors or featured performers.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "utcOffset": {
+      "definition": "Indicates the relation 'utc Offset' between entities.",
+      "general_definition": "Semantic relation representing 'utc Offset' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "TimeZone",
+      "attributes": {}
+    },
+    "publisher": {
+      "definition": "Indicates the publisher of a work.",
+      "general_definition": "Relation linking a publication or media work to the organization responsible for publishing it.",
+      "head_type": "CreativeWork",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "literaryGenre": {
+      "definition": "Indicates the relation 'literary Genre' between entities.",
+      "general_definition": "Semantic relation representing 'literary Genre' within the ontology schema.",
+      "head_type": "CreativeWork",
+      "tail_type": "Genre",
+      "attributes": {}
+    },
+    "followedBy": {
+      "definition": "Indicates the relation 'followed By' between entities.",
+      "general_definition": "Semantic relation representing 'followed By' within the ontology schema.",
+      "head_type": "CreativeWork",
+      "tail_type": "CreativeWork",
+      "attributes": {}
+    },
+    "precededBy": {
+      "definition": "Indicates the relation 'preceded By' between entities.",
+      "general_definition": "Semantic relation representing 'preceded By' within the ontology schema.",
+      "head_type": "CreativeWork",
+      "tail_type": "CreativeWork",
+      "attributes": {}
+    },
+    "builder": {
+      "definition": "Indicates the relation 'builder' between entities.",
+      "general_definition": "Semantic relation representing 'builder' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "cylinderCount": {
+      "definition": "Indicates the relation 'cylinder Count' between entities.",
+      "general_definition": "Semantic relation representing 'cylinder Count' within the ontology schema.",
+      "head_type": "Product",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "origin": {
+      "definition": "Indicates the relation 'origin' between entities.",
+      "general_definition": "Semantic relation representing 'origin' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "child": {
+      "definition": "Indicates the relation 'child' between entities.",
+      "general_definition": "Semantic relation representing 'child' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "foundationPlace": {
+      "definition": "Indicates the relation 'foundation Place' between entities.",
+      "general_definition": "Semantic relation representing 'foundation Place' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "numberOfEmployees": {
+      "definition": "Indicates the relation 'number Of Employees' between entities.",
+      "general_definition": "Semantic relation representing 'number Of Employees' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "bodyStyle": {
+      "definition": "Indicates the relation 'body Style' between entities.",
+      "general_definition": "Semantic relation representing 'body Style' within the ontology schema.",
+      "head_type": "Product",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "runwaySurfaceType": {
+      "definition": "Indicates the relation 'runway Surface Type' between entities.",
+      "general_definition": "Semantic relation representing 'runway Surface Type' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "director": {
+      "definition": "Indicates the director of a media production.",
+      "general_definition": "Relation linking a film or media production to the person directing it.",
+      "head_type": "MediaWork",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "wasGivenTheTechnicalCampusStatusBy": {
+      "definition": "Indicates the relation 'was Given The Technical Campus Status By' between entities.",
+      "general_definition": "Semantic relation representing 'was Given The Technical Campus Status By' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "hasToItsWest": {
+      "definition": "Indicates the relation 'has To Its West' between entities.",
+      "general_definition": "Semantic relation representing 'has To Its West' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "designer": {
+      "definition": "Indicates the relation 'designer' between entities.",
+      "general_definition": "Semantic relation representing 'designer' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "netIncome": {
+      "definition": "Indicates the relation 'net Income' between entities.",
+      "general_definition": "Semantic relation representing 'net Income' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "buildDate": {
+      "definition": "Indicates the relation 'build Date' between entities.",
+      "general_definition": "Semantic relation representing 'build Date' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "successor": {
+      "definition": "Indicates the relation 'successor' between entities.",
+      "general_definition": "Semantic relation representing 'successor' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Entity",
+      "attributes": {}
+    },
+    "party": {
+      "definition": "Indicates the relation 'party' between entities.",
+      "general_definition": "Semantic relation representing 'party' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "senators": {
+      "definition": "Indicates the relation 'senators' between entities.",
+      "general_definition": "Semantic relation representing 'senators' within the ontology schema.",
+      "head_type": "AdministrativeTerritory",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "manager": {
+      "definition": "Indicates the relation 'manager' between entities.",
+      "general_definition": "Semantic relation representing 'manager' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "hasToItsSouthwest": {
+      "definition": "Indicates the relation 'has To Its Southwest' between entities.",
+      "general_definition": "Semantic relation representing 'has To Its Southwest' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "lastAired": {
+      "definition": "Indicates the relation 'last Aired' between entities.",
+      "general_definition": "Semantic relation representing 'last Aired' within the ontology schema.",
+      "head_type": "MediaWork",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "foundingYear": {
+      "definition": "Indicates the relation 'founding Year' between entities.",
+      "general_definition": "Semantic relation representing 'founding Year' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "releaseDate": {
+      "definition": "Indicates the release or publication date of a work.",
+      "general_definition": "Relation linking a creative work to the date it became publicly available.",
+      "head_type": "CreativeWork",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "longName": {
+      "definition": "Indicates the relation 'long Name' between entities.",
+      "general_definition": "Semantic relation representing 'long Name' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "language": {
+      "definition": "Indicates the language used in a work.",
+      "general_definition": "Relation linking a creative work or entity to the language it uses.",
+      "head_type": "CreativeWork",
+      "tail_type": "Language",
+      "attributes": {}
+    },
+    "formerTeam": {
+      "definition": "Indicates the relation 'former Team' between entities.",
+      "general_definition": "Semantic relation representing 'former Team' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "areaTotal": {
+      "definition": "Indicates the relation 'area Total' between entities.",
+      "general_definition": "Semantic relation representing 'area Total' within the ontology schema.",
+      "head_type": "Location",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "manufacturer": {
+      "definition": "Indicates the manufacturer of a product.",
+      "general_definition": "Relation linking a product to the organization responsible for manufacturing it.",
+      "head_type": "Product",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "anthem": {
+      "definition": "Indicates the relation 'anthem' between entities.",
+      "general_definition": "Semantic relation representing 'anthem' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "CreativeWork",
+      "attributes": {}
+    },
+    "servedAsChiefOfTheAstronautOfficeIn": {
+      "definition": "Indicates the relation 'served As Chief Of The Astronaut Office In' between entities.",
+      "general_definition": "Semantic relation representing 'served As Chief Of The Astronaut Office In' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "fullName": {
+      "definition": "Indicates the relation 'full Name' between entities.",
+      "general_definition": "Semantic relation representing 'full Name' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "firstAppearanceInFilm": {
+      "definition": "Indicates the relation 'first Appearance In Film' between entities.",
+      "general_definition": "Semantic relation representing 'first Appearance In Film' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "CreativeWork",
+      "attributes": {}
+    },
+    "series": {
+      "definition": "Indicates the relation 'series' between entities.",
+      "general_definition": "Semantic relation representing 'series' within the ontology schema.",
+      "head_type": "MediaWork",
+      "tail_type": "MediaWork",
+      "attributes": {}
+    },
+    "regionServed": {
+      "definition": "Indicates the relation 'region Served' between entities.",
+      "general_definition": "Semantic relation representing 'region Served' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Location",
+      "attributes": {}
+    },
+    "office": {
+      "definition": "Indicates the relation 'office' between entities.",
+      "general_definition": "Semantic relation representing 'office' within the ontology schema.",
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "attributes": {}
+    },
+    "populationTotal": {
+      "definition": "Indicates the total population of a location.",
+      "general_definition": "Relation linking a geographic area to the number of people living there.",
+      "head_type": "Location",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "tenant": {
+      "definition": "Indicates the relation 'tenant' between entities.",
+      "general_definition": "Semantic relation representing 'tenant' within the ontology schema.",
+      "head_type": "Building",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "bird": {
+      "definition": "Indicates the relation 'bird' between entities.",
+      "general_definition": "Semantic relation representing 'bird' within the ontology schema.",
+      "head_type": "Country",
+      "tail_type": "Entity",
+      "attributes": {}
+    },
+    "coach": {
+      "definition": "Indicates the relation 'coach' between entities.",
+      "general_definition": "Semantic relation representing 'coach' within the ontology schema.",
+      "head_type": "SportsTeam",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "postalCode": {
+      "definition": "Indicates the postal code of a location.",
+      "general_definition": "Relation linking a place or address to its postal identification code.",
+      "head_type": "Location",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "extinctionDate": {
+      "definition": "Indicates the relation 'extinction Date' between entities.",
+      "general_definition": "Semantic relation representing 'extinction Date' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "Date",
+      "attributes": {}
+    },
+    "cosparId": {
+      "definition": "Indicates the relation 'cospar Id' between entities.",
+      "general_definition": "Semantic relation representing 'cospar Id' within the ontology schema.",
+      "head_type": "Entity",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "service": {
+      "definition": "Indicates the relation 'service' between entities.",
+      "general_definition": "Semantic relation representing 'service' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "TextValue",
+      "attributes": {}
+    },
+    "draftPick": {
+      "definition": "Indicates the relation 'draft Pick' between entities.",
+      "general_definition": "Semantic relation representing 'draft Pick' within the ontology schema.",
+      "head_type": "SportsTeam",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "academicStaffSize": {
+      "definition": "Indicates the relation 'academic Staff Size' between entities.",
+      "general_definition": "Semantic relation representing 'academic Staff Size' within the ontology schema.",
+      "head_type": "EducationalInstitution",
+      "tail_type": "NumericValue",
+      "attributes": {}
+    },
+    "sportsOffered": {
+      "definition": "Indicates the relation 'sports Offered' between entities.",
+      "general_definition": "Semantic relation representing 'sports Offered' within the ontology schema.",
+      "head_type": "Organization",
+      "tail_type": "Industry",
+      "attributes": {}
+    },
+    "parentCompany": {
+      "definition": "Indicates the parent company of an organization.",
+      "general_definition": "Relation linking a subsidiary organization to the larger company controlling it.",
+      "head_type": "Organization",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "founder": {
+      "definition": "Indicates the founder of an organization.",
+      "general_definition": "Relation linking an institution or organization to the individual who founded it.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "president": {
+      "definition": "Indicates the president of an organization or country.",
+      "general_definition": "Relation linking an institution or state to the individual serving as president.",
+      "head_type": "Organization",
+      "tail_type": "Person",
+      "attributes": {}
+    },
+    "ceremonialCounty": {
+      "definition": "Indicates the relation 'ceremonial County' between entities.",
+      "general_definition": "Semantic relation representing 'ceremonial County' within the ontology schema.",
+      "head_type": "Settlement",
+      "tail_type": "AdministrativeTerritory",
+      "attributes": {}
+    }
+  }
+}

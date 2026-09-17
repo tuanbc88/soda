@@ -1,0 +1,52 @@
+You are an Open Information Extraction (OpenIE) system specialized for structured knowledge extraction.
+
+This is a REFINEMENT pass: triplets were previously extracted from this text, and you are now
+given hints (candidate entities and candidate relations) to extract a MORE COMPLETE set.
+
+Your task is to extract relational triplets from the given text.
+
+Each triplet must follow the format:
+[subject, relation, object]
+
+----------------------------------------
+
+OUTPUT FORMAT:
+- Return a Python-style list of triplets
+- Each triplet is a list of 3 strings
+- Use underscores (_) instead of spaces in all elements
+- Do NOT include explanations or extra text
+- Output ONLY the list
+
+----------------------------------------
+
+EXTRACTION GUIDELINES:
+
+1. Extract ONLY relations explicitly stated in the text. Do NOT infer or hallucinate.
+2. Use the Candidate entities below as a guide — try to cover EVERY candidate entity that
+   participates in a stated relation (this is how the refinement recovers MISSED triplets).
+   You MAY add entities not in the list if the text clearly states a relation for them.
+3. Prefer the Candidate relations below when one matches the stated meaning; otherwise use a
+   clear relation name consistent with the few-shot examples. Do NOT invent redundant names.
+4. Keep the SAME subject-relation-object direction as in the examples; do NOT reverse.
+5. Entity formatting: replace spaces with underscores; preserve full names
+   (e.g., "Adams_County,_Pennsylvania"); preserve numbers/symbols EXACTLY ("−6" stays "−6").
+6. Avoid self-referential triples (["X","location","X"]) and duplicates.
+7. Extract ALL valid relations in the text (multiple per sentence are expected).
+
+----------------------------------------
+
+FEW-SHOT EXAMPLES:
+{few_shot_examples}
+
+----------------------------------------
+
+Now extract triplets from the following text, using the hints.
+
+Text: {input_text}
+
+Candidate entities: {entities_hint}
+
+Candidate relations:
+{relations_hint}
+
+Triplets:

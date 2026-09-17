@@ -1,0 +1,81 @@
+Bạn là chuyên gia xây dựng đồ thị tri thức (knowledge graph).
+
+Dưới đây là một số ví dụ:
+{few_shot_examples}
+
+Cho trước:
+- một đoạn văn bản
+- các bộ ba (triple) gốc
+
+Nhiệm vụ của bạn là bổ sung cho MỖI bộ ba:
+- một ĐỊNH NGHĨA TỔNG QUÁT của quan hệ, viết theo PHONG CÁCH MẪU CHỦ NGỮ–TÂN NGỮ kiểu EDC
+- một gợi ý ngữ nghĩa (semantic hint)
+
+-----------------------
+QUY TẮC BẮT BUỘC:
+
+1. Phải trả về ĐÚNG số lượng phần tử bằng số bộ ba.
+
+2. Phải GIỮ NGUYÊN CHÍNH XÁC:
+   - subject (chủ ngữ)
+   - relation (quan hệ)
+   - object (tân ngữ)
+
+3. KHÔNG được:
+   - đổi tên quan hệ
+   - đảo thứ tự các bộ ba
+   - bỏ sót bất kỳ bộ ba nào
+
+4. Nếu không chắc:
+   → VẪN trả về với một định nghĩa tổng quát theo đúng phong cách mẫu.
+
+-----------------------
+5. ĐỊNH NGHĨA TỔNG QUÁT (phong cách mẫu chủ ngữ–tân ngữ kiểu EDC):
+
+- Phải được diễn đạt như một mệnh đề về quan hệ TỪ chủ ngữ ĐẾN tân ngữ,
+  dùng cụm "thực thể chủ ngữ" và "thực thể tân ngữ".
+- Phải bắt đầu bằng "Thực thể chủ ngữ".
+- Nên dùng khung:
+  "Thực thể chủ ngữ <cụm động từ> ... thực thể tân ngữ"
+  hoặc "Thực thể chủ ngữ <cụm động từ> ... được chỉ định bởi thực thể tân ngữ."
+- Độ dài: 8–20 từ
+- Phải ở mức quan hệ (tái sử dụng được), KHÔNG gắn với các thực thể cụ thể trong văn bản.
+
+TỐT:
+"Thực thể chủ ngữ tọa lạc tại nơi được chỉ định bởi thực thể tân ngữ."
+"Thực thể chủ ngữ được đạo diễn bởi người được chỉ định bởi thực thể tân ngữ."
+
+XẤU (quá cụ thể với trường hợp này):
+"Apple đặt tại Cupertino."
+
+XẤU (phong cách trừu tượng 'một thực thể / thực thể khác' — đó là LOẠI định nghĩa KHÁC,
+KHÔNG dùng ở đây):
+"cho biết rằng một thực thể nằm trong một thực thể khác"
+
+-----------------------
+6. Gợi ý ngữ nghĩa phải là một trong:
+
+- "event": hành động hoặc tương tác
+- "attribute": thuộc tính, trạng thái, hoặc quan hệ tĩnh (vị trí, giá trị, vai trò)
+- "type": phân loại hoặc thể loại
+
+-----------------------
+QUAN TRỌNG:
+- Đầu ra phải tương ứng MỘT–MỘT với các bộ ba
+- Giữ ĐÚNG THỨ TỰ như đầu vào
+
+-----------------------
+Định dạng đầu ra (BẮT BUỘC):
+[
+  [subject, relation, object, general_definition, semantic_hint],
+  ...
+]
+
+-----------------------
+
+Text: {text}
+
+Triples:
+{triples}
+
+Answer:

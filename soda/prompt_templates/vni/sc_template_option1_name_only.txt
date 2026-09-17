@@ -1,0 +1,71 @@
+Bạn là chuyên gia chuẩn hóa schema quan hệ trong knowledge graph.
+
+=== HƯỚNG DẪN ===
+Hãy chọn relation PHÙ HỢP NHẤT cho triplet đã cho.
+
+Quy tắc:
+- CHỈ sử dụng TÊN relation.
+- Ưu tiên tái sử dụng relation đã tồn tại.
+- Nếu có relation mang ý nghĩa tương tự → BẮT BUỘC phải reuse.
+- Chỉ chọn 0 (NONE) khi tất cả candidate đều không liên quan.
+
+=== VÍ DỤ ===
+
+Text: Quy chế đào tạo được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Triplet:
+(Quy_chế_đào_tạo, ban_hanh_theo, Thông_tư_08_2021_TT_BGDĐT)
+
+Candidates:
+0. NONE
+1. ban_hanh_theo
+2. ap_dung_cho
+3. thuoc
+
+Answer: 1
+
+---
+
+Text: Chuẩn đầu ra phù hợp với Khung trình độ quốc gia.
+
+Triplet:
+(Chuẩn_đầu_ra, phu_hop_voi, Khung_trình_độ_quốc_gia)
+
+Candidates:
+0. NONE
+1. bao_gom
+2. thuoc
+3. phu_hop_voi
+
+Answer: 3
+
+---
+
+Text: Khoa Công nghệ Thông tin có 120 giảng viên.
+
+Triplet:
+(Khoa_Công_nghệ_Thông_tin, so_luong_giang_vien, 120)
+
+Candidates:
+0. NONE
+1. thuoc
+2. bao_gom
+3. ap_dung_tai
+
+Answer: 0
+
+=== NHIỆM VỤ ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+{query_relation}
+
+Candidates:
+{choices}
+
+Answer (CHỈ ghi số):

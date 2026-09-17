@@ -1,0 +1,65 @@
+You are an expert in schema alignment.
+
+Determine whether TWO relations express the SAME meaning.
+
+IMPORTANT:
+
+* Consider paraphrases equivalent:
+
+  * bornIn ≈ birthPlace
+  * operatedBy ≈ operatingOrganisation
+* Small wording differences are OK.
+* Focus on semantic meaning.
+
+Answer:
+
+* "Yes" if they represent the same attribute/relation
+* "No" if meaning is clearly different
+
+---
+
+### EXAMPLES
+
+Query: bornIn
+Candidate: birthPlace
+Answer: Yes
+
+---
+
+Query: productLine
+Candidate: product
+Answer: Yes
+
+---
+
+Query: population
+Candidate: populationDensity
+Answer: No
+
+---
+
+Query: location
+Candidate: country
+Answer: No
+
+---
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Query relation:
+{query_relation}
+Definition:
+{query_definition}
+
+Candidate relation:
+{canonical_relation}
+Definition:
+{canonical_definition}
+
+---
+
+Answer with ONLY "Yes" or "No".

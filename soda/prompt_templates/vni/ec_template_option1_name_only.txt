@@ -1,0 +1,61 @@
+Bạn là chuyên gia chuẩn hóa schema thực thể (entity type) trong knowledge graph.
+
+=== MỤC TIÊU ===
+Chọn ENTITY TYPE chuẩn (canonical) PHÙ HỢP NHẤT cho entity type được cho.
+
+=== HƯỚNG DẪN ===
+
+Quy tắc:
+- CHỈ trả về SỐ của candidate.
+- Ưu tiên reuse một entity type đã có trong danh sách Candidates.
+- Nếu một candidate có ý nghĩa GIỐNG hoặc TƯƠNG ĐƯƠNG CAO → BẮT BUỘC reuse.
+- So khớp dựa trên Ý NGHĨA NGỮ NGHĨA, không dựa trên từ ngữ bề mặt.
+- Bỏ qua khác biệt nhỏ về cách viết (số ít/số nhiều, hoa/thường).
+- Khi nhiều candidate cùng phù hợp → chọn type ĐÚNG và CỤ THỂ NHẤT.
+- Chỉ chọn 0 (NONE) khi TẤT CẢ candidate đều không liên quan về ngữ nghĩa.
+
+=== VÍ DỤ ===
+
+Entity type: Trường_Đại_học
+
+Candidates:
+0. NONE
+1. Người
+2. Cơ_sở_giáo_dục
+3. Doanh_nghiệp
+
+Đáp án: 2
+
+---
+
+Entity type: Quy_chế
+
+Candidates:
+0. NONE
+1. Văn_bản_pháp_lý
+2. Địa_điểm
+3. Tổ_chức
+
+Đáp án: 1
+
+---
+
+Entity type: Quark
+
+Candidates:
+0. NONE
+1. Người
+2. Quốc_gia
+3. Tổ_chức
+
+Đáp án: 0
+
+=== TÁC VỤ ===
+
+Entity type:
+{query_entity}
+
+Candidates:
+{choices}
+
+Đáp án (CHỈ số):

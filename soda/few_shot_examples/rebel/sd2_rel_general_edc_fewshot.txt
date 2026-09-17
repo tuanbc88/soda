@@ -1,0 +1,110 @@
+Example 1:
+Text: Herbert Blankenhorn was born on 15 December 1904.
+
+Triples:
+[
+  ['Herbert Blankenhorn', 'date of birth', '15 December 1904']
+]
+
+Answer:
+[
+  ['Herbert Blankenhorn', 'date of birth', '15 December 1904',
+   'The subject entity was born on the date specified by the object entity.',
+   'attribute']
+]
+
+
+Example 2:
+Text: Spodnje Hoče is located in the Municipality of Hoče–Slivnica.
+
+Triples:
+[
+  ['Spodnje Hoče', 'located in the administrative territorial entity', 'Municipality of Hoče–Slivnica']
+]
+
+Answer:
+[
+  ['Spodnje Hoče', 'located in the administrative territorial entity', 'Municipality of Hoče–Slivnica',
+   'The subject entity is located within the administrative territorial entity specified by the object entity.',
+   'attribute']
+]
+
+
+Example 3:
+Text: Romany Love was directed by Fred Paul.
+
+Triples:
+[
+  ['Romany Love', 'director', 'Fred Paul']
+]
+
+Answer:
+[
+  ['Romany Love', 'director', 'Fred Paul',
+   'The subject entity was directed by the person or entity specified by the object entity.',
+   'event']
+]
+
+
+Example 4:
+Text: Slovenia is the country of the Municipality of Hoče–Slivnica.
+
+Triples:
+[
+  ['Municipality of Hoče–Slivnica', 'country', 'Slovenia']
+]
+
+Answer:
+[
+  ['Municipality of Hoče–Slivnica', 'country', 'Slovenia',
+   'The subject entity is located in the country specified by the object entity.',
+   'attribute']
+]
+
+
+Example 5:
+Text: Monopoly Star Wars is an instance of a video game.
+
+Triples:
+[
+  ['Monopoly Star Wars', 'instance of', 'video game']
+]
+
+Answer:
+[
+  ['Monopoly Star Wars', 'instance of', 'video game',
+   'The subject entity is an instance or example of the type specified by the object entity.',
+   'type']
+]
+
+
+Example 6:
+Text: Esmond Knight was a cast member of Romany Love.
+
+Triples:
+[
+  ['Romany Love', 'cast member', 'Esmond Knight']
+]
+
+Answer:
+[
+  ['Romany Love', 'cast member', 'Esmond Knight',
+   'The subject entity includes the person specified by the object entity as a member of its cast.',
+   'event']
+]
+
+
+Example 7:
+Text: Josef Schäffer was a participant in the 1912 Summer Olympics.
+
+Triples:
+[
+  ['Josef Schäffer', 'participant in', '1912 Summer Olympics']
+]
+
+Answer:
+[
+  ['Josef Schäffer', 'participant in', '1912 Summer Olympics',
+   'The subject entity took part in the event specified by the object entity.',
+   'event']
+]

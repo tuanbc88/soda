@@ -1,0 +1,183 @@
+{
+  "entity_types": {
+    "Person": {
+      "parent": "Agent",
+      "definition": "A human individual.",
+      "attributes": {}
+    },
+    "Organization": {
+      "parent": "Agent",
+      "definition": "An organized entity such as a company, institution, or association.",
+      "attributes": {}
+    },
+    "EducationalInstitution": {
+      "parent": "Organization",
+      "definition": "An organization that provides education, such as a university or school.",
+      "attributes": {}
+    },
+    "Location": {
+      "parent": "Place",
+      "definition": "A geographic place or spatial area.",
+      "attributes": {}
+    },
+    "Settlement": {
+      "parent": "Place",
+      "definition": "A populated place such as a city, town, or village.",
+      "attributes": {}
+    },
+    "Country": {
+      "parent": "Place",
+      "definition": "A sovereign nation state.",
+      "attributes": {}
+    },
+    "FieldOfStudy": {
+      "parent": "Thing",
+      "definition": "An academic discipline or field of knowledge.",
+      "attributes": {}
+    },
+    "Occupation": {
+      "parent": "Thing",
+      "definition": "A role, profession, or position held by a person.",
+      "attributes": {}
+    },
+    "Industry": {
+      "parent": "Thing",
+      "definition": "A sector of economic activity.",
+      "attributes": {}
+    },
+    "SportsTeam": {
+      "parent": "Organization",
+      "definition": "A group of athletes competing together.",
+      "attributes": {}
+    },
+    "Number": {
+      "parent": "Value",
+      "definition": "A numerical value or quantity.",
+      "attributes": {}
+    },
+    "Year": {
+      "parent": "Value",
+      "definition": "A calendar year or point in time.",
+      "attributes": {}
+    },
+    "Type": {
+      "parent": "Thing",
+      "definition": "A class or category to which an entity belongs.",
+      "attributes": {}
+    }
+  },
+  "relation_types": {
+    "studiedAt": {
+      "definition": "Indicates that a person studied at an educational institution.",
+      "general_definition_edc": "The subject entity studied at the institution specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity received its formation at another entity",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {}
+    },
+    "educatedAt": {
+      "definition": "Indicates the educational institution where a person was educated.",
+      "general_definition_edc": "The subject entity was educated at the institution specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity received its formation at another entity",
+      "head_type": "Person",
+      "tail_type": "EducationalInstitution",
+      "attributes": {}
+    },
+    "fieldOfStudy": {
+      "definition": "Indicates the academic field that a person studied.",
+      "general_definition_edc": "The subject entity studied the field specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is concerned with a domain that is another entity",
+      "head_type": "Person",
+      "tail_type": "FieldOfStudy",
+      "attributes": {}
+    },
+    "gpa": {
+      "definition": "Indicates the grade point average of a person.",
+      "general_definition_edc": "The subject entity has the grade point average specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is associated with a numerical performance value given by another entity",
+      "head_type": "Person",
+      "tail_type": "Number",
+      "attributes": {}
+    },
+    "servedAs": {
+      "definition": "Indicates a role or position that a person served in.",
+      "general_definition_edc": "The subject entity served in the role or position specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity holds a role given by another entity",
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "attributes": {}
+    },
+    "country": {
+      "definition": "Indicates the country associated with a person, role, or organization.",
+      "general_definition_edc": "The subject entity is associated with the country specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is situated within the sovereign state of another entity",
+      "head_type": "Person",
+      "tail_type": "Country",
+      "attributes": {}
+    },
+    "defeated": {
+      "definition": "Indicates that one team or competitor defeated another.",
+      "general_definition_edc": "The subject entity defeated the opponent specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity prevailed over another entity",
+      "head_type": "SportsTeam",
+      "tail_type": "SportsTeam",
+      "attributes": {}
+    },
+    "employer": {
+      "definition": "Indicates the organization that a person works for.",
+      "general_definition_edc": "The subject entity is employed by the organization specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity works for another entity",
+      "head_type": "Person",
+      "tail_type": "Organization",
+      "attributes": {}
+    },
+    "occupation": {
+      "definition": "Indicates the occupation or role of a person.",
+      "general_definition_edc": "The subject entity has the occupation specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity practices another entity",
+      "head_type": "Person",
+      "tail_type": "Occupation",
+      "attributes": {}
+    },
+    "headquarteredIn": {
+      "definition": "Indicates the location where an organization is headquartered.",
+      "general_definition_edc": "The subject entity has its headquarters in the location specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is based at another entity",
+      "head_type": "Organization",
+      "tail_type": "Settlement",
+      "attributes": {}
+    },
+    "industry": {
+      "definition": "Indicates the industry sector of an organization.",
+      "general_definition_edc": "The subject entity operates in the industry specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity operates within another entity",
+      "head_type": "Organization",
+      "tail_type": "Industry",
+      "attributes": {}
+    },
+    "foundingYear": {
+      "definition": "Indicates the year in which an organization was founded.",
+      "general_definition_edc": "The subject entity was founded in the year specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity came into existence at a time given by another entity",
+      "head_type": "Organization",
+      "tail_type": "Year",
+      "attributes": {}
+    },
+    "numberOfEmployees": {
+      "definition": "Indicates the number of employees of an organization.",
+      "general_definition_edc": "The subject entity has the number of employees specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity has a count given by another entity",
+      "head_type": "Organization",
+      "tail_type": "Number",
+      "attributes": {}
+    },
+    "isA": {
+      "definition": "Indicates the type or category that an entity belongs to.",
+      "general_definition_edc": "The subject entity is an instance or example of the type specified by the object entity.",
+      "general_definition_abstract": "indicates that one entity is a specific example of another entity",
+      "head_type": "Organization",
+      "tail_type": "Type",
+      "attributes": {}
+    }
+  }
+}

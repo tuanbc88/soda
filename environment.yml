@@ -1,0 +1,60 @@
+# SODA environment.
+#
+#   conda env create -f environment.yml
+#   conda activate soda
+#   python -c "import nltk; nltk.download('punkt_tab')"
+#
+# The last line cannot live in this file and is not optional: without punkt_tab the
+# closed-schema evaluation scores every item 0.000 while B-cubed still looks normal, and
+# nothing raises an error.
+#
+# These versions are the stack a working GPU box runs, not a `conda env export` dump. An
+# export pins the OS-level packages of the machine it came from (aws-c-*, abseil, ...) and
+# fails to solve elsewhere, which is what the previous version of this file did.
+#
+# torch is pinned to a CUDA 12.8 build. On a different driver, change the extra-index-url
+# to the matching wheel index (cu121, cu124, ...) and keep everything else as it is.
+name: soda
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu128
+      - torch==2.8.0
+
+      # inference stack
+      - transformers==4.57.6
+      - tokenizers==0.22.2
+      - accelerate==1.10.1
+      - bitsandbytes==0.48.2          # 4-bit loading for large backbones
+      - sentence-transformers==3.0.1  # the canonicalization retriever
+      - peft
+
+      # three imports that are easy to miss and each break the pipeline outright:
+      #   datasets  - sentence_transformers.model_card imports it, and this repo's own
+      #               datasets/ directory shadows it if it is absent
+      #   openai    - imported at module scope in soda/utils/llm_utils.py, even for pure-HF runs
+      #   evaluate  - same, in soda/utils/e5_mistral_utils.py
+      - datasets
+      - openai
+      - evaluate
+
+      # evaluation and analysis
+      - nervaluate                    # span-level strict/exact/partial F1
+      - scikit-learn                  # clustering metrics (B-cubed, ARI, NMI, V)
+      - nltk
+      - pandas
+      - openpyxl                      # the aggregated result workbooks
+      - matplotlib
+
+      # utilities
+      - huggingface_hub
+      - tqdm
+      - unidecode
+      - ujson
+      - beautifulsoup4

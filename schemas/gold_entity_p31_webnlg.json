@@ -1,0 +1,3291 @@
+{
+  "_meta": {
+    "dataset": "webnlg",
+    "source": "dbpedia",
+    "granularity": "per-entity instance-of (P31) -> low-level schema type"
+  },
+  "_report": {
+    "dataset": "webnlg",
+    "source": "dbpedia",
+    "n_surfaces": 343,
+    "n_entity": 251,
+    "n_literal": 92,
+    "by_status": {
+      "linked": 163,
+      "literal": 92,
+      "unlinked": 79,
+      "no_type_match": 9
+    },
+    "entity_coverage": 0.6494,
+    "n_schema_types_used": 20,
+    "type_hist": {
+      "Person": 40,
+      "Settlement": 33,
+      "Organization": 20,
+      "AdministrativeTerritory": 13,
+      "Country": 12,
+      "Food": 7,
+      "CreativeWork": 7,
+      "EthnicGroup": 5,
+      "Building": 4,
+      "EducationalInstitution": 4,
+      "Airport": 3,
+      "Event": 3,
+      "Genre": 3,
+      "Vehicle": 2,
+      "Location": 2,
+      "Currency": 1,
+      "SportsTeam": 1,
+      "Award": 1,
+      "Language": 1,
+      "Product": 1
+    },
+    "n_review": 9
+  },
+  "trane": {
+    "surface": "Trane",
+    "kb_id": "http://dbpedia.org/resource/Trane",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "swords_dublin": {
+    "surface": "Swords,_Dublin",
+    "kb_id": "http://dbpedia.org/resource/Swords,_Dublin",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement",
+      "Town"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "ciudad_ayala": {
+    "surface": "Ciudad_Ayala",
+    "kb_id": "http://dbpedia.org/resource/Ciudad_Ayala",
+    "kb_types": [
+      "City",
+      "Locality",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "1777539": {
+    "surface": "1777539",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "city_manager": {
+    "surface": "\"City Manager\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "city": {
+    "surface": "City",
+    "kb_id": "http://dbpedia.org/resource/City",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "16040": {
+    "surface": "1604.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "councilmanager_government": {
+    "surface": "Council-manager_government",
+    "kb_id": "http://dbpedia.org/resource/Council-manager_government",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "6": {
+    "surface": "−6",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "morelos": {
+    "surface": "Morelos",
+    "kb_id": "http://dbpedia.org/resource/Morelos",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "alco_rs3": {
+    "surface": "ALCO_RS-3",
+    "kb_id": "http://dbpedia.org/resource/ALCO_RS-3",
+    "kb_types": [
+      "Locomotive",
+      "MeanOfTransportation"
+    ],
+    "schema_type": "Vehicle",
+    "status": "linked"
+  },
+  "dieselelectric_transmission": {
+    "surface": "Diesel-electric_transmission",
+    "kb_id": "http://dbpedia.org/resource/Diesel-electric_transmission",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "170688_millimetres": {
+    "surface": "17068.8 (millimetres)",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "alan_b_miller_hall": {
+    "surface": "Alan_B._Miller_Hall",
+    "kb_id": "http://dbpedia.org/resource/Alan_B._Miller_Hall",
+    "kb_types": [
+      "ArchitecturalStructure",
+      "Building"
+    ],
+    "schema_type": "Building",
+    "status": "linked"
+  },
+  "robert_a_m_stern": {
+    "surface": "Robert_A._M._Stern",
+    "kb_id": "http://dbpedia.org/resource/Robert_A._M._Stern",
+    "kb_types": [
+      "Animal",
+      "Architect",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "101_ukrop_way": {
+    "surface": "\"101 Ukrop Way\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "mason_school_of_business": {
+    "surface": "Mason_School_of_Business",
+    "kb_id": "http://dbpedia.org/resource/Mason_School_of_Business",
+    "kb_types": [
+      "Agent",
+      "EducationalInstitution",
+      "Organisation",
+      "University"
+    ],
+    "schema_type": "EducationalInstitution",
+    "status": "linked"
+  },
+  "virginia": {
+    "surface": "Virginia",
+    "kb_id": "http://dbpedia.org/resource/Virginia",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "united_states": {
+    "surface": "\"United States\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "liselotte_grschebina": {
+    "surface": "Liselotte_Grschebina",
+    "kb_id": "http://dbpedia.org/resource/Liselotte_Grschebina",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "karlsruhe": {
+    "surface": "Karlsruhe",
+    "kb_id": "http://dbpedia.org/resource/Karlsruhe",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "israel": {
+    "surface": "Israel",
+    "kb_id": "http://dbpedia.org/resource/Israel",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "arab_citizens_of_israel": {
+    "surface": "Arab_citizens_of_Israel",
+    "kb_id": "http://dbpedia.org/resource/Arab_citizens_of_Israel",
+    "kb_types": [
+      "EthnicGroup"
+    ],
+    "schema_type": "EthnicGroup",
+    "status": "linked"
+  },
+  "agremiao_sportiva_arapiraquense": {
+    "surface": "\"Agremiação Sportiva Arapiraquense\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "campeonato_brasileiro_srie_c": {
+    "surface": "Campeonato_Brasileiro_Série_C",
+    "kb_id": "http://dbpedia.org/resource/Campeonato_Brasileiro_S%C3%A9rie_C",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "brazil": {
+    "surface": "Brazil",
+    "kb_id": "http://dbpedia.org/resource/Brazil",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "17000": {
+    "surface": "17000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "vica": {
+    "surface": "Vica",
+    "kb_id": "http://dbpedia.org/resource/Vica",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "SoccerManager",
+      "Species",
+      "SportsManager"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "bananaman": {
+    "surface": "Bananaman",
+    "kb_id": "http://dbpedia.org/resource/Bananaman",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "steve_bright": {
+    "surface": "Steve_Bright",
+    "kb_id": "http://dbpedia.org/resource/Steve_Bright",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "bbc": {
+    "surface": "BBC",
+    "kb_id": "http://dbpedia.org/resource/BBC",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "19831003": {
+    "surface": "\"1983-10-03\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "11th_mississippi_infantry_monument": {
+    "surface": "11th_Mississippi_Infantry_Monument",
+    "kb_id": "http://dbpedia.org/resource/11th_Mississippi_Infantry_Monument",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "2000": {
+    "surface": "2000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "adams_county_pennsylvania": {
+    "surface": "Adams_County,_Pennsylvania",
+    "kb_id": "http://dbpedia.org/resource/Adams_County,_Pennsylvania",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "gettysburg_pennsylvania": {
+    "surface": "Gettysburg,_Pennsylvania",
+    "kb_id": "http://dbpedia.org/resource/Gettysburg,_Pennsylvania",
+    "kb_types": [
+      "CityDistrict",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "contributing_property": {
+    "surface": "Contributing_property",
+    "kb_id": "http://dbpedia.org/resource/Contributing_property",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "cumberland_county_pennsylvania": {
+    "surface": "Cumberland_County,_Pennsylvania",
+    "kb_id": "http://dbpedia.org/resource/Cumberland_County,_Pennsylvania",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "france": {
+    "surface": "France",
+    "kb_id": "http://dbpedia.org/resource/France",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "unitary_state": {
+    "surface": "Unitary_state",
+    "kb_id": "http://dbpedia.org/resource/Unitary_state",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "college_of_william_mary": {
+    "surface": "College_of_William_&_Mary",
+    "kb_id": "http://dbpedia.org/resource/College_of_William_%26_Mary",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "al_asad_airbase": {
+    "surface": "Al_Asad_Airbase",
+    "kb_id": "http://dbpedia.org/resource/Al_Asad_Airbase",
+    "kb_types": [
+      "MilitaryStructure"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "united_states_air_force": {
+    "surface": "United_States_Air_Force",
+    "kb_id": "http://dbpedia.org/resource/United_States_Air_Force",
+    "kb_types": [
+      "Agent",
+      "MilitaryUnit",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "39900": {
+    "surface": "3990.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "alan_shepard": {
+    "surface": "Alan_Shepard",
+    "kb_id": "http://dbpedia.org/resource/Alan_Shepard",
+    "kb_types": [
+      "Animal",
+      "Astronaut",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "19231118": {
+    "surface": "\"1923-11-18\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "california": {
+    "surface": "California",
+    "kb_id": "http://dbpedia.org/resource/California",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "1959": {
+    "surface": "1959",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "new_hampshire": {
+    "surface": "New_Hampshire",
+    "kb_id": "http://dbpedia.org/resource/New_Hampshire",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "mexico": {
+    "surface": "Mexico",
+    "kb_id": "http://dbpedia.org/resource/Mexico",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "nie_haisheng": {
+    "surface": "Nie_Haisheng",
+    "kb_id": "http://dbpedia.org/resource/Nie_Haisheng",
+    "kb_types": [
+      "Animal",
+      "Astronaut",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "zaoyang": {
+    "surface": "Zaoyang",
+    "kb_id": "http://dbpedia.org/resource/Zaoyang",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "hubei": {
+    "surface": "Hubei",
+    "kb_id": "http://dbpedia.org/resource/Hubei",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "peoples_republic_of_china": {
+    "surface": "People's_Republic_of_China",
+    "kb_id": "http://dbpedia.org/resource/China",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked",
+    "via_redirect": "China"
+  },
+  "19641013": {
+    "surface": "1964-10-13",
+    "kb_id": "http://dbpedia.org/resource/1964-10-13",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "fighter_pilot": {
+    "surface": "Fighter_pilot",
+    "kb_id": "http://dbpedia.org/resource/Fighter_pilot",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "bedford_aerodrome": {
+    "surface": "Bedford_Aerodrome",
+    "kb_id": "http://dbpedia.org/resource/Bedford_Aerodrome",
+    "kb_types": [
+      "Airport",
+      "ArchitecturalStructure",
+      "Infrastructure"
+    ],
+    "schema_type": "Airport",
+    "status": "linked"
+  },
+  "motorsport_vision": {
+    "surface": "MotorSport_Vision",
+    "kb_id": "http://dbpedia.org/resource/MotorSport_Vision",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "egbf": {
+    "surface": "EGBF",
+    "kb_id": "http://dbpedia.org/resource/Bedford_Aerodrome",
+    "kb_types": [
+      "Airport",
+      "ArchitecturalStructure",
+      "Infrastructure"
+    ],
+    "schema_type": "Airport",
+    "status": "linked",
+    "via_redirect": "Bedford_Aerodrome"
+  },
+  "adolfo_surez_madridbarajas_airport": {
+    "surface": "Adolfo_Suárez_Madrid–Barajas_Airport",
+    "kb_id": "http://dbpedia.org/resource/Adolfo_Su%C3%A1rez_Madrid%E2%80%93Barajas_Airport",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "enaire": {
+    "surface": "ENAIRE",
+    "kb_id": "http://dbpedia.org/resource/ENAIRE",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "paracuellos_de_jarama": {
+    "surface": "Paracuellos_de_Jarama",
+    "kb_id": "http://dbpedia.org/resource/Paracuellos_de_Jarama",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement",
+      "Town"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "35000": {
+    "surface": "3500.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "6100": {
+    "surface": "610.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "estdio_municipal_coaracy_da_mata_fonseca": {
+    "surface": "Estádio_Municipal_Coaracy_da_Mata_Fonseca",
+    "kb_id": "http://dbpedia.org/resource/Est%C3%A1dio_Municipal_Coaracy_da_Mata_Fonseca",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "arapiraca": {
+    "surface": "Arapiraca",
+    "kb_id": "http://dbpedia.org/resource/Arapiraca",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement",
+      "Town"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "vila_nova_futebol_clube": {
+    "surface": "Vila_Nova_Futebol_Clube",
+    "kb_id": "http://dbpedia.org/resource/Vila_Nova_Futebol_Clube",
+    "kb_types": [
+      "Agent",
+      "Organisation",
+      "SoccerClub",
+      "SportsClub"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "acharya_institute_of_technology": {
+    "surface": "Acharya_Institute_of_Technology",
+    "kb_id": "http://dbpedia.org/resource/Acharya_Institute_of_Technology",
+    "kb_types": [
+      "University"
+    ],
+    "schema_type": "EducationalInstitution",
+    "status": "linked"
+  },
+  "visvesvaraya_technological_university": {
+    "surface": "Visvesvaraya_Technological_University",
+    "kb_id": "http://dbpedia.org/resource/Visvesvaraya_Technological_University",
+    "kb_types": [
+      "Agent",
+      "EducationalInstitution",
+      "Organisation",
+      "University"
+    ],
+    "schema_type": "EducationalInstitution",
+    "status": "linked"
+  },
+  "belgaum": {
+    "surface": "Belgaum",
+    "kb_id": "http://dbpedia.org/resource/Belgaum",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "india": {
+    "surface": "\"India\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "azerbaijan": {
+    "surface": "Azerbaijan",
+    "kb_id": "http://dbpedia.org/resource/Azerbaijan",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "artur_rasizade": {
+    "surface": "Artur_Rasizade",
+    "kb_id": "http://dbpedia.org/resource/Artur_Rasizade",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "baku_turkish_martyrs_memorial": {
+    "surface": "Baku_Turkish_Martyrs'_Memorial",
+    "kb_id": "http://dbpedia.org/resource/Baku_Turkish_Martyrs'_Memorial",
+    "kb_types": [
+      "ArchitecturalStructure",
+      "Monument"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "bionico": {
+    "surface": "Bionico",
+    "kb_id": "http://dbpedia.org/resource/Bionico",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "dessert": {
+    "surface": "Dessert",
+    "kb_id": "http://dbpedia.org/resource/Dessert",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "aaron_turner": {
+    "surface": "Aaron_Turner",
+    "kb_id": "http://dbpedia.org/resource/Aaron_Turner",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "Eukaryote",
+      "MusicalArtist",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "singing": {
+    "surface": "Singing",
+    "kb_id": "http://dbpedia.org/resource/Singing",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "twilight_band": {
+    "surface": "Twilight_(band)",
+    "kb_id": "http://dbpedia.org/resource/Twilight_(band)",
+    "kb_types": [
+      "Agent",
+      "Band",
+      "Group",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "1995": {
+    "surface": "1995",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "stv": {
+    "surface": "\"STV\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "hypermarcas": {
+    "surface": "Hypermarcas",
+    "kb_id": "http://dbpedia.org/resource/Hypera_Pharma",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked",
+    "via_redirect": "Hypera_Pharma"
+  },
+  "20010101": {
+    "surface": "2001-01-01",
+    "kb_id": "http://dbpedia.org/resource/2001-01-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "healthcare": {
+    "surface": "Healthcare",
+    "kb_id": "http://dbpedia.org/resource/Healthcare",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "cosmetics": {
+    "surface": "Cosmetics",
+    "kb_id": "http://dbpedia.org/resource/Cosmetics",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "pharmaceuticals": {
+    "surface": "Pharmaceuticals",
+    "kb_id": "http://dbpedia.org/resource/Pharmaceuticals",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "mexican_peso": {
+    "surface": "Mexican_peso",
+    "kb_id": "http://dbpedia.org/resource/Mexican_peso",
+    "kb_types": [
+      "Currency"
+    ],
+    "schema_type": "Currency",
+    "status": "linked"
+  },
+  "mexicans": {
+    "surface": "Mexicans",
+    "kb_id": "http://dbpedia.org/resource/Mexicans",
+    "kb_types": [
+      "EthnicGroup",
+      "Population"
+    ],
+    "schema_type": "EthnicGroup",
+    "status": "linked"
+  },
+  "chopped_fruits_sour_cream_condensed_milk_granola_shredded_coconut_raisins": {
+    "surface": "\"Chopped Fruits, Sour Cream, Condensed Milk, Granola, Shredded Coconut, Raisins\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "shenzhou_10": {
+    "surface": "Shenzhou_10",
+    "kb_id": "http://dbpedia.org/resource/Shenzhou_10",
+    "kb_types": [
+      "Event",
+      "SocietalEvent",
+      "SpaceMission"
+    ],
+    "schema_type": "Event",
+    "status": "linked"
+  },
+  "shenzhou_6": {
+    "surface": "Shenzhou_6",
+    "kb_id": "http://dbpedia.org/resource/Shenzhou_6",
+    "kb_types": [
+      "Event",
+      "SocietalEvent",
+      "SpaceMission"
+    ],
+    "schema_type": "Event",
+    "status": "linked"
+  },
+  "jalisco": {
+    "surface": "Jalisco",
+    "kb_id": "http://dbpedia.org/resource/Jalisco",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "gma_new_media": {
+    "surface": "GMA_New_Media",
+    "kb_id": "http://dbpedia.org/resource/GMA_New_Media",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "gma_network_center": {
+    "surface": "GMA_Network_Center",
+    "kb_id": "http://dbpedia.org/resource/GMA_Network_Center",
+    "kb_types": [
+      "ArchitecturalStructure",
+      "Building"
+    ],
+    "schema_type": "Building",
+    "status": "linked"
+  },
+  "online_game": {
+    "surface": "Online_Game",
+    "kb_id": "http://dbpedia.org/resource/Online_Game",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "philippines": {
+    "surface": "Philippines",
+    "kb_id": "http://dbpedia.org/resource/Philippines",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "world_wide_web": {
+    "surface": "World_Wide_Web",
+    "kb_id": "http://dbpedia.org/resource/World_Wide_Web",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "abraham_a_ribicoff": {
+    "surface": "Abraham_A._Ribicoff",
+    "kb_id": "http://dbpedia.org/resource/Abraham_Ribicoff",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked",
+    "via_redirect": "Abraham_Ribicoff"
+  },
+  "ruth_ribicoff": {
+    "surface": "\"Ruth Ribicoff\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "john_f_kennedy": {
+    "surface": "John_F._Kennedy",
+    "kb_id": "http://dbpedia.org/resource/John_F._Kennedy",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "american": {
+    "surface": "American",
+    "kb_id": "http://dbpedia.org/resource/American",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "new_britain_connecticut": {
+    "surface": "New_Britain,_Connecticut",
+    "kb_id": "http://dbpedia.org/resource/New_Britain,_Connecticut",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "ceo": {
+    "surface": "CEO",
+    "kb_id": "http://dbpedia.org/resource/Chief_executive_officer",
+    "kb_types": [
+      "PersonFunction",
+      "Profession"
+    ],
+    "schema_type": null,
+    "status": "no_type_match",
+    "via_redirect": "Chief_executive_officer"
+  },
+  "sa_corporation": {
+    "surface": "S.A._(corporation)",
+    "kb_id": "http://dbpedia.org/resource/S.A._(corporation)",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "aleksandr_prudnikov": {
+    "surface": "Aleksandr_Prudnikov",
+    "kb_id": "http://dbpedia.org/resource/Aleksandr_Prudnikov",
+    "kb_types": [
+      "Animal",
+      "Athlete",
+      "Eukaryote",
+      "Person",
+      "SoccerPlayer",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "19890224": {
+    "surface": "1989-02-24",
+    "kb_id": "http://dbpedia.org/resource/1989-02-24",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "fc_spartak_moscow": {
+    "surface": "FC_Spartak_Moscow",
+    "kb_id": "http://dbpedia.org/resource/FC_Spartak_Moscow",
+    "kb_types": [
+      "Agent",
+      "Organisation",
+      "SoccerClub",
+      "SportsClub"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "fc_terek_grozny": {
+    "surface": "FC_Terek_Grozny",
+    "kb_id": "http://dbpedia.org/resource/FC_Akhmat_Grozny",
+    "kb_types": [
+      "Agent",
+      "Organisation",
+      "SoccerClub",
+      "SportsClub"
+    ],
+    "schema_type": "Organization",
+    "status": "linked",
+    "via_redirect": "FC_Akhmat_Grozny"
+  },
+  "1147_stavropolis": {
+    "surface": "1147_Stavropolis",
+    "kb_id": "http://dbpedia.org/resource/1147_Stavropolis",
+    "kb_types": [
+      "Asteroid",
+      "CelestialBody",
+      "Location",
+      "Place",
+      "Planet"
+    ],
+    "schema_type": "Location",
+    "status": "linked"
+  },
+  "4184760000000": {
+    "surface": "418476000000.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "12496": {
+    "surface": "1249.6",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "grigory_neujmin": {
+    "surface": "Grigory_Neujmin",
+    "kb_id": "http://dbpedia.org/resource/Grigory_Neujmin",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "115": {
+    "surface": "11.5",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "19290611": {
+    "surface": "1929-06-11",
+    "kb_id": "http://dbpedia.org/resource/1929-06-11",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "203785": {
+    "surface": "20378.5",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "test_pilot": {
+    "surface": "Test_pilot",
+    "kb_id": "http://dbpedia.org/resource/Test_pilot",
+    "kb_types": [
+      "PersonFunction",
+      "Profession"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "19940614": {
+    "surface": "1994-06-14",
+    "kb_id": "http://dbpedia.org/resource/1994-06-14",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "school_of_applied_arts_in_stuttgart": {
+    "surface": "School_of_Applied_Arts_in_Stuttgart",
+    "kb_id": "http://dbpedia.org/resource/School_of_Applied_Arts_in_Stuttgart",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "photographer": {
+    "surface": "Photographer",
+    "kb_id": "http://dbpedia.org/resource/Photographer",
+    "kb_types": [
+      "Agent"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "pontiac_rageous": {
+    "surface": "Pontiac_Rageous",
+    "kb_id": "http://dbpedia.org/resource/Pontiac_Rageous",
+    "kb_types": [
+      "Automobile",
+      "MeanOfTransportation"
+    ],
+    "schema_type": "Vehicle",
+    "status": "linked"
+  },
+  "1997": {
+    "surface": "1997",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "michigan": {
+    "surface": "Michigan",
+    "kb_id": "http://dbpedia.org/resource/Michigan",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "detroit": {
+    "surface": "Detroit",
+    "kb_id": "http://dbpedia.org/resource/Detroit",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "city_michigan": {
+    "surface": "City_(Michigan)",
+    "kb_id": "http://dbpedia.org/resource/City_(Michigan)",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "alcobendas": {
+    "surface": "Alcobendas",
+    "kb_id": "http://dbpedia.org/resource/Alcobendas",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement",
+      "Town"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "madrid": {
+    "surface": "Madrid",
+    "kb_id": "http://dbpedia.org/resource/Madrid",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "14l32r": {
+    "surface": "\"14L/32R\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "spain": {
+    "surface": "Spain",
+    "kb_id": "http://dbpedia.org/resource/Spain",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "akeem_ayers": {
+    "surface": "Akeem_Ayers",
+    "kb_id": "http://dbpedia.org/resource/Akeem_Ayers",
+    "kb_types": [
+      "AmericanFootballPlayer",
+      "Animal",
+      "Athlete",
+      "Eukaryote",
+      "GridironFootballPlayer",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "los_angeles_rams": {
+    "surface": "\"Los Angeles Rams\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "tennessee_titans": {
+    "surface": "Tennessee_Titans",
+    "kb_id": "http://dbpedia.org/resource/Tennessee_Titans",
+    "kb_types": [
+      "Agent",
+      "AmericanFootballTeam",
+      "Organisation",
+      "SportsTeam"
+    ],
+    "schema_type": "SportsTeam",
+    "status": "linked"
+  },
+  "thurleigh": {
+    "surface": "Thurleigh",
+    "kb_id": "http://dbpedia.org/resource/Thurleigh",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement",
+      "Village"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "united_kingdom": {
+    "surface": "United_Kingdom",
+    "kb_id": "http://dbpedia.org/resource/United_Kingdom",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "university_of_burgundy": {
+    "surface": "University_of_Burgundy",
+    "kb_id": "http://dbpedia.org/resource/University_of_Burgundy",
+    "kb_types": [
+      "Agent",
+      "EducationalInstitution",
+      "Organisation",
+      "University"
+    ],
+    "schema_type": "EducationalInstitution",
+    "status": "linked"
+  },
+  "president_of_the_senate": {
+    "surface": "\"President of the Senate\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "43490": {
+    "surface": "4349.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "18l36r": {
+    "surface": "\"18L/36R\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "piotr_hallmann": {
+    "surface": "Piotr_Hallmann",
+    "kb_id": "http://dbpedia.org/resource/Piotr_Hallmann",
+    "kb_types": [
+      "Animal",
+      "Athlete",
+      "Eukaryote",
+      "MartialArtist",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "19870825": {
+    "surface": "1987-08-25",
+    "kb_id": "http://dbpedia.org/resource/1987-08-25",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "gdynia_poland": {
+    "surface": "Gdynia,_Poland",
+    "kb_id": "http://dbpedia.org/resource/Gdynia",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked",
+    "via_redirect": "Gdynia"
+  },
+  "70308": {
+    "surface": "70.308",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "30_march_2007": {
+    "surface": "\"30 March 2007\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "20090601": {
+    "surface": "2009-06-01",
+    "kb_id": "http://dbpedia.org/resource/2009-06-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "pennsylvania": {
+    "surface": "\"Pennsylvania\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "carroll_county_maryland": {
+    "surface": "Carroll_County,_Maryland",
+    "kb_id": "http://dbpedia.org/resource/Carroll_County,_Maryland",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "2608550000000": {
+    "surface": "260855000000.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "tbilisi": {
+    "surface": "Tbilisi",
+    "kb_id": "http://dbpedia.org/resource/Tbilisi",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "18860101": {
+    "surface": "1886-01-01",
+    "kb_id": "http://dbpedia.org/resource/1886-01-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "postmetal": {
+    "surface": "Post-metal",
+    "kb_id": "http://dbpedia.org/resource/Post-metal",
+    "kb_types": [
+      "Genre",
+      "MusicGenre",
+      "TopicalConcept"
+    ],
+    "schema_type": "Genre",
+    "status": "linked"
+  },
+  "electric_guitar": {
+    "surface": "Electric_guitar",
+    "kb_id": "http://dbpedia.org/resource/Electric_guitar",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "deceased": {
+    "surface": "\"Deceased\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "nwc_ma_1957": {
+    "surface": "\"NWC, M.A. 1957\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "distinguished_service_medal_united_states_navy": {
+    "surface": "Distinguished_Service_Medal_(United_States_Navy)",
+    "kb_id": "http://dbpedia.org/resource/Navy_Distinguished_Service_Medal",
+    "kb_types": [
+      "Award"
+    ],
+    "schema_type": "Award",
+    "status": "linked",
+    "via_redirect": "Navy_Distinguished_Service_Medal"
+  },
+  "african_americans": {
+    "surface": "African_Americans",
+    "kb_id": "http://dbpedia.org/resource/African_Americans",
+    "kb_types": [
+      "EthnicGroup"
+    ],
+    "schema_type": "EthnicGroup",
+    "status": "linked"
+  },
+  "in_soldevanahalli_acharya_dr_sarvapalli_radhakrishnan_road_hessarghatta_main_road_bangalore_560090": {
+    "surface": "\"In Soldevanahalli, Acharya Dr. Sarvapalli Radhakrishnan Road, Hessarghatta Main Road, Bangalore – 560090.\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "bangalore": {
+    "surface": "Bangalore",
+    "kb_id": "http://dbpedia.org/resource/Bangalore",
+    "kb_types": [
+      "City"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "10950": {
+    "surface": "1095.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "bedford_autodrome": {
+    "surface": "Bedford_Autodrome",
+    "kb_id": "http://dbpedia.org/resource/Bedford_Autodrome",
+    "kb_types": [
+      "Airport",
+      "ArchitecturalStructure",
+      "Infrastructure"
+    ],
+    "schema_type": "Airport",
+    "status": "linked"
+  },
+  "832104": {
+    "surface": "83.2104",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "guadalajara": {
+    "surface": "Guadalajara",
+    "kb_id": "http://dbpedia.org/resource/Guadalajara",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "sandesh_confectionery": {
+    "surface": "Sandesh_(confectionery)",
+    "kb_id": "http://dbpedia.org/resource/Sandesh_(confectionery)",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "condensed_milk": {
+    "surface": "Condensed_milk",
+    "kb_id": "http://dbpedia.org/resource/Condensed_milk",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "0826": {
+    "surface": "\"08/26\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "pacific_standard_time_zone": {
+    "surface": "Pacific_Standard_Time_Zone",
+    "kb_id": "http://dbpedia.org/resource/Pacific_Standard_Time_Zone",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "juan_nolasco": {
+    "surface": "Juan_Nolasco",
+    "kb_id": "http://dbpedia.org/resource/Juan_Nolasco",
+    "kb_types": [
+      "SoccerManager"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "peter_ogden": {
+    "surface": "Peter_Ogden",
+    "kb_id": "http://dbpedia.org/resource/Peter_Ogden",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "31_july_2016_jd24576005": {
+    "surface": "31 July 2016 (JD2457600.5)",
+    "kb_id": "http://dbpedia.org/resource/31%20July%202016%20(JD2457600.5)",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "v12_engine": {
+    "surface": "V12_engine",
+    "kb_id": "http://dbpedia.org/resource/V12_engine",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "16800": {
+    "surface": "16800",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "2900": {
+    "surface": "2900",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "27400": {
+    "surface": "27400",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "1299": {
+    "surface": "1299",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "dijon": {
+    "surface": "Dijon",
+    "kb_id": "http://dbpedia.org/resource/Dijon",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "9400": {
+    "surface": "9400",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "cottage_cheese": {
+    "surface": "Cottage_cheese",
+    "kb_id": "http://dbpedia.org/resource/Cottage_cheese",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "19740801": {
+    "surface": "\"1974-08-01\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "apollo_14": {
+    "surface": "Apollo_14",
+    "kb_id": "http://dbpedia.org/resource/Apollo_14",
+    "kb_types": [
+      "Event",
+      "SocietalEvent",
+      "SpaceMission"
+    ],
+    "schema_type": "Event",
+    "status": "linked"
+  },
+  "san_sebastin_de_los_reyes": {
+    "surface": "San_Sebastián_de_los_Reyes",
+    "kb_id": "http://dbpedia.org/resource/San_Sebasti%C3%A1n_de_los_Reyes",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "1634_the_bavarian_crisis": {
+    "surface": "1634:_The_Bavarian_Crisis",
+    "kb_id": "http://dbpedia.org/resource/1634%3A_The_Bavarian_Crisis",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "448": {
+    "surface": "\"448\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "virginia_demarce_and_eric_flint": {
+    "surface": "\"Virginia DeMarce and Eric Flint\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "11470": {
+    "surface": "1147.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "pacific_daylight_time": {
+    "surface": "Pacific_Daylight_Time",
+    "kb_id": "http://dbpedia.org/resource/Pacific_Daylight_Time",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "01234": {
+    "surface": "01234",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "2015": {
+    "surface": "2015",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "19080502": {
+    "surface": "1908-05-02",
+    "kb_id": "http://dbpedia.org/resource/1908-05-02",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "german_empire": {
+    "surface": "German_Empire",
+    "kb_id": "http://dbpedia.org/resource/German_Empire",
+    "kb_types": [
+      "Country",
+      "HistoricalPeriod",
+      "HistoricalRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region",
+      "TimePeriod"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "18r36l": {
+    "surface": "\"18R/36L\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "mantecorp": {
+    "surface": "Mantecorp",
+    "kb_id": "http://dbpedia.org/resource/Mantecorp",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "so_paulo": {
+    "surface": "São_Paulo",
+    "kb_id": "http://dbpedia.org/resource/S%C3%A3o_Paulo",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "1800000000": {
+    "surface": "1800000000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "asian_american": {
+    "surface": "Asian_American",
+    "kb_id": "http://dbpedia.org/resource/Asian_Americans",
+    "kb_types": [
+      "EthnicGroup"
+    ],
+    "schema_type": "EthnicGroup",
+    "status": "linked",
+    "via_redirect": "Asian_Americans"
+  },
+  "alvinegro": {
+    "surface": "\"''Alvinegro\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "john_geering": {
+    "surface": "John_Geering",
+    "kb_id": "http://dbpedia.org/resource/John_Geering",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "ComicsCreator",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "fc_amkar_perm": {
+    "surface": "FC_Amkar_Perm",
+    "kb_id": "http://dbpedia.org/resource/FC_Amkar_Perm",
+    "kb_types": [
+      "Agent",
+      "Organisation",
+      "SoccerClub",
+      "SportsClub"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "1850_centimetres": {
+    "surface": "185.0 (centimetres)",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "graeme_garden": {
+    "surface": "Graeme_Garden",
+    "kb_id": "http://dbpedia.org/resource/Graeme_Garden",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "Comedian",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "otkrytiye_arena": {
+    "surface": "Otkrytiye_Arena",
+    "kb_id": "http://dbpedia.org/resource/Otkritie_Arena",
+    "kb_types": [
+      "Venue"
+    ],
+    "schema_type": "Building",
+    "status": "linked",
+    "via_redirect": "Otkritie_Arena"
+  },
+  "the_fellowship_of_the_ring": {
+    "surface": "The_Fellowship_of_the_Ring",
+    "kb_id": "http://dbpedia.org/resource/The_Fellowship_of_the_Ring",
+    "kb_types": [
+      "Book",
+      "Work",
+      "WrittenWork"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked"
+  },
+  "george_allen_unwin": {
+    "surface": "George_Allen_&_Unwin",
+    "kb_id": "http://dbpedia.org/resource/George_Allen_%26_Unwin",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "fantasy_genre": {
+    "surface": "Fantasy_(genre)",
+    "kb_id": "http://dbpedia.org/resource/Fantasy_(genre)",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "the_two_towers": {
+    "surface": "The_Two_Towers",
+    "kb_id": "http://dbpedia.org/resource/The_Two_Towers",
+    "kb_types": [
+      "Book",
+      "Work",
+      "WrittenWork"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked"
+  },
+  "j_r_r_tolkien": {
+    "surface": "J._R._R._Tolkien",
+    "kb_id": "http://dbpedia.org/resource/J._R._R._Tolkien",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species",
+      "Writer"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "the_hobbit": {
+    "surface": "The_Hobbit",
+    "kb_id": "http://dbpedia.org/resource/The_Hobbit",
+    "kb_types": [
+      "Book",
+      "Work",
+      "WrittenWork"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked"
+  },
+  "american_locomotive_company": {
+    "surface": "American_Locomotive_Company",
+    "kb_id": "http://dbpedia.org/resource/American_Locomotive_Company",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "12": {
+    "surface": "12",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "governator": {
+    "surface": "Governator",
+    "kb_id": "http://dbpedia.org/resource/Arnold_Schwarzenegger",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked",
+    "via_redirect": "Arnold_Schwarzenegger"
+  },
+  "drugs": {
+    "surface": "Drugs",
+    "kb_id": "http://dbpedia.org/resource/Drugs",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "broadcasting_house": {
+    "surface": "Broadcasting_House",
+    "kb_id": "http://dbpedia.org/resource/Broadcasting_House",
+    "kb_types": [
+      "ArchitecturalStructure",
+      "Building"
+    ],
+    "schema_type": "Building",
+    "status": "linked"
+  },
+  "bill_oddie": {
+    "surface": "Bill_Oddie",
+    "kb_id": "http://dbpedia.org/resource/Bill_Oddie",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "kate_hardie": {
+    "surface": "Kate_Hardie",
+    "kb_id": "http://dbpedia.org/resource/Kate_Hardie",
+    "kb_types": [
+      "Actor",
+      "Animal",
+      "Artist",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "subsidiary": {
+    "surface": "Subsidiary",
+    "kb_id": "http://dbpedia.org/resource/Subsidiary",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "19130101": {
+    "surface": "1913-01-01",
+    "kb_id": "http://dbpedia.org/resource/1913-01-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "ireland": {
+    "surface": "Ireland",
+    "kb_id": "http://dbpedia.org/resource/Ireland",
+    "kb_types": [
+      "Island",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Location",
+    "status": "linked"
+  },
+  "la_crosse_wisconsin": {
+    "surface": "La_Crosse,_Wisconsin",
+    "kb_id": "http://dbpedia.org/resource/La_Crosse,_Wisconsin",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "29000": {
+    "surface": "29000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "hvac": {
+    "surface": "HVAC",
+    "kb_id": "http://dbpedia.org/resource/HVAC",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "building_materials": {
+    "surface": "Building_materials",
+    "kb_id": "http://dbpedia.org/resource/Building_materials",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "coupe": {
+    "surface": "Coupe",
+    "kb_id": "http://dbpedia.org/resource/Coupe",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "ring_of_fire_ii": {
+    "surface": "Ring_of_Fire_II",
+    "kb_id": "http://dbpedia.org/resource/Ring_of_Fire_II",
+    "kb_types": [
+      "Book",
+      "Work",
+      "WrittenWork"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked"
+  },
+  "eric_flint": {
+    "surface": "Eric_Flint",
+    "kb_id": "http://dbpedia.org/resource/Eric_Flint",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species",
+      "Writer"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "concrete": {
+    "surface": "Concrete",
+    "kb_id": "http://dbpedia.org/resource/Concrete",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "black_metal": {
+    "surface": "Black_metal",
+    "kb_id": "http://dbpedia.org/resource/Black_metal",
+    "kb_types": [
+      "Genre",
+      "MusicGenre",
+      "TopicalConcept"
+    ],
+    "schema_type": "Genre",
+    "status": "linked"
+  },
+  "jill_shilling": {
+    "surface": "Jill_Shilling",
+    "kb_id": "http://dbpedia.org/resource/Jill_Shilling",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "2015_campeonato_brasileiro_srie_c": {
+    "surface": "2015_Campeonato_Brasileiro_Série_C",
+    "kb_id": "http://dbpedia.org/resource/2015_Campeonato_Brasileiro_S%C3%A9rie_C",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "all_india_council_for_technical_education": {
+    "surface": "All_India_Council_for_Technical_Education",
+    "kb_id": "http://dbpedia.org/resource/All_India_Council_for_Technical_Education",
+    "kb_types": [
+      "Agent",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "mumbai": {
+    "surface": "Mumbai",
+    "kb_id": "http://dbpedia.org/resource/Mumbai",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "dr_g_p_prabhukumar": {
+    "surface": "\"Dr. G. P. Prabhukumar\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "franklin_county_pennsylvania": {
+    "surface": "Franklin_County,_Pennsylvania",
+    "kb_id": "http://dbpedia.org/resource/Franklin_County,_Pennsylvania",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "hseyin_btner_and_hilmi_gner": {
+    "surface": "\"Hüseyin Bütüner and Hilmi Güner\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "amerigas": {
+    "surface": "AmeriGas",
+    "kb_id": "http://dbpedia.org/resource/AmeriGas",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "19590101": {
+    "surface": "1959-01-01",
+    "kb_id": "http://dbpedia.org/resource/1959-01-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "211200000": {
+    "surface": "211200000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "may_1950_august_1956": {
+    "surface": "\"May 1950 - August 1956\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "montreal_locomotive_works": {
+    "surface": "Montreal_Locomotive_Works",
+    "kb_id": "http://dbpedia.org/resource/Montreal_Locomotive_Works",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "abdul_taib_mahmud": {
+    "surface": "Abdul_Taib_Mahmud",
+    "kb_id": "http://dbpedia.org/resource/Abdul_Taib_Mahmud",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "adenan_satem": {
+    "surface": "Adenan_Satem",
+    "kb_id": "http://dbpedia.org/resource/Adenan_Satem",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "parti_pesaka_bumiputera_bersatu": {
+    "surface": "Parti_Pesaka_Bumiputera_Bersatu",
+    "kb_id": "http://dbpedia.org/resource/Parti_Pesaka_Bumiputera_Bersatu",
+    "kb_types": [
+      "Agent",
+      "Organisation",
+      "PoliticalParty"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "18710101": {
+    "surface": "1871-01-01",
+    "kb_id": "http://dbpedia.org/resource/1871-01-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "dianne_feinstein": {
+    "surface": "Dianne_Feinstein",
+    "kb_id": "http://dbpedia.org/resource/Dianne_Feinstein",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "israeli_jews": {
+    "surface": "Israeli_Jews",
+    "kb_id": "http://dbpedia.org/resource/Israeli_Jews",
+    "kb_types": [
+      "EthnicGroup"
+    ],
+    "schema_type": "EthnicGroup",
+    "status": "linked"
+  },
+  "asa_gigante": {
+    "surface": "\"Asa Gigante ''\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "grozny": {
+    "surface": "Grozny",
+    "kb_id": "http://dbpedia.org/resource/Grozny",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "gadzhi_gadzhiyev": {
+    "surface": "Gadzhi_Gadzhiyev",
+    "kb_id": "http://dbpedia.org/resource/Gadzhi_Gadzhiyev",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "SoccerManager",
+      "Species",
+      "SportsManager"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "frederick_county_maryland": {
+    "surface": "Frederick_County,_Maryland",
+    "kb_id": "http://dbpedia.org/resource/Frederick_County,_Maryland",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "19860415": {
+    "surface": "\"1986-04-15\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "tim_brooketaylor": {
+    "surface": "Tim_Brooke-Taylor",
+    "kb_id": "http://dbpedia.org/resource/Tim_Brooke-Taylor",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "Comedian",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "2004": {
+    "surface": "2004",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "raisin": {
+    "surface": "Raisin",
+    "kb_id": "http://dbpedia.org/resource/Raisin",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "18920103": {
+    "surface": "1892-01-03",
+    "kb_id": "http://dbpedia.org/resource/1892-01-03",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "19540729": {
+    "surface": "1954-07-29",
+    "kb_id": "http://dbpedia.org/resource/1954-07-29",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "republic_of_the_philippines": {
+    "surface": "\"Republic of the Philippines\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "38763": {
+    "surface": "387.63",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "modern_hebrew": {
+    "surface": "Modern_Hebrew",
+    "kb_id": "http://dbpedia.org/resource/Modern_Hebrew",
+    "kb_types": [
+      "Language"
+    ],
+    "schema_type": "Language",
+    "status": "linked"
+  },
+  "2504930000000": {
+    "surface": "250493000000.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "petah_tikva": {
+    "surface": "Petah_Tikva",
+    "kb_id": "http://dbpedia.org/resource/Petah_Tikva",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "state_of_israel": {
+    "surface": "\"State of Israel\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "pontiac": {
+    "surface": "Pontiac",
+    "kb_id": "http://dbpedia.org/resource/Pontiac",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "casey_ribicoff": {
+    "surface": "Casey_Ribicoff",
+    "kb_id": "http://dbpedia.org/resource/Casey_Ribicoff",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "connecticut": {
+    "surface": "Connecticut",
+    "kb_id": "http://dbpedia.org/resource/Connecticut",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "rashid_rakhimov": {
+    "surface": "Rashid_Rakhimov",
+    "kb_id": "http://dbpedia.org/resource/Rashid_Rakhimov",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "SoccerManager",
+      "Species",
+      "SportsManager"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "john_reith_1st_baron_reith": {
+    "surface": "John_Reith,_1st_Baron_Reith",
+    "kb_id": "http://dbpedia.org/resource/John_Reith,_1st_Baron_Reith",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "2": {
+    "surface": "+2",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "die_wacht_am_rhein": {
+    "surface": "Die_Wacht_am_Rhein",
+    "kb_id": "http://dbpedia.org/resource/Die_Wacht_am_Rhein",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "prime_minister": {
+    "surface": "\"Prime Minister\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "19980721": {
+    "surface": "\"1998-07-21\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "lotus_eaters_band": {
+    "surface": "Lotus_Eaters_(band)",
+    "kb_id": "http://dbpedia.org/resource/Lotus_Eaters_(band)",
+    "kb_types": [
+      "Agent",
+      "Band",
+      "Group",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "boston": {
+    "surface": "Boston",
+    "kb_id": "http://dbpedia.org/resource/Boston",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "1963": {
+    "surface": "1963",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "states_of_mexico": {
+    "surface": "States_of_Mexico",
+    "kb_id": "http://dbpedia.org/resource/States_of_Mexico",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "baymax": {
+    "surface": "Baymax",
+    "kb_id": "http://dbpedia.org/resource/Baymax",
+    "kb_types": [
+      "Agent",
+      "ComicsCharacter",
+      "FictionalCharacter"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "big_hero_6_film": {
+    "surface": "Big_Hero_6_(film)",
+    "kb_id": "http://dbpedia.org/resource/Big_Hero_6_(film)",
+    "kb_types": [
+      "Film",
+      "Work"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked"
+  },
+  "king_of_prussia_pennsylvania": {
+    "surface": "King_of_Prussia,_Pennsylvania",
+    "kb_id": "http://dbpedia.org/resource/King_of_Prussia,_Pennsylvania",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "energy_industry": {
+    "surface": "Energy_industry",
+    "kb_id": "http://dbpedia.org/resource/Energy_industry",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "united_states_secretary_of_health_education_and_welfare": {
+    "surface": "\"United States Secretary of Health, Education, and Welfare\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "324720797": {
+    "surface": "324720797",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "burbank_california": {
+    "surface": "Burbank,_California",
+    "kb_id": "http://dbpedia.org/resource/Burbank,_California",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "purple_finch": {
+    "surface": "Purple_finch",
+    "kb_id": "http://dbpedia.org/resource/Purple_finch",
+    "kb_types": [
+      "Taxon"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "graco_ramrez": {
+    "surface": "Graco_Ramírez",
+    "kb_id": "http://dbpedia.org/resource/Graco_Ram%C3%ADrez",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "19260210": {
+    "surface": "1926-02-10",
+    "kb_id": "http://dbpedia.org/resource/1926-02-10",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "karnataka": {
+    "surface": "Karnataka",
+    "kb_id": "http://dbpedia.org/resource/Karnataka",
+    "kb_types": [
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "quezon_city": {
+    "surface": "Quezon_City",
+    "kb_id": "http://dbpedia.org/resource/Quezon_City",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "16533": {
+    "surface": "165.33",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "mike_mularkey": {
+    "surface": "Mike_Mularkey",
+    "kb_id": "http://dbpedia.org/resource/Mike_Mularkey",
+    "kb_types": [
+      "AmericanFootballPlayer",
+      "Animal",
+      "Athlete",
+      "Eukaryote",
+      "GridironFootballPlayer",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "mk44": {
+    "surface": "MK44",
+    "kb_id": "http://dbpedia.org/resource/Mk44_Bushmaster_II",
+    "kb_types": [
+      "Weapon"
+    ],
+    "schema_type": "Product",
+    "status": "linked",
+    "via_redirect": "Mk44_Bushmaster_II"
+  },
+  "19461217": {
+    "surface": "1946-12-17",
+    "kb_id": "http://dbpedia.org/resource/1946-12-17",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "207691000000": {
+    "surface": "20769100000.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "anthony_j_celebrezze": {
+    "surface": "Anthony_J._Celebrezze",
+    "kb_id": "http://dbpedia.org/resource/Anthony_J._Celebrezze",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "das_lied_der_deutschen": {
+    "surface": "Das_Lied_der_Deutschen",
+    "kb_id": "http://dbpedia.org/resource/Deutschlandlied",
+    "kb_types": [
+      "MusicalWork",
+      "NationalAnthem",
+      "Work"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked",
+    "via_redirect": "Deutschlandlied"
+  },
+  "20101031": {
+    "surface": "2010-10-31",
+    "kb_id": "http://dbpedia.org/resource/2010-10-31",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "17526": {
+    "surface": "175.26",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "madrid_paracuellos_de_jarama_san_sebastin_de_los_reyes_and_alcobendas": {
+    "surface": "\"Madrid, Paracuellos de Jarama, San Sebastián de los Reyes and Alcobendas\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "williamsburg_virginia": {
+    "surface": "Williamsburg,_Virginia",
+    "kb_id": "http://dbpedia.org/resource/Williamsburg,_Virginia",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "andrew_rayel": {
+    "surface": "Andrew_Rayel",
+    "kb_id": "http://dbpedia.org/resource/Andrew_Rayel",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "Eukaryote",
+      "MusicalArtist",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "chiinu_moldova": {
+    "surface": "\"Chișinău, Moldova\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "bobina": {
+    "surface": "Bobina",
+    "kb_id": "http://dbpedia.org/resource/Bobina",
+    "kb_types": [
+      "Animal",
+      "Artist",
+      "Eukaryote",
+      "MusicalArtist",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "2009": {
+    "surface": "2009",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "trance_music": {
+    "surface": "Trance_music",
+    "kb_id": "http://dbpedia.org/resource/Trance_music",
+    "kb_types": [
+      "Genre",
+      "MusicGenre",
+      "TopicalConcept"
+    ],
+    "schema_type": "Genre",
+    "status": "linked"
+  },
+  "700": {
+    "surface": "700",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "2005040a": {
+    "surface": "2005-040A",
+    "kb_id": "http://dbpedia.org/resource/2005-040A",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "germany": {
+    "surface": "Germany",
+    "kb_id": "http://dbpedia.org/resource/Germany",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "fourstroke_engine": {
+    "surface": "Four-stroke_engine",
+    "kb_id": "http://dbpedia.org/resource/Four-stroke_engine",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "chinabank": {
+    "surface": "Chinabank",
+    "kb_id": "http://dbpedia.org/resource/Chinabank",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "19200816": {
+    "surface": "1920-08-16",
+    "kb_id": "http://dbpedia.org/resource/1920-08-16",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "banking": {
+    "surface": "Banking",
+    "kb_id": "http://dbpedia.org/resource/Banking",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "19370921": {
+    "surface": "1937-09-21",
+    "kb_id": "http://dbpedia.org/resource/1937-09-21",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "610": {
+    "surface": "61.0",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "fawkham": {
+    "surface": "Fawkham",
+    "kb_id": "http://dbpedia.org/resource/Fawkham",
+    "kb_types": [
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement",
+      "Village"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "108600000": {
+    "surface": "108600000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "10252": {
+    "surface": "10252",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "119530753": {
+    "surface": "119530753",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "983351663_square_kilometres": {
+    "surface": "9833516.63  (square kilometres)",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "massachusetts": {
+    "surface": "Massachusetts",
+    "kb_id": "http://dbpedia.org/resource/Massachusetts",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "the_lord_of_the_rings": {
+    "surface": "The_Lord_of_the_Rings",
+    "kb_id": "http://dbpedia.org/resource/The_Lord_of_the_Rings",
+    "kb_types": [
+      "Book",
+      "Work",
+      "WrittenWork"
+    ],
+    "schema_type": "CreativeWork",
+    "status": "linked"
+  },
+  "automobile": {
+    "surface": "Automobile",
+    "kb_id": "http://dbpedia.org/resource/Automobile",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "39": {
+    "surface": "\"39\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "500": {
+    "surface": "\"~500\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "tennis": {
+    "surface": "Tennis",
+    "kb_id": "http://dbpedia.org/resource/Tennis",
+    "kb_types": [
+      "Activity",
+      "Sport"
+    ],
+    "schema_type": null,
+    "status": "no_type_match"
+  },
+  "20000101": {
+    "surface": "2000-01-01",
+    "kb_id": "http://dbpedia.org/resource/2000-01-01",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "mobile_applications": {
+    "surface": "Mobile_Applications",
+    "kb_id": "http://dbpedia.org/resource/Mobile_Applications",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "felipe_gozon": {
+    "surface": "Felipe_Gozon",
+    "kb_id": "http://dbpedia.org/resource/Felipe_Gozon",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "vice_president": {
+    "surface": "\"Vice President\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "21000": {
+    "surface": "21000",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "iraq": {
+    "surface": "Iraq",
+    "kb_id": "http://dbpedia.org/resource/Iraq",
+    "kb_types": [
+      "Country",
+      "Location",
+      "Place",
+      "PopulatedPlace"
+    ],
+    "schema_type": "Country",
+    "status": "linked"
+  },
+  "7613176229": {
+    "surface": "76131–76229",
+    "kb_id": "http://dbpedia.org/resource/76131%E2%80%9376229",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "schenectady_new_york": {
+    "surface": "Schenectady,_New_York",
+    "kb_id": "http://dbpedia.org/resource/Schenectady,_New_York",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "granola": {
+    "surface": "Granola",
+    "kb_id": "http://dbpedia.org/resource/Granola",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "gma_network_company": {
+    "surface": "GMA_Network_(company)",
+    "kb_id": "http://dbpedia.org/resource/GMA_Network_(company)",
+    "kb_types": [
+      "Agent",
+      "Company",
+      "Organisation"
+    ],
+    "schema_type": "Organization",
+    "status": "linked"
+  },
+  "cake": {
+    "surface": "Cake",
+    "kb_id": "http://dbpedia.org/resource/Cake",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "philippine_standard_time": {
+    "surface": "Philippine_Standard_Time",
+    "kb_id": "http://dbpedia.org/resource/Philippine_Standard_Time",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "john_n_dempsey": {
+    "surface": "John_N._Dempsey",
+    "kb_id": "http://dbpedia.org/resource/John_N._Dempsey",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "new_york_city": {
+    "surface": "New_York_City",
+    "kb_id": "http://dbpedia.org/resource/New_York_City",
+    "kb_types": [
+      "City",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Settlement"
+    ],
+    "schema_type": "Settlement",
+    "status": "linked"
+  },
+  "kempe_gowda_i": {
+    "surface": "Kempe_Gowda_I",
+    "kb_id": "http://dbpedia.org/resource/Kempe_Gowda_I",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "bm_reddy": {
+    "surface": "\"B.M. Reddy\"",
+    "kb_id": null,
+    "kb_types": [],
+    "schema_type": null,
+    "status": "literal"
+  },
+  "michel_temer": {
+    "surface": "Michel_Temer",
+    "kb_id": "http://dbpedia.org/resource/Michel_Temer",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "crmen_lcia": {
+    "surface": "Cármen_Lúcia",
+    "kb_id": "http://dbpedia.org/resource/C%C3%A1rmen_L%C3%BAcia",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "silvano_aureoles_conejo": {
+    "surface": "Silvano_Aureoles_Conejo",
+    "kb_id": "http://dbpedia.org/resource/Silvano_Aureoles_Conejo",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "roberto_gil_zuarth": {
+    "surface": "Roberto_Gil_Zuarth",
+    "kb_id": "http://dbpedia.org/resource/Roberto_Gil_Zuarth",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "Person",
+      "Politician",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  },
+  "cookie": {
+    "surface": "Cookie",
+    "kb_id": "http://dbpedia.org/resource/Cookie",
+    "kb_types": [
+      "Food"
+    ],
+    "schema_type": "Food",
+    "status": "linked"
+  },
+  "enrique_pea_nieto": {
+    "surface": "Enrique_Peña_Nieto",
+    "kb_id": "http://dbpedia.org/resource/Enrique_Pe%C3%B1a_Nieto",
+    "kb_types": [],
+    "schema_type": null,
+    "status": "unlinked"
+  },
+  "bedfordshire": {
+    "surface": "Bedfordshire",
+    "kb_id": "http://dbpedia.org/resource/Bedfordshire",
+    "kb_types": [
+      "AdministrativeRegion",
+      "Location",
+      "Place",
+      "PopulatedPlace",
+      "Region"
+    ],
+    "schema_type": "AdministrativeTerritory",
+    "status": "linked"
+  },
+  "mass_media": {
+    "surface": "Mass_Media",
+    "kb_id": "http://dbpedia.org/resource/Mass_media",
+    "kb_types": [
+      "AcademicSubject"
+    ],
+    "schema_type": null,
+    "status": "no_type_match",
+    "via_redirect": "Mass_media"
+  },
+  "jonathan_palmer": {
+    "surface": "Jonathan_Palmer",
+    "kb_id": "http://dbpedia.org/resource/Jonathan_Palmer",
+    "kb_types": [
+      "Animal",
+      "Eukaryote",
+      "FormulaOneRacer",
+      "Person",
+      "Species"
+    ],
+    "schema_type": "Person",
+    "status": "linked"
+  }
+}

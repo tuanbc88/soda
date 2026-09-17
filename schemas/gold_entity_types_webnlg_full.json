@@ -1,0 +1,4272 @@
+{
+  "_meta": {
+    "dataset": "webnlg_full",
+    "source": "dbpedia",
+    "granularity": "per-slot, schema low-level type grounded vs KB domain/range"
+  },
+  "_report": {
+    "n_relations": 381,
+    "head": {
+      "accepted": 10,
+      "broader": 63,
+      "confirmed": 64,
+      "literal_or_unmapped": 8,
+      "narrower": 25,
+      "unverified": 211
+    },
+    "tail": {
+      "accepted": 4,
+      "broader": 31,
+      "confirmed": 67,
+      "literal_or_unmapped": 123,
+      "narrower": 13,
+      "unverified": 143
+    },
+    "mismatches": []
+  },
+  "creator": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Person",
+    "prop": "dbo:creator",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Agent": "Agent"
+    },
+    "head_status": "unverified",
+    "tail_status": "accepted"
+  },
+  "broadcastedBy": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Organization",
+    "prop": "dbo:broadcastedBy",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "firstAired": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Date",
+    "prop": "dbo:firstAired",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "established": {
+    "schema_head": "Organization",
+    "schema_tail": "Date",
+    "prop": "dbo:established",
+    "head_allowed": {
+      "ChristianDoctrine": "ChristianDoctrine"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "accepted",
+    "tail_status": "literal_or_unmapped"
+  },
+  "location": {
+    "schema_head": "Organization",
+    "schema_tail": "Location",
+    "prop": "dbo:location",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "municipality": {
+    "schema_head": "Location",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:municipality",
+    "head_allowed": {},
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "unverified",
+    "tail_status": "narrower"
+  },
+  "category": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:category",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "hasToItsNorth": {
+    "schema_head": "Location",
+    "schema_tail": "Location",
+    "prop": "dbo:hasToItsNorth",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "country": {
+    "schema_head": "Location",
+    "schema_tail": "Country",
+    "prop": "dbo:country",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Country": "Country"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "governmentType": {
+    "schema_head": "Country",
+    "schema_tail": "TextValue",
+    "prop": "dbo:governmentType",
+    "head_allowed": {},
+    "tail_allowed": {
+      "GovernmentType": "GovernmentType"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "address": {
+    "schema_head": "Organization",
+    "schema_tail": "TextValue",
+    "prop": "dbo:address",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "accepted",
+    "tail_status": "literal_or_unmapped"
+  },
+  "currentTenants": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:currentTenants",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "owner": {
+    "schema_head": "Organization",
+    "schema_tail": "Organization",
+    "prop": "dbo:owner",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Agent": "Agent"
+    },
+    "head_status": "unverified",
+    "tail_status": "narrower"
+  },
+  "operatingOrganisation": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:operatingOrganisation",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "runwayLength": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:runwayLength",
+    "head_allowed": {
+      "Airport": "Airport"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "birthDate": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:birthDate",
+    "head_allowed": {
+      "Animal": "Animal"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "nationality": {
+    "schema_head": "Person",
+    "schema_tail": "Country",
+    "prop": "dbo:nationality",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "Country": "Country"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "deathPlace": {
+    "schema_head": "Person",
+    "schema_tail": "Location",
+    "prop": "dbo:deathPlace",
+    "head_allowed": {
+      "Animal": "Animal"
+    },
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "narrower",
+    "tail_status": "confirmed"
+  },
+  "selectedByNasa": {
+    "schema_head": "Person",
+    "schema_tail": "Organization",
+    "prop": "dbo:selectedByNasa",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "birthPlace": {
+    "schema_head": "Person",
+    "schema_tail": "Location",
+    "prop": "dbo:birthPlace",
+    "head_allowed": {
+      "Animal": "Animal"
+    },
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "narrower",
+    "tail_status": "confirmed"
+  },
+  "occupation": {
+    "schema_head": "Person",
+    "schema_tail": "Occupation",
+    "prop": "dbo:occupation",
+    "head_allowed": {},
+    "tail_allowed": {
+      "PersonFunction": "PersonFunction"
+    },
+    "head_status": "unverified",
+    "tail_status": "accepted"
+  },
+  "icaoLocationIdentifier": {
+    "schema_head": "Airport",
+    "schema_tail": "TextValue",
+    "prop": "dbo:icaoLocationIdentifier",
+    "head_allowed": {
+      "Airport": "Airport"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "elevationAboveTheSeaLevel": {
+    "schema_head": "Location",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:elevationAboveTheSeaLevel",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "league": {
+    "schema_head": "SportsTeam",
+    "schema_tail": "SportsLeague",
+    "prop": "dbo:league",
+    "head_allowed": {},
+    "tail_allowed": {
+      "SportsLeague": "SportsLeague"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "champions": {
+    "schema_head": "SportsLeague",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:champions",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "numberOfMembers": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfMembers",
+    "head_allowed": {
+      "Legislature": "Legislature"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "ground": {
+    "schema_head": "SportsTeam",
+    "schema_tail": "Location",
+    "prop": "dbo:ground",
+    "head_allowed": {
+      "SoccerClub": "SoccerClub"
+    },
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "accepted",
+    "tail_status": "confirmed"
+  },
+  "affiliation": {
+    "schema_head": "Person",
+    "schema_tail": "Organization",
+    "prop": "dbo:affiliation",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "city": {
+    "schema_head": "Location",
+    "schema_tail": "Settlement",
+    "prop": "dbo:city",
+    "head_allowed": {},
+    "tail_allowed": {
+      "City": "City"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "leader": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:leader",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "course": {
+    "schema_head": "Food",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:course",
+    "head_allowed": {
+      "GrandPrix": "GrandPrix"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "accepted",
+    "tail_status": "literal_or_unmapped"
+  },
+  "instrument": {
+    "schema_head": "Person",
+    "schema_tail": "Product",
+    "prop": "dbo:instrument",
+    "head_allowed": {
+      "Artist": "Artist"
+    },
+    "tail_allowed": {
+      "Instrument": "Instrument"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "associatedBand/associatedMusicalArtist": {
+    "schema_head": "Person",
+    "schema_tail": "Organization",
+    "prop": "dbo:associatedBand/associatedMusicalArtist",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "activeYearsStartYear": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:activeYearsStartYear",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "foundingDate": {
+    "schema_head": "Organization",
+    "schema_tail": "Date",
+    "prop": "dbo:foundingDate",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "product": {
+    "schema_head": "Organization",
+    "schema_tail": "Product",
+    "prop": "dbo:product",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "industry": {
+    "schema_head": "Organization",
+    "schema_tail": "Industry",
+    "prop": "dbo:industry",
+    "head_allowed": {
+      "Company": "Company"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "architect": {
+    "schema_head": "Building",
+    "schema_tail": "Person",
+    "prop": "dbo:architect",
+    "head_allowed": {
+      "ArchitecturalStructure": "ArchitecturalStructure"
+    },
+    "tail_allowed": {
+      "Architect": "Architect"
+    },
+    "head_status": "narrower",
+    "tail_status": "broader"
+  },
+  "currency": {
+    "schema_head": "Country",
+    "schema_tail": "Currency",
+    "prop": "dbo:currency",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Currency": "Currency"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "demonym": {
+    "schema_head": "Location",
+    "schema_tail": "TextValue",
+    "prop": "dbo:demonym",
+    "head_allowed": {},
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "mainIngredient": {
+    "schema_head": "Entity",
+    "schema_tail": "Entity",
+    "prop": "dbo:mainIngredient",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "mission": {
+    "schema_head": "Person",
+    "schema_tail": "Event",
+    "prop": "dbo:mission",
+    "head_allowed": {},
+    "tail_allowed": {
+      "SpaceMission": "SpaceMission"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "region": {
+    "schema_head": "Location",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:region",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "unverified",
+    "tail_status": "narrower"
+  },
+  "spouse": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:spouse",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "inOfficeWhilePresident": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:inOfficeWhilePresident",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "keyPerson": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:keyPerson",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "type": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:type",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "youthclub": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:youthclub",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "club": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:club",
+    "head_allowed": {
+      "Athlete": "Athlete"
+    },
+    "tail_allowed": {
+      "SportsTeam": "SportsTeam"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "populationMetro": {
+    "schema_head": "Settlement",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:populationMetro",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "leaderTitle": {
+    "schema_head": "Organization",
+    "schema_tail": "Occupation",
+    "prop": "dbo:leaderTitle",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "accepted",
+    "tail_status": "literal_or_unmapped"
+  },
+  "populationDensity": {
+    "schema_head": "Settlement",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:populationDensity",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "apoapsis": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:apoapsis",
+    "head_allowed": {
+      "CelestialBody": "CelestialBody"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "orbitalPeriod": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:orbitalPeriod",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "discoverer": {
+    "schema_head": "Entity",
+    "schema_tail": "Person",
+    "prop": "dbo:discoverer",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "absoluteMagnitude": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:absoluteMagnitude",
+    "head_allowed": {
+      "CelestialBody": "CelestialBody"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "discovered": {
+    "schema_head": "Entity",
+    "schema_tail": "Date",
+    "prop": "dbo:discovered",
+    "head_allowed": {
+      "CelestialBody": "CelestialBody"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "rotationPeriod": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:rotationPeriod",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "deathDate": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:deathDate",
+    "head_allowed": {
+      "Animal": "Animal"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "training": {
+    "schema_head": "Person",
+    "schema_tail": "EducationalInstitution",
+    "prop": "dbo:training",
+    "head_allowed": {
+      "Artist": "Artist"
+    },
+    "tail_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "professionalField": {
+    "schema_head": "Person",
+    "schema_tail": "Industry",
+    "prop": "dbo:professionalField",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "isPartOf": {
+    "schema_head": "Location",
+    "schema_tail": "Location",
+    "prop": "dbo:isPartOf",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "productionStartYear": {
+    "schema_head": "Product",
+    "schema_tail": "Date",
+    "prop": "dbo:productionStartYear",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "assembly": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Organization",
+    "prop": "dbo:assembly",
+    "head_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "productionEndYear": {
+    "schema_head": "Product",
+    "schema_tail": "Date",
+    "prop": "dbo:productionEndYear",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "runwayName": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:runwayName",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "currentteam": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:currentteam",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "debutTeam": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:debutTeam",
+    "head_allowed": {
+      "Athlete": "Athlete"
+    },
+    "tail_allowed": {
+      "SportsTeam": "SportsTeam"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "weight": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:weight",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "buildingStartDate": {
+    "schema_head": "Building",
+    "schema_tail": "Date",
+    "prop": "dbo:buildingStartDate",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "completionDate": {
+    "schema_head": "Building",
+    "schema_tail": "Date",
+    "prop": "dbo:completionDate",
+    "head_allowed": {
+      "Work": "Work"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "accepted",
+    "tail_status": "literal_or_unmapped"
+  },
+  "state": {
+    "schema_head": "Settlement",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:state",
+    "head_allowed": {},
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "unverified",
+    "tail_status": "narrower"
+  },
+  "hasToItsSoutheast": {
+    "schema_head": "Location",
+    "schema_tail": "Location",
+    "prop": "dbo:hasToItsSoutheast",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "periapsis": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:periapsis",
+    "head_allowed": {
+      "CelestialBody": "CelestialBody"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "genre": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Genre",
+    "prop": "dbo:genre",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Genre": "Genre"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "status": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:status",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "almaMater": {
+    "schema_head": "Person",
+    "schema_tail": "EducationalInstitution",
+    "prop": "dbo:almaMater",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "award": {
+    "schema_head": "Person",
+    "schema_tail": "Award",
+    "prop": "dbo:award",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Award": "Award"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "ethnicGroup": {
+    "schema_head": "Location",
+    "schema_tail": "EthnicGroup",
+    "prop": "dbo:ethnicGroup",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "EthnicGroup": "EthnicGroup"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "campus": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "Location",
+    "prop": "dbo:campus",
+    "head_allowed": {
+      "University": "University"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "cityServed": {
+    "schema_head": "Building",
+    "schema_tail": "Settlement",
+    "prop": "dbo:cityServed",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "dishVariation": {
+    "schema_head": "Entity",
+    "schema_tail": "Entity",
+    "prop": "dbo:dishVariation",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "ingredient": {
+    "schema_head": "Entity",
+    "schema_tail": "Entity",
+    "prop": "dbo:ingredient",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {},
+    "head_status": "literal_or_unmapped",
+    "tail_status": "unverified"
+  },
+  "timeZone": {
+    "schema_head": "Location",
+    "schema_tail": "TimeZone",
+    "prop": "dbo:timeZone",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "foundedBy": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:foundedBy",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Agent": "Agent"
+    },
+    "head_status": "unverified",
+    "tail_status": "accepted"
+  },
+  "epoch": {
+    "schema_head": "Entity",
+    "schema_tail": "Date",
+    "prop": "dbo:epoch",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "literal_or_unmapped",
+    "tail_status": "literal_or_unmapped"
+  },
+  "engine": {
+    "schema_head": "Product",
+    "schema_tail": "Engine",
+    "prop": "dbo:engine",
+    "head_allowed": {
+      "Automobile": "Automobile"
+    },
+    "tail_allowed": {
+      "AutomobileEngine": "AutomobileEngine"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "powerType": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:powerType",
+    "head_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "length": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:length",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "numberOfUndergraduateStudents": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfUndergraduateStudents",
+    "head_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "staff": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:staff",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "numberOfStudents": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfStudents",
+    "head_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "numberOfDoctoralStudents": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfDoctoralStudents",
+    "head_allowed": {
+      "University": "University"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "numberOfPostgraduateStudents": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfPostgraduateStudents",
+    "head_allowed": {
+      "University": "University"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "dateOfRetirement": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:dateOfRetirement",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "numberOfPages": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfPages",
+    "head_allowed": {
+      "WrittenWork": "WrittenWork"
+    },
+    "tail_allowed": {
+      "XMLSchema#positiveInteger": "XMLSchema#positiveInteger"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "author": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Person",
+    "prop": "dbo:author",
+    "head_allowed": {
+      "Work": "Work"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "areaCode": {
+    "schema_head": "Settlement",
+    "schema_tail": "TextValue",
+    "prop": "dbo:areaCode",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "season": {
+    "schema_head": "MediaWork",
+    "schema_tail": "MediaWork",
+    "prop": "dbo:season",
+    "head_allowed": {
+      "Agent": "Agent"
+    },
+    "tail_allowed": {},
+    "head_status": "accepted",
+    "tail_status": "unverified"
+  },
+  "subsidiary": {
+    "schema_head": "Organization",
+    "schema_tail": "Organization",
+    "prop": "dbo:subsidiary",
+    "head_allowed": {
+      "Company": "Company"
+    },
+    "tail_allowed": {
+      "Company": "Company"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "revenue": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:revenue",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "nickname": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:nickname",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "height": {
+    "schema_head": "Entity",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:height",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "currentclub": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:currentclub",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "starring": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Person",
+    "prop": "dbo:starring",
+    "head_allowed": {
+      "Work": "Work"
+    },
+    "tail_allowed": {
+      "Actor": "Actor"
+    },
+    "head_status": "confirmed",
+    "tail_status": "broader"
+  },
+  "utcOffset": {
+    "schema_head": "Location",
+    "schema_tail": "TimeZone",
+    "prop": "dbo:utcOffset",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "publisher": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Organization",
+    "prop": "dbo:publisher",
+    "head_allowed": {
+      "Work": "Work"
+    },
+    "tail_allowed": {
+      "Agent": "Agent"
+    },
+    "head_status": "confirmed",
+    "tail_status": "narrower"
+  },
+  "literaryGenre": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Genre",
+    "prop": "dbo:literaryGenre",
+    "head_allowed": {
+      "WrittenWork": "WrittenWork"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "followedBy": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:followedBy",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "precededBy": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:precededBy",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "builder": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:builder",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "cylinderCount": {
+    "schema_head": "Product",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:cylinderCount",
+    "head_allowed": {
+      "Locomotive": "Locomotive"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "origin": {
+    "schema_head": "Entity",
+    "schema_tail": "Location",
+    "prop": "dbo:origin",
+    "head_allowed": {},
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "child": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:child",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "foundationPlace": {
+    "schema_head": "Organization",
+    "schema_tail": "Location",
+    "prop": "dbo:foundationPlace",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "City": "City"
+    },
+    "head_status": "confirmed",
+    "tail_status": "broader"
+  },
+  "numberOfEmployees": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfEmployees",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "bodyStyle": {
+    "schema_head": "Product",
+    "schema_tail": "TextValue",
+    "prop": "dbo:bodyStyle",
+    "head_allowed": {
+      "Automobile": "Automobile"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "runwaySurfaceType": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:runwaySurfaceType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "director": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Person",
+    "prop": "dbo:director",
+    "head_allowed": {
+      "Film": "Film"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "wasGivenTheTechnicalCampusStatusBy": {
+    "schema_head": "Organization",
+    "schema_tail": "Organization",
+    "prop": "dbo:wasGivenTheTechnicalCampusStatusBy",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "hasToItsWest": {
+    "schema_head": "Location",
+    "schema_tail": "Location",
+    "prop": "dbo:hasToItsWest",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "designer": {
+    "schema_head": "Entity",
+    "schema_tail": "Person",
+    "prop": "dbo:designer",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "netIncome": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:netIncome",
+    "head_allowed": {
+      "Company": "Company"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "buildDate": {
+    "schema_head": "Building",
+    "schema_tail": "Date",
+    "prop": "dbo:buildDate",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "successor": {
+    "schema_head": "Entity",
+    "schema_tail": "Entity",
+    "prop": "dbo:successor",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "party": {
+    "schema_head": "Person",
+    "schema_tail": "Organization",
+    "prop": "dbo:party",
+    "head_allowed": {},
+    "tail_allowed": {
+      "PoliticalParty": "PoliticalParty"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "senators": {
+    "schema_head": "AdministrativeTerritory",
+    "schema_tail": "Person",
+    "prop": "dbo:senators",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "manager": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:manager",
+    "head_allowed": {
+      "SportsTeam": "SportsTeam"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "hasToItsSouthwest": {
+    "schema_head": "Location",
+    "schema_tail": "Location",
+    "prop": "dbo:hasToItsSouthwest",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "lastAired": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Date",
+    "prop": "dbo:lastAired",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "foundingYear": {
+    "schema_head": "Organization",
+    "schema_tail": "Date",
+    "prop": "dbo:foundingYear",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "releaseDate": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Date",
+    "prop": "dbo:releaseDate",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "longName": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:longName",
+    "head_allowed": {},
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "language": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Language",
+    "prop": "dbo:language",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Language": "Language"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "formerTeam": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:formerTeam",
+    "head_allowed": {
+      "Athlete": "Athlete"
+    },
+    "tail_allowed": {
+      "SportsTeam": "SportsTeam"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "areaTotal": {
+    "schema_head": "Location",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:areaTotal",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "manufacturer": {
+    "schema_head": "Product",
+    "schema_tail": "Organization",
+    "prop": "dbo:manufacturer",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "anthem": {
+    "schema_head": "Organization",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:anthem",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Work": "Work"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "servedAsChiefOfTheAstronautOfficeIn": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:servedAsChiefOfTheAstronautOfficeIn",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "fullName": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:fullName",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "firstAppearanceInFilm": {
+    "schema_head": "Person",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:firstAppearanceInFilm",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "series": {
+    "schema_head": "MediaWork",
+    "schema_tail": "MediaWork",
+    "prop": "dbo:series",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "regionServed": {
+    "schema_head": "Organization",
+    "schema_tail": "Location",
+    "prop": "dbo:regionServed",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "office": {
+    "schema_head": "Person",
+    "schema_tail": "Occupation",
+    "prop": "dbo:office",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "populationTotal": {
+    "schema_head": "Location",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:populationTotal",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "tenant": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:tenant",
+    "head_allowed": {
+      "ArchitecturalStructure": "ArchitecturalStructure"
+    },
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "narrower",
+    "tail_status": "confirmed"
+  },
+  "bird": {
+    "schema_head": "Country",
+    "schema_tail": "Entity",
+    "prop": "dbo:bird",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "Species": "Species"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "coach": {
+    "schema_head": "SportsTeam",
+    "schema_tail": "Person",
+    "prop": "dbo:coach",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "postalCode": {
+    "schema_head": "Location",
+    "schema_tail": "TextValue",
+    "prop": "dbo:postalCode",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "extinctionDate": {
+    "schema_head": "Entity",
+    "schema_tail": "Date",
+    "prop": "dbo:extinctionDate",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "cosparId": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:cosparId",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "service": {
+    "schema_head": "Organization",
+    "schema_tail": "TextValue",
+    "prop": "dbo:service",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "draftPick": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:draftPick",
+    "head_allowed": {
+      "GridironFootballPlayer": "GridironFootballPlayer"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "academicStaffSize": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:academicStaffSize",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "sportsOffered": {
+    "schema_head": "Organization",
+    "schema_tail": "Industry",
+    "prop": "dbo:sportsOffered",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "parentCompany": {
+    "schema_head": "Organization",
+    "schema_tail": "Organization",
+    "prop": "dbo:parentCompany",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Company": "Company"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "founder": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:founder",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "president": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:president",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "ceremonialCounty": {
+    "schema_head": "Settlement",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:ceremonialCounty",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "narrower",
+    "tail_status": "narrower"
+  },
+  "1stRunwayLengthFeet": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:1stRunwayLengthFeet",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "1stRunwayLengthMetre": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:1stRunwayLengthMetre",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "1stRunwayNumber": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:1stRunwayNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "1stRunwaySurfaceType": {
+    "schema_head": "Airport",
+    "schema_tail": "Material",
+    "prop": "dbo:1stRunwaySurfaceType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "2ndRunwaySurfaceType": {
+    "schema_head": "Airport",
+    "schema_tail": "Material",
+    "prop": "dbo:2ndRunwaySurfaceType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "3rdRunwayLengthFeet": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:3rdRunwayLengthFeet",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "3rdRunwaySurfaceType": {
+    "schema_head": "Airport",
+    "schema_tail": "Material",
+    "prop": "dbo:3rdRunwaySurfaceType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "4thRunwayLengthFeet": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:4thRunwayLengthFeet",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "4thRunwaySurfaceType": {
+    "schema_head": "Airport",
+    "schema_tail": "Material",
+    "prop": "dbo:4thRunwaySurfaceType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "5thRunwayNumber": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:5thRunwayNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "5thRunwaySurfaceType": {
+    "schema_head": "Airport",
+    "schema_tail": "Material",
+    "prop": "dbo:5thRunwaySurfaceType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "LCCN_number": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:LCCN_number",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "NationalRegisterOfHistoricPlacesReferenceNumber": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:NationalRegisterOfHistoricPlacesReferenceNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "abbreviation": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:abbreviation",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "academicDiscipline": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Field",
+    "prop": "dbo:academicDiscipline",
+    "head_allowed": {
+      "AcademicJournal": "AcademicJournal"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "activeYearsEndDate": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:activeYearsEndDate",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "activeYearsEndYear": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:activeYearsEndYear",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "activeYearsStartDate": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:activeYearsStartDate",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "addedToTheNationalRegisterOfHistoricPlaces": {
+    "schema_head": "Building",
+    "schema_tail": "Date",
+    "prop": "dbo:addedToTheNationalRegisterOfHistoricPlaces",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "administrativeArrondissement": {
+    "schema_head": "Settlement",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:administrativeArrondissement",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "aircraftFighter": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:aircraftFighter",
+    "head_allowed": {
+      "MilitaryUnit": "MilitaryUnit"
+    },
+    "tail_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "aircraftHelicopter": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:aircraftHelicopter",
+    "head_allowed": {
+      "MilitaryUnit": "MilitaryUnit"
+    },
+    "tail_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "alternativeName": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:alternativeName",
+    "head_allowed": {},
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "architecturalStyle": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:architecturalStyle",
+    "head_allowed": {
+      "ArchitecturalStructure": "ArchitecturalStructure"
+    },
+    "tail_allowed": {},
+    "head_status": "narrower",
+    "tail_status": "unverified"
+  },
+  "architecture": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:architecture",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "areaOfLand": {
+    "schema_head": "Settlement",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:areaOfLand",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "areaOfWater": {
+    "schema_head": "Settlement",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:areaOfWater",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "areaUrban": {
+    "schema_head": "Settlement",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:areaUrban",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "associatedRocket": {
+    "schema_head": "LaunchPad",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:associatedRocket",
+    "head_allowed": {
+      "LaunchPad": "LaunchPad"
+    },
+    "tail_allowed": {
+      "Rocket": "Rocket"
+    },
+    "head_status": "confirmed",
+    "tail_status": "broader"
+  },
+  "attackAircraft": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:attackAircraft",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "averageSpeed": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:averageSpeed",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "awards": {
+    "schema_head": "Person",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:awards",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "background": {
+    "schema_head": "Person",
+    "schema_tail": "TextValue",
+    "prop": "dbo:background",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "backupPilot": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Person",
+    "prop": "dbo:backupPilot",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "bandMember": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:bandMember",
+    "head_allowed": {
+      "Band": "Band"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "battle": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Event",
+    "prop": "dbo:battle",
+    "head_allowed": {},
+    "tail_allowed": {
+      "MilitaryConflict": "MilitaryConflict"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "bedCount": {
+    "schema_head": "Hospital",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:bedCount",
+    "head_allowed": {
+      "Hospital": "Hospital"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "birthName": {
+    "schema_head": "Person",
+    "schema_tail": "TextValue",
+    "prop": "dbo:birthName",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "birthYear": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:birthYear",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "buildingType": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:buildingType",
+    "head_allowed": {
+      "Building": "Building"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "capital": {
+    "schema_head": "Country",
+    "schema_tail": "Settlement",
+    "prop": "dbo:capital",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "City": "City"
+    },
+    "head_status": "narrower",
+    "tail_status": "broader"
+  },
+  "carbohydrate": {
+    "schema_head": "Food",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:carbohydrate",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "chairman": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:chairman",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "chairmanTitle": {
+    "schema_head": "Organization",
+    "schema_tail": "TextValue",
+    "prop": "dbo:chairmanTitle",
+    "head_allowed": {
+      "SoccerClub": "SoccerClub"
+    },
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "chairperson": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:chairperson",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "chancellor": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "Person",
+    "prop": "dbo:chancellor",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "chief": {
+    "schema_head": "Organization",
+    "schema_tail": "Person",
+    "prop": "dbo:chief",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Chief": "Chief"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "christeningDate": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:christeningDate",
+    "head_allowed": {
+      "Ship": "Ship"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "class": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:class",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "codenCode": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:codenCode",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "college": {
+    "schema_head": "Person",
+    "schema_tail": "EducationalInstitution",
+    "prop": "dbo:college",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "colour": {
+    "schema_head": "Organization",
+    "schema_tail": "TextValue",
+    "prop": "dbo:colour",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Colour": "Colour"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "commander": {
+    "schema_head": "Event",
+    "schema_tail": "Person",
+    "prop": "dbo:commander",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "comparable": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:comparable",
+    "head_allowed": {
+      "Rocket": "Rocket"
+    },
+    "tail_allowed": {
+      "Rocket": "Rocket"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "competeIn": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "SportsLeague",
+    "prop": "dbo:competeIn",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "cost": {
+    "schema_head": "Building",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:cost",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "countryOrigin": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Country",
+    "prop": "dbo:countryOrigin",
+    "head_allowed": {
+      "Rocket": "Rocket"
+    },
+    "tail_allowed": {
+      "Country": "Country"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "countySeat": {
+    "schema_head": "AdministrativeTerritory",
+    "schema_tail": "Settlement",
+    "prop": "dbo:countySeat",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {},
+    "head_status": "narrower",
+    "tail_status": "unverified"
+  },
+  "creatorOfDish": {
+    "schema_head": "Food",
+    "schema_tail": "Person",
+    "prop": "dbo:creatorOfDish",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "crewMembers": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Person",
+    "prop": "dbo:crewMembers",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "dean": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "Person",
+    "prop": "dbo:dean",
+    "head_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "deathCause": {
+    "schema_head": "Person",
+    "schema_tail": "MedicalCondition",
+    "prop": "dbo:deathCause",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "deathYear": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:deathYear",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "dedicatedTo": {
+    "schema_head": "Building",
+    "schema_tail": "Person",
+    "prop": "dbo:dedicatedTo",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "density": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:density",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "derivative": {
+    "schema_head": "Genre",
+    "schema_tail": "Genre",
+    "prop": "dbo:derivative",
+    "head_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "tail_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "designCompany": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Organization",
+    "prop": "dbo:designCompany",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Company": "Company"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "developer": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:developer",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Agent": "Agent"
+    },
+    "head_status": "unverified",
+    "tail_status": "narrower"
+  },
+  "diameter": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:diameter",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "distributingCompany": {
+    "schema_head": "Organization",
+    "schema_tail": "Organization",
+    "prop": "dbo:distributingCompany",
+    "head_allowed": {
+      "RecordLabel": "RecordLabel"
+    },
+    "tail_allowed": {
+      "Company": "Company"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "distributor": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Organization",
+    "prop": "dbo:distributor",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "district": {
+    "schema_head": "Building",
+    "schema_tail": "Location",
+    "prop": "dbo:district",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "accepted",
+    "tail_status": "broader"
+  },
+  "division": {
+    "schema_head": "Taxon",
+    "schema_tail": "Taxon",
+    "prop": "dbo:division",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "doctoralAdvisor": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:doctoralAdvisor",
+    "head_allowed": {
+      "Scientist": "Scientist"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "doctoralStudent": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:doctoralStudent",
+    "head_allowed": {
+      "Scientist": "Scientist"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "draftRound": {
+    "schema_head": "Person",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:draftRound",
+    "head_allowed": {
+      "GridironFootballPlayer": "GridironFootballPlayer"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "draftTeam": {
+    "schema_head": "Person",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:draftTeam",
+    "head_allowed": {
+      "Athlete": "Athlete"
+    },
+    "tail_allowed": {
+      "SportsTeam": "SportsTeam"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "draftYear": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:draftYear",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "editor": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Person",
+    "prop": "dbo:editor",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Agent": "Agent"
+    },
+    "head_status": "unverified",
+    "tail_status": "accepted"
+  },
+  "eissnNumber": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:eissnNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "elevationAboveTheSeaLevelInFeet": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:elevationAboveTheSeaLevelInFeet",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "elevationAboveTheSeaLevelInMetres": {
+    "schema_head": "Airport",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:elevationAboveTheSeaLevelInMetres",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "employer": {
+    "schema_head": "Person",
+    "schema_tail": "Organization",
+    "prop": "dbo:employer",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "escapeVelocity": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:escapeVelocity",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "failedLaunches": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:failedLaunches",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "family": {
+    "schema_head": "Taxon",
+    "schema_tail": "Taxon",
+    "prop": "dbo:family",
+    "head_allowed": {
+      "Species": "Species"
+    },
+    "tail_allowed": {
+      "Species": "Species"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "fat": {
+    "schema_head": "Food",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:fat",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "fate": {
+    "schema_head": "Organization",
+    "schema_tail": "Organization",
+    "prop": "dbo:fate",
+    "head_allowed": {
+      "Company": "Company"
+    },
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "finalFlight": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:finalFlight",
+    "head_allowed": {
+      "Rocket": "Rocket"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "firstPublicationYear": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "Date",
+    "prop": "dbo:firstPublicationYear",
+    "head_allowed": {
+      "PeriodicalLiterature": "PeriodicalLiterature"
+    },
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "floorArea": {
+    "schema_head": "Building",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:floorArea",
+    "head_allowed": {
+      "Building": "Building"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "floorCount": {
+    "schema_head": "Building",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:floorCount",
+    "head_allowed": {
+      "Building": "Building"
+    },
+    "tail_allowed": {
+      "XMLSchema#positiveInteger": "XMLSchema#positiveInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "formerName": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "TextValue",
+    "prop": "dbo:formerName",
+    "head_allowed": {},
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "fossil": {
+    "schema_head": "Taxon",
+    "schema_tail": "Taxon",
+    "prop": "dbo:fossil",
+    "head_allowed": {
+      "Species": "Species"
+    },
+    "tail_allowed": {
+      "Species": "Species"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "frequency": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:frequency",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "function": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:function",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "garrison": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Settlement",
+    "prop": "dbo:garrison",
+    "head_allowed": {
+      "MilitaryUnit": "MilitaryUnit"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "confirmed",
+    "tail_status": "narrower"
+  },
+  "gemstone": {
+    "schema_head": "AdministrativeTerritory",
+    "schema_tail": "Material",
+    "prop": "dbo:gemstone",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "generalManager": {
+    "schema_head": "SportsTeam",
+    "schema_tail": "Person",
+    "prop": "dbo:generalManager",
+    "head_allowed": {
+      "SportsTeam": "SportsTeam"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "genus": {
+    "schema_head": "Taxon",
+    "schema_tail": "Taxon",
+    "prop": "dbo:genus",
+    "head_allowed": {
+      "Species": "Species"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "governingBody": {
+    "schema_head": "Settlement",
+    "schema_tail": "Organization",
+    "prop": "dbo:governingBody",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "narrower",
+    "tail_status": "confirmed"
+  },
+  "hasDeputy": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:hasDeputy",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "hasToItsNortheast": {
+    "schema_head": "Settlement",
+    "schema_tail": "Location",
+    "prop": "dbo:hasToItsNortheast",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "hasToItsNorthwest": {
+    "schema_head": "AdministrativeTerritory",
+    "schema_tail": "Location",
+    "prop": "dbo:hasToItsNorthwest",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "headquarter": {
+    "schema_head": "Organization",
+    "schema_tail": "Settlement",
+    "prop": "dbo:headquarter",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "confirmed",
+    "tail_status": "narrower"
+  },
+  "higher": {
+    "schema_head": "Award",
+    "schema_tail": "Award",
+    "prop": "dbo:higher",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "hubAirport": {
+    "schema_head": "Organization",
+    "schema_tail": "Airport",
+    "prop": "dbo:hubAirport",
+    "head_allowed": {
+      "Airline": "Airline"
+    },
+    "tail_allowed": {
+      "Airport": "Airport"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "iataLocationIdentifier": {
+    "schema_head": "Airport",
+    "schema_tail": "TextValue",
+    "prop": "dbo:iataLocationIdentifier",
+    "head_allowed": {
+      "Infrastructure": "Infrastructure"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "impactFactor": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:impactFactor",
+    "head_allowed": {
+      "AcademicJournal": "AcademicJournal"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "inOfficeWhileGovernor": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:inOfficeWhileGovernor",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "inOfficeWhileMonarch": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:inOfficeWhileMonarch",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "inOfficeWhilePrimeMinister": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:inOfficeWhilePrimeMinister",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "inOfficeWhileVicePresident": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:inOfficeWhileVicePresident",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "inaugurationDate": {
+    "schema_head": "Building",
+    "schema_tail": "Date",
+    "prop": "dbo:inaugurationDate",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "influencedBy": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:influencedBy",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "isPartOfMilitaryConflict": {
+    "schema_head": "Event",
+    "schema_tail": "Event",
+    "prop": "dbo:isPartOfMilitaryConflict",
+    "head_allowed": {
+      "MilitaryConflict": "MilitaryConflict"
+    },
+    "tail_allowed": {
+      "MilitaryConflict": "MilitaryConflict"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "isbnNumber": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:isbnNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "issnNumber": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:issnNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "jurisdiction": {
+    "schema_head": "Organization",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:jurisdiction",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "largestCity": {
+    "schema_head": "Country",
+    "schema_tail": "Settlement",
+    "prop": "dbo:largestCity",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "narrower",
+    "tail_status": "narrower"
+  },
+  "latinName": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "TextValue",
+    "prop": "dbo:latinName",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "launchSite": {
+    "schema_head": "SpaceMission",
+    "schema_tail": "Building",
+    "prop": "dbo:launchSite",
+    "head_allowed": {
+      "SpaceMission": "SpaceMission"
+    },
+    "tail_allowed": {
+      "Building": "Building"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "layout": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:layout",
+    "head_allowed": {
+      "Automobile": "Automobile"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "leaderParty": {
+    "schema_head": "Settlement",
+    "schema_tail": "Organization",
+    "prop": "dbo:leaderParty",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {},
+    "head_status": "narrower",
+    "tail_status": "unverified"
+  },
+  "legislature": {
+    "schema_head": "Country",
+    "schema_tail": "Organization",
+    "prop": "dbo:legislature",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "Legislature": "Legislature"
+    },
+    "head_status": "narrower",
+    "tail_status": "broader"
+  },
+  "libraryofCongressClassification": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:libraryofCongressClassification",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "locationIdentifier": {
+    "schema_head": "Airport",
+    "schema_tail": "TextValue",
+    "prop": "dbo:locationIdentifier",
+    "head_allowed": {
+      "Airport": "Airport"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "maidenFlight": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:maidenFlight",
+    "head_allowed": {
+      "Rocket": "Rocket"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "maidenVoyage": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:maidenVoyage",
+    "head_allowed": {
+      "Ship": "Ship"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "mascot": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "Entity",
+    "prop": "dbo:mascot",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "mass": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:mass",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "material": {
+    "schema_head": "Building",
+    "schema_tail": "Material",
+    "prop": "dbo:material",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "maximumTemperature": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:maximumTemperature",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "mayor": {
+    "schema_head": "Settlement",
+    "schema_tail": "Person",
+    "prop": "dbo:mayor",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Mayor": "Mayor"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "meanTemperature": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:meanTemperature",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "mediaType": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:mediaType",
+    "head_allowed": {
+      "WrittenWork": "WrittenWork"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "militaryBranch": {
+    "schema_head": "Person",
+    "schema_tail": "MilitaryUnit",
+    "prop": "dbo:militaryBranch",
+    "head_allowed": {
+      "MilitaryPerson": "MilitaryPerson"
+    },
+    "tail_allowed": {
+      "MilitaryUnit": "MilitaryUnit"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "militaryRank": {
+    "schema_head": "Person",
+    "schema_tail": "MilitaryRank",
+    "prop": "dbo:militaryRank",
+    "head_allowed": {
+      "MilitaryPerson": "MilitaryPerson"
+    },
+    "tail_allowed": {},
+    "head_status": "broader",
+    "tail_status": "unverified"
+  },
+  "minimumTemperature": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:minimumTemperature",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "modelStartYear": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:modelStartYear",
+    "head_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "modelYears": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:modelYears",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "mostChampions": {
+    "schema_head": "SportsLeague",
+    "schema_tail": "SportsTeam",
+    "prop": "dbo:mostChampions",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "motto": {
+    "schema_head": "Entity",
+    "schema_tail": "TextValue",
+    "prop": "dbo:motto",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "musicFusionGenre": {
+    "schema_head": "Genre",
+    "schema_tail": "Genre",
+    "prop": "dbo:musicFusionGenre",
+    "head_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "tail_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "musicSubgenre": {
+    "schema_head": "Genre",
+    "schema_tail": "Genre",
+    "prop": "dbo:musicSubgenre",
+    "head_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "tail_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "nativeName": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:nativeName",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "nearestCity": {
+    "schema_head": "Building",
+    "schema_tail": "Settlement",
+    "prop": "dbo:nearestCity",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "accepted",
+    "tail_status": "narrower"
+  },
+  "neighboringMunicipality": {
+    "schema_head": "Settlement",
+    "schema_tail": "Settlement",
+    "prop": "dbo:neighboringMunicipality",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "narrower",
+    "tail_status": "narrower"
+  },
+  "notableWork": {
+    "schema_head": "Person",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:notableWork",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Work": "Work"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "numberOfLocations": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfLocations",
+    "head_allowed": {
+      "Organisation": "Organisation"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "numberOfRooms": {
+    "schema_head": "Building",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfRooms",
+    "head_allowed": {
+      "Building": "Building"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "numberOfVotesAttained": {
+    "schema_head": "Person",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:numberOfVotesAttained",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "oclcNumber": {
+    "schema_head": "CreativeWork",
+    "schema_tail": "TextValue",
+    "prop": "dbo:oclcNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "officialLanguage": {
+    "schema_head": "Country",
+    "schema_tail": "Language",
+    "prop": "dbo:officialLanguage",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "Language": "Language"
+    },
+    "head_status": "narrower",
+    "tail_status": "confirmed"
+  },
+  "officialSchoolColour": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "TextValue",
+    "prop": "dbo:officialSchoolColour",
+    "head_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "operatingIncome": {
+    "schema_head": "Organization",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:operatingIncome",
+    "head_allowed": {
+      "Company": "Company"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "operator": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:operator",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "order": {
+    "schema_head": "Taxon",
+    "schema_tail": "Taxon",
+    "prop": "dbo:order",
+    "head_allowed": {
+      "Species": "Species"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "outlookRanking": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:outlookRanking",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "owningOrganisation": {
+    "schema_head": "Building",
+    "schema_tail": "Organization",
+    "prop": "dbo:owningOrganisation",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Organisation": "Organisation"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "part": {
+    "schema_head": "Settlement",
+    "schema_tail": "AdministrativeTerritory",
+    "prop": "dbo:part",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "partialFailures": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:partialFailures",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "partsType": {
+    "schema_head": "Settlement",
+    "schema_tail": "CreativeWork",
+    "prop": "dbo:partsType",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "patronSaint": {
+    "schema_head": "Country",
+    "schema_tail": "Person",
+    "prop": "dbo:patronSaint",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "percentageOfAreaWater": {
+    "schema_head": "Country",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:percentageOfAreaWater",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#float": "XMLSchema#float"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "place": {
+    "schema_head": "Event",
+    "schema_tail": "Location",
+    "prop": "dbo:place",
+    "head_allowed": {},
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "playerNumber": {
+    "schema_head": "Person",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:playerNumber",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "position": {
+    "schema_head": "Person",
+    "schema_tail": "SportsPosition",
+    "prop": "dbo:position",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "predecessor": {
+    "schema_head": "Person",
+    "schema_tail": "Person",
+    "prop": "dbo:predecessor",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "profession": {
+    "schema_head": "Person",
+    "schema_tail": "Occupation",
+    "prop": "dbo:profession",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "protein": {
+    "schema_head": "Food",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:protein",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "recordLabel": {
+    "schema_head": "Person",
+    "schema_tail": "Organization",
+    "prop": "dbo:recordLabel",
+    "head_allowed": {},
+    "tail_allowed": {
+      "RecordLabel": "RecordLabel"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "rector": {
+    "schema_head": "EducationalInstitution",
+    "schema_tail": "Person",
+    "prop": "dbo:rector",
+    "head_allowed": {
+      "EducationalInstitution": "EducationalInstitution"
+    },
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "related": {
+    "schema_head": "Food",
+    "schema_tail": "Food",
+    "prop": "dbo:related",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "relatedMeanOfTransportation": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:relatedMeanOfTransportation",
+    "head_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "tail_allowed": {
+      "MeanOfTransportation": "MeanOfTransportation"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "religion": {
+    "schema_head": "Country",
+    "schema_tail": "Religion",
+    "prop": "dbo:religion",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "representative": {
+    "schema_head": "AdministrativeTerritory",
+    "schema_tail": "Person",
+    "prop": "dbo:representative",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "narrower",
+    "tail_status": "literal_or_unmapped"
+  },
+  "residence": {
+    "schema_head": "Person",
+    "schema_tail": "Location",
+    "prop": "dbo:residence",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "Place": "Place"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "ribbonAward": {
+    "schema_head": "Person",
+    "schema_tail": "TextValue",
+    "prop": "dbo:ribbonAward",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "river": {
+    "schema_head": "Country",
+    "schema_tail": "Watercourse",
+    "prop": "dbo:river",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "River": "River"
+    },
+    "head_status": "narrower",
+    "tail_status": "broader"
+  },
+  "rocketStages": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:rocketStages",
+    "head_allowed": {
+      "Rocket": "Rocket"
+    },
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "saint": {
+    "schema_head": "Settlement",
+    "schema_tail": "Person",
+    "prop": "dbo:saint",
+    "head_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "tail_allowed": {
+      "Saint": "Saint"
+    },
+    "head_status": "narrower",
+    "tail_status": "broader"
+  },
+  "served": {
+    "schema_head": "Food",
+    "schema_tail": "TextValue",
+    "prop": "dbo:served",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "serviceStartYear": {
+    "schema_head": "Person",
+    "schema_tail": "Date",
+    "prop": "dbo:serviceStartYear",
+    "head_allowed": {
+      "MilitaryPerson": "MilitaryPerson"
+    },
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "servingSize": {
+    "schema_head": "Food",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:servingSize",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "servingTemperature": {
+    "schema_head": "Food",
+    "schema_tail": "TextValue",
+    "prop": "dbo:servingTemperature",
+    "head_allowed": {
+      "Food": "Food"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "confirmed",
+    "tail_status": "literal_or_unmapped"
+  },
+  "shipBeam": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:shipBeam",
+    "head_allowed": {
+      "Ship": "Ship"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "shipClass": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:shipClass",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "shipDisplacement": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:shipDisplacement",
+    "head_allowed": {
+      "Ship": "Ship"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "shipDraft": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:shipDraft",
+    "head_allowed": {
+      "Ship": "Ship"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "shipInService": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:shipInService",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "shipLaidDown": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:shipLaidDown",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "shipLaunch": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:shipLaunch",
+    "head_allowed": {
+      "Ship": "Ship"
+    },
+    "tail_allowed": {
+      "XMLSchema#date": "XMLSchema#date"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "shipOrdered": {
+    "schema_head": "Vehicle",
+    "schema_tail": "Date",
+    "prop": "dbo:shipOrdered",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "shipPower": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:shipPower",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "significantBuilding": {
+    "schema_head": "Person",
+    "schema_tail": "Building",
+    "prop": "dbo:significantBuilding",
+    "head_allowed": {
+      "Architect": "Architect"
+    },
+    "tail_allowed": {
+      "Building": "Building"
+    },
+    "head_status": "broader",
+    "tail_status": "confirmed"
+  },
+  "significantProject": {
+    "schema_head": "Person",
+    "schema_tail": "Building",
+    "prop": "dbo:significantProject",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {},
+    "head_status": "confirmed",
+    "tail_status": "unverified"
+  },
+  "similarDish": {
+    "schema_head": "Food",
+    "schema_tail": "TextValue",
+    "prop": "dbo:similarDish",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "site": {
+    "schema_head": "Building",
+    "schema_tail": "Location",
+    "prop": "dbo:site",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "spokenIn": {
+    "schema_head": "Language",
+    "schema_tail": "Country",
+    "prop": "dbo:spokenIn",
+    "head_allowed": {
+      "Language": "Language"
+    },
+    "tail_allowed": {
+      "PopulatedPlace": "PopulatedPlace"
+    },
+    "head_status": "confirmed",
+    "tail_status": "narrower"
+  },
+  "sportGoverningBody": {
+    "schema_head": "Sport",
+    "schema_tail": "Organization",
+    "prop": "dbo:sportGoverningBody",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "stadium": {
+    "schema_head": "SportsTeam",
+    "schema_tail": "Building",
+    "prop": "dbo:stadium",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Stadium": "Stadium"
+    },
+    "head_status": "unverified",
+    "tail_status": "broader"
+  },
+  "stateOfOrigin": {
+    "schema_head": "Person",
+    "schema_tail": "Country",
+    "prop": "dbo:stateOfOrigin",
+    "head_allowed": {
+      "Person": "Person"
+    },
+    "tail_allowed": {
+      "Country": "Country"
+    },
+    "head_status": "confirmed",
+    "tail_status": "confirmed"
+  },
+  "stylisticOrigin": {
+    "schema_head": "Genre",
+    "schema_tail": "Genre",
+    "prop": "dbo:stylisticOrigin",
+    "head_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "tail_allowed": {
+      "MusicGenre": "MusicGenre"
+    },
+    "head_status": "broader",
+    "tail_status": "broader"
+  },
+  "surfaceArea": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:surfaceArea",
+    "head_allowed": {
+      "Planet": "Planet"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "temperature": {
+    "schema_head": "CelestialBody",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:temperature",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "timeInSpace": {
+    "schema_head": "Person",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:timeInSpace",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "title": {
+    "schema_head": "Person",
+    "schema_tail": "Title",
+    "prop": "dbo:title",
+    "head_allowed": {},
+    "tail_allowed": {
+      "22-rdf-syntax-ns#langString": "22-rdf-syntax-ns#langString"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "topSpeed": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:topSpeed",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "totalLaunches": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:totalLaunches",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#nonNegativeInteger": "XMLSchema#nonNegativeInteger"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "totalProduction": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:totalProduction",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "trainerAircraft": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:trainerAircraft",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "transmission": {
+    "schema_head": "Vehicle",
+    "schema_tail": "TextValue",
+    "prop": "dbo:transmission",
+    "head_allowed": {
+      "Automobile": "Automobile"
+    },
+    "tail_allowed": {
+      "XMLSchema#string": "XMLSchema#string"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "transportAircraft": {
+    "schema_head": "MilitaryUnit",
+    "schema_tail": "Vehicle",
+    "prop": "dbo:transportAircraft",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "unit": {
+    "schema_head": "Person",
+    "schema_tail": "MilitaryUnit",
+    "prop": "dbo:unit",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "universityTeam": {
+    "schema_head": "SportsTeam",
+    "schema_tail": "EducationalInstitution",
+    "prop": "dbo:universityTeam",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "voice": {
+    "schema_head": "MediaWork",
+    "schema_tail": "Person",
+    "prop": "dbo:voice",
+    "head_allowed": {},
+    "tail_allowed": {
+      "Person": "Person"
+    },
+    "head_status": "unverified",
+    "tail_status": "confirmed"
+  },
+  "website": {
+    "schema_head": "Building",
+    "schema_tail": "TextValue",
+    "prop": "dbo:website",
+    "head_allowed": {},
+    "tail_allowed": {},
+    "head_status": "unverified",
+    "tail_status": "unverified"
+  },
+  "wheelbase": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:wheelbase",
+    "head_allowed": {
+      "Automobile": "Automobile"
+    },
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "broader",
+    "tail_status": "literal_or_unmapped"
+  },
+  "width": {
+    "schema_head": "Vehicle",
+    "schema_tail": "NumericValue",
+    "prop": "dbo:width",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#double": "XMLSchema#double"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "year": {
+    "schema_head": "Food",
+    "schema_tail": "Date",
+    "prop": "dbo:year",
+    "head_allowed": {},
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "unverified",
+    "tail_status": "literal_or_unmapped"
+  },
+  "yearOfConstruction": {
+    "schema_head": "Building",
+    "schema_tail": "Date",
+    "prop": "dbo:yearOfConstruction",
+    "head_allowed": {
+      "Place": "Place"
+    },
+    "tail_allowed": {
+      "XMLSchema#gYear": "XMLSchema#gYear"
+    },
+    "head_status": "accepted",
+    "tail_status": "literal_or_unmapped"
+  }
+}

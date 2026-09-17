@@ -1,0 +1,104 @@
+Example 1:
+Text: The location of Trane is Swords, Dublin.
+Triplets: [
+['Trane', 'locatedIn', 'Swords,_Dublin']
+]
+
+Example 2:
+Text: Ciudad Ayala is a city in Morelos with a population of 1,777,539 and a population density of 1604.0. It follows a council-manager government system and has a UTC offset of -6.
+Triplets: [
+['Ciudad_Ayala', 'isA', 'City'],
+['Ciudad_Ayala', 'locatedIn', 'Morelos'],
+['Ciudad_Ayala', 'population', '1777539'],
+['Ciudad_Ayala', 'populationDensity', '1604.0'],
+['Ciudad_Ayala', 'governmentType', 'Council-manager_government'],
+['Ciudad_Ayala', 'utcOffset', '-6']
+]
+
+Example 3:
+Text: The ALCO RS-3 is 17068.8 millimeters long and uses a diesel-electric transmission system.
+Triplets: [
+['ALCO_RS-3', 'length', '17068.8_millimeters'],
+['ALCO_RS-3', 'powerType', 'Diesel-electric_transmission']
+]
+
+Example 4:
+Text: Alan B. Miller Hall in Virginia was designed by Robert A. M. Stern and is located at 101 Ukrop Way.
+Triplets: [
+['Alan_B._Miller_Hall', 'designedBy', 'Robert_A._M._Stern'],
+['Alan_B._Miller_Hall', 'locatedIn', 'Virginia'],
+['Alan_B._Miller_Hall', 'address', '101_Ukrop_Way']
+]
+
+Example 5:
+Text: Liselotte Grschebina was born in Karlsruhe and later died in Israel.
+Triplets: [
+['Liselotte_Grschebina', 'bornIn', 'Karlsruhe'],
+['Liselotte_Grschebina', 'diedIn', 'Israel']
+]
+
+Example 6:
+Text: Agremiação Sportiva Arapiraquense plays in the Campeonato Brasileiro Série C league in Brazil and is managed by Vica.
+Triplets: [
+['Agremiação_Sportiva_Arapiraquense', 'playsIn', 'Campeonato_Brasileiro_Série_C'],
+['Campeonato_Brasileiro_Série_C', 'locatedIn', 'Brazil'],
+['Agremiação_Sportiva_Arapiraquense', 'managedBy', 'Vica']
+]
+
+Example 7:
+Text: John Doe is a student at the National University of Singapore.
+Triplets: [
+['John_Doe', 'studentAt', 'National_University_of_Singapore']
+]
+
+Example 8:
+Text: Maria Lopez studied Biology at Stanford University.
+Triplets: [
+['Maria_Lopez', 'studiedAt', 'Stanford_University'],
+['Maria_Lopez', 'fieldOfStudy', 'Biology']
+]
+
+Example 9:
+Text: Team X defeated Team Y with a score of 2-0.
+Triplets: [
+['Team_X', 'defeated', 'Team_Y'],
+['Team_X', 'score', '2-0']
+]
+
+Example 10:
+Text: Angela Merkel served as Chancellor of Germany from 2005 to 2021.
+Triplets: [
+['Angela_Merkel', 'servedAs', 'Chancellor_of_Germany'],
+['Angela_Merkel', 'termStart', '2005'],
+['Angela_Merkel', 'termEnd', '2021']
+]
+
+Example 11:
+Text: David Kim worked at Microsoft as a data scientist starting in 2018.
+Triplets: [
+['David_Kim', 'workedAt', 'Microsoft'],
+['David_Kim', 'jobTitle', 'data_scientist'],
+['David_Kim', 'startYear', '2018']
+]
+
+Example 12:
+Text: Tesla is an electric vehicle company based in California.
+Triplets: [
+['Tesla', 'isA', 'Electric_vehicle_company'],
+['Tesla', 'locatedIn', 'California']
+]
+
+Example 13:
+Text: The match ended with Team A beating Team B by a score of 3-1.
+Triplets: [
+['Team_A', 'defeated', 'Team_B'],
+['Team_A', 'score', '3-1']
+]
+
+Example 14:
+Text: Robert Brown studied Physics at Oxford University and graduated in 2010.
+Triplets: [
+['Robert_Brown', 'studiedAt', 'Oxford_University'],
+['Robert_Brown', 'fieldOfStudy', 'Physics'],
+['Robert_Brown', 'graduationYear', '2010']
+]

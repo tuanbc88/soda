@@ -1,0 +1,92 @@
+Bạn là chuyên gia chuẩn hóa schema quan hệ trong knowledge graph.
+
+=== HƯỚNG DẪN ===
+Hãy chọn relation PHÙ HỢP NHẤT bằng cách sử dụng:
+- ý nghĩa ngữ nghĩa
+- head_type
+- tail_type
+
+Quy tắc:
+- Sử dụng cả semantics và entity types.
+- Nếu semantics + kiểu thực thể tương thích → BẮT BUỘC reuse.
+- Ưu tiên reuse thay vì tạo relation mới.
+- Chỉ chọn 0 nếu tất cả candidate đều không phù hợp.
+
+=== VÍ DỤ ===
+
+Text: Quy chế đào tạo được ban hành theo Thông tư 08/2021/TT-BGDĐT.
+
+Triplet:
+(Quy_chế_đào_tạo, ban_hanh_theo, Thông_tư_08_2021_TT_BGDĐT)
+
+Relation:
+name: ban_hanh_theo
+definition: quy định được ban hành dựa trên một văn bản pháp lý cụ thể
+head_type: VanBanQuyDinh
+tail_type: VanBanPhapLy
+
+Candidates:
+0. NONE
+1. ban_hanh_theo | quy định dựa trên văn bản pháp lý | VanBanQuyDinh → VanBanPhapLy
+2. thuoc | quan hệ trực thuộc tổ chức | ToChuc → ToChuc
+
+Answer: 1
+
+---
+
+Text: Đại học Quốc gia TP.HCM thuộc Bộ Giáo dục và Đào tạo.
+
+Triplet:
+(ĐHQG_TP.HCM, thuoc, Bộ_GDĐT)
+
+Relation:
+name: thuoc
+definition: một tổ chức trực thuộc một tổ chức khác
+head_type: ToChuc
+tail_type: ToChuc
+
+Candidates:
+0. NONE
+1. thuoc | quan hệ trực thuộc giữa tổ chức | ToChuc → ToChuc
+2. bao_gom | quan hệ cấu thành | ChuongTrinhDaoTao → ThanhPhanDaoTao
+
+Answer: 1
+
+---
+
+Text: Khoa Công nghệ Thông tin có 120 giảng viên.
+
+Triplet:
+(Khoa_Công_nghệ_Thông_tin, so_luong_giang_vien, 120)
+
+Relation:
+name: so_luong_giang_vien
+definition: số lượng giảng viên thuộc tổ chức giáo dục
+head_type: ToChuc
+tail_type: Number
+
+Candidates:
+0. NONE
+1. thuoc
+2. ap_dung_tai
+
+Answer: 0
+
+=== NHIỆM VỤ ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+name: {query_relation}
+definition: {query_relation_definition}
+head_type: {head_type}
+tail_type: {tail_type}
+
+Candidates:
+{choices}
+
+Answer (CHỈ ghi số):

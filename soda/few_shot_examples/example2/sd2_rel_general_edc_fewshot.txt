@@ -1,0 +1,94 @@
+Example 1:
+Text: John Doe studied at Harvard University.
+
+Triples:
+[
+  ['John_Doe', 'studiedAt', 'Harvard_University']
+]
+
+Answer:
+[
+  ['John_Doe', 'studiedAt', 'Harvard_University',
+   'The subject entity studied at the institution specified by the object entity.',
+   'event']
+]
+
+
+Example 2:
+Text: Apple Inc. is headquartered in Cupertino.
+
+Triples:
+[
+  ['Apple_Inc.', 'headquarteredIn', 'Cupertino']
+]
+
+Answer:
+[
+  ['Apple_Inc.', 'headquarteredIn', 'Cupertino',
+   'The subject entity has its headquarters in the location specified by the object entity.',
+   'event']
+]
+
+
+Example 3:
+Text: Barack Obama served as president.
+
+Triples:
+[
+  ['Barack_Obama', 'servedAs', 'President']
+]
+
+Answer:
+[
+  ['Barack_Obama', 'servedAs', 'President',
+   'The subject entity served in the role or position specified by the object entity.',
+   'event']
+]
+
+
+Example 4:
+Text: Alice has a GPA of 3.8.
+
+Triples:
+[
+  ['Alice', 'gpa', '3.8']
+]
+
+Answer:
+[
+  ['Alice', 'gpa', '3.8',
+   'The subject entity has the grade point average specified by the object entity.',
+   'attribute']
+]
+
+
+Example 5:
+Text: Apple is a technology company.
+
+Triples:
+[
+  ['Apple', 'isA', 'Technology_company']
+]
+
+Answer:
+[
+  ['Apple', 'isA', 'Technology_company',
+   'The subject entity is an instance or example of the type specified by the object entity.',
+   'type']
+]
+
+
+Example 6:
+Text: Team A defeated Team B.
+
+Triples:
+[
+  ['Team_A', 'defeated', 'Team_B']
+]
+
+Answer:
+[
+  ['Team_A', 'defeated', 'Team_B',
+   'The subject entity defeated the opponent specified by the object entity.',
+   'event']
+]

@@ -1,0 +1,6 @@
+John Doe is a student at National University of Singapore.
+Tuan Bui studied Computer Science at the National University of Singapore from 2023 to 2026 with a GPA of 3.8.
+Barack Obama served as the president of the United States from 2009 to 2017.
+Team A defeated Team B with a score of 3-1 in the final match.
+Alice Smith joined Google as a software engineer in 2020.
+Apple Inc. is a technology company headquartered in Cupertino. The company was founded in 1976 and has over 160000 employees.

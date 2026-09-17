@@ -1,0 +1,133 @@
+You are an expert in knowledge graph schema canonicalization.
+
+=== GOAL ===
+Select the BEST canonical relation for the given triplet.
+
+=== INSTRUCTION ===
+
+Rules:
+- Output ONLY the candidate NUMBER.
+- Prefer reusing an existing relation from Candidates.
+- Use relation NAME, DEFINITION, and ENTITY TYPES together.
+- Match based on SEMANTIC MEANING, not surface words.
+- Use head_type and tail_type to verify relation compatibility.
+- If both semantic meaning and entity types are compatible,
+  you MUST reuse the candidate relation.
+- Ignore minor wording differences if the underlying relationship is equivalent.
+- Choose the MOST specific correct relation when multiple candidates are related.
+- Choose 0 (NONE) ONLY if all candidates are semantically or structurally incompatible.
+- Do NOT rely only on lexical similarity between relation names.
+
+=== EXAMPLES ===
+
+Text: Barack Obama was born in Hawaii.
+Triplet: (Barack Obama, bornIn, Hawaii)
+
+Relation:
+name: bornIn
+definition: indicates the geographic location where a person was born
+head_type: Person
+tail_type: Location
+
+Candidates:
+0. NONE
+1. spouse | relation between married individuals | Person → Person
+2. birthPlace | Indicates the birthplace of a person. | Person → Location
+3. nationality | legal citizenship or national affiliation | Person → Country
+
+Answer: 2
+
+---
+
+Text: Microsoft purchased GitHub in 2018.
+Triplet: (Microsoft, purchased, GitHub)
+
+Relation:
+name: purchased
+definition: indicates that one organization acquires ownership of another company
+head_type: Organization
+tail_type: Organization
+
+Candidates:
+0. NONE
+1. acquisitionTarget | Entity acquired by another organization in a business acquisition. | Organization → Organization
+2. founder | Person who established an organization. | Person → Organization
+3. subsidiary | Organization controlled by another organization. | Organization → Organization
+
+Answer: 1
+
+---
+
+Text: Tesla is headquartered in Austin.
+Triplet: (Tesla, headquartersLocation, Austin)
+
+Relation:
+name: headquartersLocation
+definition: indicates the primary administrative office location of an organization
+head_type: Organization
+tail_type: Location
+
+Candidates:
+0. NONE
+1. locatedInCountry | Sovereign country where an entity is geographically situated. | Location → Country
+2. headquarters | Main office or administrative center of an organization. | Organization → Location
+3. foundedBy | Person or organization that established another organization. | Organization → Person
+
+Answer: 2
+
+---
+
+Text: John was born in Paris.
+Triplet: (John, bornIn, Paris)
+
+Relation:
+name: bornIn
+definition: indicates that a person was born in a specific city or place
+head_type: Person
+tail_type: Location
+
+Candidates:
+0. NONE
+1. locatedIn | General spatial containment or location relation. | Entity → Location
+2. birthPlace | Indicates the birthplace of a person. | Person → Location
+3. nationality | Citizenship or national identity of a person. | Person → Country
+
+Answer: 2
+
+---
+
+Text: The city has a population density of 1000 people per square kilometer.
+Triplet: (City, populationDensity, 1000)
+
+Relation:
+name: populationDensity
+definition: indicates the number of people living per unit area
+head_type: City
+tail_type: Number
+
+Candidates:
+0. NONE
+1. population | Total number of inhabitants in a region or settlement. | Location → Number
+2. locatedInCountry | Country where a geographic entity is situated. | Location → Country
+3. containsSettlement | Relation indicating that a region includes settlements. | Region → Settlement
+
+Answer: 0
+
+=== TASK ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+name: {query_relation}
+definition: {query_relation_definition}
+head_type: {head_type}
+tail_type: {tail_type}
+
+Candidates:
+{choices}
+
+Answer (ONLY number):

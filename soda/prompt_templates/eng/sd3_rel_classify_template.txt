@@ -1,0 +1,42 @@
+You are an expert in knowledge graph construction.
+
+Here are some examples:
+{few_shot_examples}
+
+You are given type-level relations. Each relation is a 5-field list:
+[subject_type, relation, object_type, definition, semantic_hint]
+
+Your task is to classify each relation and determine its attachment.
+
+For each relation:
+
+1. Assign a role:
+- "main": core event relation
+- "rel_attr": attribute describing a main relation
+- "subj_attr": attribute describing the subject type
+
+2. Assign an anchor:
+- if role = "main"      -> anchor = "self"
+- if role = "rel_attr"  -> anchor = the relation it describes
+- if role = "subj_attr" -> anchor = "subject"
+
+Output format (STRICT):
+[
+  [subject_type, relation, object_type, role, anchor],
+  ...
+]
+
+Rules:
+- Keep the original relation names EXACTLY.
+- Each relation appears exactly once.
+- anchor must match an existing relation name or be "self"/"subject".
+- Use semantic meaning to decide the correct attachment.
+
+Heuristics:
+- If the relation describes an action/interaction -> main
+- If it describes details of an action -> rel_attr (attach to that action)
+- If it describes a general property of the subject -> subj_attr
+
+Relations: {relations}
+
+Answer:

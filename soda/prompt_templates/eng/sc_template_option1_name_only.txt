@@ -1,0 +1,96 @@
+You are an expert in knowledge graph schema canonicalization.
+
+=== GOAL ===
+Select the BEST canonical relation for the given triplet.
+
+=== INSTRUCTION ===
+
+Rules:
+- Output ONLY the candidate NUMBER.
+- Prefer reusing an existing relation from Candidates.
+- If a candidate has the SAME or HIGHLY SIMILAR semantic meaning,
+  you MUST reuse it.
+- Match based on SEMANTIC MEANING, not surface words.
+- Ignore minor wording differences.
+- Choose the MOST specific correct relation when multiple candidates are related.
+- Choose 0 (NONE) ONLY if all candidates are semantically unrelated.
+- Two relations are considered matching if they express the same
+  real-world relationship, even with different wording.
+
+=== EXAMPLES ===
+
+Text: Barack Obama was born in Hawaii.
+Triplet: (Barack Obama, bornIn, Hawaii)
+
+Relation: bornIn  
+
+Candidates:
+0. NONE
+1. spouse
+2. birthPlace
+3. nationality
+4. locatedIn
+
+Answer: 2
+
+---
+
+Text: Microsoft purchased GitHub in 2018.
+Triplet: (Microsoft, purchased, GitHub)
+
+Relation: purchased  
+
+Candidates:
+0. NONE
+1. acquisitionTarget
+2. founder
+3. subsidiary
+
+Answer: 1
+
+---
+
+Text: Tesla is headquartered in Austin.
+Triplet: (Tesla, headquartersLocation, Austin)
+
+Relation: headquartersLocation 
+
+Candidates:
+0. NONE
+1. locatedInCountry
+2. headquarters
+3. foundedBy
+
+Answer: 2
+
+
+---
+
+Text: The city has a population density of 1000 people per square kilometer.
+Triplet: (City, populationDensity, 1000)
+
+Relation: populationDensity 
+
+Candidates:
+0. NONE
+1. population
+2. locatedInCountry
+3. containsSettlement
+
+Answer: 0
+
+=== TASK ===
+
+Text:
+{input_text}
+
+Triplet:
+{query_triplet}
+
+Relation:
+{query_relation}
+
+Candidates:
+{choices}
+
+Answer (ONLY number):
