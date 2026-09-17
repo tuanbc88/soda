@@ -21,7 +21,7 @@ over: when a relation is extracted, should the system **reuse** an existing sche
 a new one? Over-merging collapses distinct relations; over-creating fragments the schema into
 near-duplicates. The decision is usually treated as a fixed pipeline component.
 
-SODA treats it as a design variable. Its core, **CaSA** (retriever × LLM), makes the
+SODA treats it as a design variable. Its core, **Resolve** (retriever × LLM), makes the
 reuse-or-create choice an explicit neuro-symbolic decision: a retriever proposes candidate schema
 elements, an LLM chooses among them, and *what the LLM is shown about each candidate* is varied
 systematically — **nine relation signals** spanning names, three definition styles, argument types and
@@ -50,24 +50,21 @@ open ≤9B backbone matches or exceeds it on two of three benchmarks while falli
 |---|---|
 | **Extract** (OIE) | open triples from raw text — the base every configuration shares |
 | **Define** (SD) | symbolic descriptions for new schema elements: three definition styles and argument types. These are the fields a canonicalization signal selects from |
-| **Canonicalize** (CaSA) | retrieve top-*k* candidates, then reuse or create. The stage under study |
+| **Canonicalize** (Resolve) | retrieve top-*k* candidates, then reuse or create. The stage under study |
 | **Assess** | accuracy where a gold graph exists, plus canonicalization clustering metrics, stage-wise error attribution, and gold-free structural diagnostics |
 
-### CaSA — the decision under study
-
-![CaSA](docs/casa.png)
-
 One relation can surface three ways in the same corpus — *is located in*, *situated in*, *located at*.
-Are they one schema element or three? CaSA makes that call explicitly, and makes the **information the
-LLM sees while calling it** the variable: a relation signal φ selects among the name, three definition
-styles and the argument types; an entity signal φᵉ selects among name, definition and parent type. The
-retrieved candidates and the schema policy π condition the same decision.
+Are they one schema element or three? Resolve makes that call explicitly, and makes the **information
+the LLM sees while calling it** the variable: a relation signal φ selects among the name, three
+definition styles and the argument types; an entity signal φᵉ selects among name, definition and parent
+type. The retrieved candidates and the schema policy π condition the same decision, and Assess (right
+of the figure) then scores all three outcomes.
 
-The two ways it fails are opposite and both are visible on the right of the figure: creating too often
-**fragments** the graph into near-duplicate relations, reusing too eagerly **collapses** distinct ones.
-A single triple never shows which is happening, because the damage is to the vocabulary the *next*
-document will be judged against — which is why the assessment stage scores the schema, not just the
-triples.
+The two ways the decision fails are opposite, and both are visible in the outcomes column above:
+creating too often **fragments** the graph into near-duplicate relations, reusing too eagerly
+**collapses** distinct ones. A single triple never shows which is happening, because the damage is to
+the vocabulary the *next* document will be judged against — which is why the assessment stage scores
+the schema, not just the triples.
 
 ## Repository layout
 
@@ -89,7 +86,7 @@ run_soda.sh              the runner — every experiment is this under different
 run_smoke.sh             five-minute end-to-end check on a tiny fixture
 run_eval.sh              evaluate a run that already exists on disk
 run_backbone_headline.sh the headline backbone row
-docs/                    the two figures used by this README
+docs/                    the figure used by this README
 schemas/                 gold schemas and the contributed typed entity-schema layer + its builders
 datasets/                dataset builders and the small benchmark inputs
 scripts/                 things that are not metrics: cross-run aggregation into tables, the
